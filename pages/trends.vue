@@ -91,7 +91,6 @@
         <div class="wrapper2" style="background-color: #F2EEED">
           <div class="container">
             <div class="cont">
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node38 widget widget-blank xs-hidden promo">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -216,7 +215,6 @@
                   </div>
                 </div>
               </div>
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node44 widget widget-blank xs-hidden">
                 <div class="wrapper1">
                   <div class="wrapper2">

@@ -16,7 +16,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 66px; background-position: center center; background-size: contain; background-image: url(img/logo_sm.png);" data-lazy-bgimage="img/logo_sm.png" data-lazy-bgimage_size="565,402"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/logo_sm.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -31,7 +31,6 @@
                                     <div class="gridwrap">
                                       <div class="col" style="width: 78.6713%;">
                                         <div class="cont">
-                                          <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
                                           <div class="node node4 widget widget-menu xs-hidden">
                                             <div class="wrapper1">
                                               <div class="wrapper2">
@@ -133,7 +132,6 @@
                                             </div>
                                           </div>
                                           <!-- ADAPTIVE-->
-                                          <script class="adaptive">if (["md","lg"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
                                           <div class="node node12 widget widget-hamburger md-hidden lg-hidden">
                                             <div class="wrapper1">
                                               <div class="wrapper2">
@@ -271,7 +269,6 @@
                                       </div>
                                       <div class="col" style="width: 21.3287%;">
                                         <div class="cont">
-                                          <script class="adaptive">if (["md","lg"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
                                           <div class="node node22 widget widget-text md-hidden lg-hidden">
                                             <div class="wrapper1">
                                               <div class="wrapper2">
@@ -284,7 +281,6 @@
                                             </div>
                                           </div>
                                           <!-- ADAPTIVE-->
-                                          <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
                                           <div class="node node23 widget widget-button xs-hidden wow pulse" data-wow-delay="1.1s">
                                             <div class="wrapper1">
                                               <div class="wrapper2">
@@ -387,7 +383,6 @@
         <div class="wrapper2">
           <div class="container">
             <div class="cont">
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node38 widget widget-blank xs-hidden">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -434,7 +429,6 @@
                   </div>
                 </div>
               </div>
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node44 widget widget-blank xs-hidden">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -568,7 +562,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 50px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/ff1e7c634aae05dfaf06a01323a947fe.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/ff1e7c634aae05dfaf06a01323a947fe.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -580,7 +574,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 50px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/61fcda56c79ed7763e370190ebe919b2.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" alt=""></div>
-                                  <noscript><img src="img/61fcda56c79ed7763e370190ebe919b2.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -592,7 +586,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 53px; background-position: center center; background-size: contain; background-image: url(img/d67793c6bbee58a646b1a0d759dd96e6.png);" data-lazy-bgimage="img/d67793c6bbee58a646b1a0d759dd96e6.png" data-lazy-bgimage_size="500,120"><img src="img/d67793c6bbee58a646b1a0d759dd96e6.png" alt=""></div>
-                                  <noscript><img src="img/d67793c6bbee58a646b1a0d759dd96e6.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -616,7 +610,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 50px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/ff39ffbe72c71b25a445643992958172.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/ff39ffbe72c71b25a445643992958172.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -628,7 +622,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 52px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAADCAYAAACasY9UAAAAEklEQVQYV2NkoBAwUqifgWIDAAJJAATwXgcuAAAAAElFTkSuQmCC&quot;);" data-lazy-bgimage="img/07af8c0d4e60b02f8bc6cff9ad039a69.png" data-lazy-bgimage_size="500,120"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/07af8c0d4e60b02f8bc6cff9ad039a69.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -669,7 +663,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 50px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/59becde746c9e448ff68226020855e60.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/59becde746c9e448ff68226020855e60.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -681,7 +675,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 50px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/9bcbfe25766bc1cefbf61e5dab6555ee.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/9bcbfe25766bc1cefbf61e5dab6555ee.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -693,7 +687,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 53px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/23ca5331d6aff57e5743265ecfb62a25.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/23ca5331d6aff57e5743265ecfb62a25.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -705,7 +699,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 50px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/4bd22cb2fbcefa654e3c4ee165c472dd.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/4bd22cb2fbcefa654e3c4ee165c472dd.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -717,7 +711,6 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 52px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAE0lEQVQoU2NkoBAwUqifYeANAAADjgAFOpmydAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/284167d2a5d2691e56acdb7bcbc9cc9e.png" data-lazy-bgimage_size="500,150"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/284167d2a5d2691e56acdb7bcbc9cc9e.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -857,7 +850,6 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 305px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAH0lEQVQ4T2NkoBAwUqifYdQAhtEwYBgNA1A+Gvi8AAAmmAARf9qcXAAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/e96aebf877ee49fc9f90dd87be995c52.png" data-lazy-bgimage_size="861,880"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/e96aebf877ee49fc9f90dd87be995c52.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -907,7 +899,6 @@
                   </div>
                 </div>
               </div>
-              <script class="adaptive">if (["md","lg"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node107 widget widget-blank md-hidden lg-hidden">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -916,7 +907,6 @@
                 </div>
               </div>
               <!-- ADAPTIVE-->
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node108 widget widget-blank xs-hidden" id="checklist">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -1047,7 +1037,7 @@
                   </div>
                 </div>
               </div>
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
+
               <div class="node node118 widget widget-blank xs-hidden">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -1307,12 +1297,11 @@
                         </div>
                         <div class="col" style="width: 25%;">
                           <div class="cont">
-                            <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
                             <div class="node node140 widget widget-image xs-hidden">
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 306px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAH0lEQVQ4T2NkoBAwUqifYdQAhtEwYBgNA1A+ojgvAAAiRwAQVlAAgwAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/384af90f9bf8826b1a8909002a7339b2.png" data-lazy-bgimage_size="565,552"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/384af90f9bf8826b1a8909002a7339b2.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -1343,7 +1332,6 @@
                   </div>
                 </div>
               </div>
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node151 widget widget-blank xs-hidden">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -1380,7 +1368,7 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/177--black.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -1432,7 +1420,6 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/213--black.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -1485,7 +1472,6 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/127--black.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -1536,7 +1522,6 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/178--black.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -1727,7 +1712,6 @@
                   </div>
                 </div>
               </div>
-              <script class="adaptive">if (["xs"].indexOf(plp.screen) >= 0) document.write("<!--")</script>
               <div class="node node185 widget widget-blank xs-hidden">
                 <div class="wrapper1">
                   <div class="wrapper2">
@@ -2294,7 +2278,7 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/228--black.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>
@@ -2336,7 +2320,6 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/203--black.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -2372,7 +2355,6 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/81--black.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -2446,7 +2428,6 @@
                                       </svg>
                                     </div>
                                   </div>
-                                  <noscript><img src="img/259--black.png" alt=""></noscript>
                                 </div>
                               </div>
                             </div>
@@ -2598,7 +2579,7 @@
                               <div class="wrapper1">
                                 <div class="wrapper2">
                                   <div class="bgimage" style="height: 111px; background-position: center center; background-size: contain; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAH0lEQVQ4T2NkoBAwUqifYdQAhtEwYBgNA1A+ojgvAAAiRwAQVlAAgwAAAABJRU5ErkJggg==&quot;);" data-lazy-bgimage="img/384af90f9bf8826b1a8909002a7339b2.png" data-lazy-bgimage_size="565,552"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
-                                  <noscript><img src="img/384af90f9bf8826b1a8909002a7339b2.png" alt=""></noscript>
+
                                 </div>
                               </div>
                             </div>

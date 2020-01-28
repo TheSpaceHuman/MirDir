@@ -99,15 +99,6 @@
     <div class="footer">
       <div class="container">
         <div class="col-wrap">
-          <!-- Yandex.Metrika informer -->
-          <a href="https://metrika.yandex.ru/stat/?id=54989998&amp;from=informer"
-             target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/54989998/3_0_B9B9B9FF_999999FF_0_pageviews"
-                                                 style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="54989998" data-lang="ru" /></a>
-          <!-- /Yandex.Metrika informer -->
-          <div class="col" style="width: 15.0175%;">
-            <img src="img/384af90f9bf8826b1a8909002a7339b2.png" alt="">
-            <!-- <noscript><img src="img/384af90f9bf8826b1a8909002a7339b2.png" alt=""></noscript> -->
-          </div>
           <div class="col right" style="width: 84.9825%;">
             <ul class="menu">
               <li>
