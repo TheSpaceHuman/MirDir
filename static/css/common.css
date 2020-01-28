@@ -1,0 +1,276 @@
+body{ font-size: 17px; font-family: 'Montserrat', sans-serif; }
+header{ background-color: #fff;  color: #666; padding: 20px 0; border-bottom: 1px solid #fff;}
+header ul li, .header ul.menu li{ display: inline-block; list-style: none; }
+header ul li a, .header ul.menu li a{ color: #666; }
+header .right{ padding-top: 10px; }
+header ul, .header ul.menu{ margin-left: 0;     padding-left: 0;  padding-top: 20px;  display: flex;   justify-content: space-around; }
+h1{   font-size: 70px;    }
+.col-3{        float: left;        width: 33.3%;}
+.col-2{        float: left;        width: 50%;}
+.col-4{  float: left; width: 25%;}
+.col-5{ float: left; width: 18%; }
+.col-60{ float: left; width: 64%; }
+.promo .descr{ max-width: 780px; margin: 40px auto;  font-size: 22px;}
+.promo h1{ max-width: 780px; margin: 40px auto; }
+/*.header{ background-image: url(../img/image-bg3.jpg);  background-attachment: fixed;   background-size: cover;}*/
+section{    background-color: rgb(109, 152, 194);  /*color: #fff; */padding: 40px 0; color: #333;
+background-image: url(../img/bg-right.jpg);
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
+            /*background-size: cover;*/
+}
+.promo{
+       /* background-image: url(../img/pattern-1920x1200-turquoise-teal-blue-hd-11844.jpg);
+            background-blend-mode: multiply;
+                background-blend-mode: color-burn;*/
+}
+.right{ text-align: right; }
+.btn{ border: 1px solid rgba(255, 137, 50, 1);  font-size: 18px; padding: 10px 20px; color: #FFF; 
+        min-width: 150px; margin-right: 5px;     background-color: rgb(239, 83, 80);  
+           border-color: rgb(187, 20, 17);}
+.btn:hover{  background-color: rgb(236, 54, 51);  border-color: transparent; color: #FFF;}
+.btn-transp{background-color: #fff ; color:rgb(236, 54, 51); }
+.btn-transp:hover{    background-color: rgb(236, 54, 51);  color: #FFF; }
+.btn-wrap{padding: 30px;}
+.logo{ color:#FF8932;   font-size: 24px;}
+
+.form-inline{ background-color: #FFF;  color: #666;}
+.form-inline p{ text-align: center; margin-bottom: 20px; font-size: 18px; font-weight: bold; }
+.form-inline .agreement-checkbox{ color: #666; margin-bottom: 15px;}
+.form-inline .agreement-checkbox span{ padding-left: 10px; font-weight: 400; }
+.form-inline .form-control{ width: 95%; margin-bottom: 15px; }
+/*.form-inline form{     padding: 30px 20px 20px;    background-color: rgba(144, 200, 249, 0.25); }*/
+.promo-descr{background-color: rgb(238, 238, 238); color: #000;}
+.promo-descr p{ max-width: 780px;  margin-left: auto; margin-right: auto;  font-size: 22px;}
+p+p{ margin-top: 15px; }
+.promo-descr .btn-wrap{ max-width: 780px;  margin-left: auto; margin-right: auto; }
+/*.achieve, .tehnology, .tz{position: relative; background-color: transparent; opacity: 1;}*/
+/*.achieve:before, .tehnology:before, .tz:before{ content: "";
+        position: absolute; top: 0;left: 0; bottom: 0; right: 0;
+        background-color: #FF8932; 
+        background-image: url(../img/image-bg1.jpg);
+        background-image: url(../img/orange_dreams2.jpg);
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
+        opacity: .6; z-index: -1;
+}*/
+.achieve, .tehnology, .tz{ 
+        /*background-color: #FF8932; */
+        /*background-color: rgb(239, 83, 80);*/
+        /*background-image: url(../img/orange_dreams.jpg);*/
+        background-image: url(../img/bg-right.jpg);
+        /*background-attachment: fixed;*/
+        /*background-blend-mode: soft-light;*/
+            /*background-size: cover;*/
+            background-color: #FFF;
+           background-size: auto;
+            background-blend-mode: unset;
+            color: #000;
+}
+.achieve .descr{ margin:0 0 40px ;  text-align: center; }
+.achieve .descr h3{   font-size: 50px; margin-bottom: 20px;}
+.achieve  .col-3 h3{ min-height: 50px; margin-top: 20px; color: rgb(239, 83, 80); text-transform: uppercase;padding: 20px;}
+.achieve  .col-3, .achieve p{    background-color: #fff; }
+.achieve  .col-3 p{ padding: 0 20px 30px; min-height: 160px; color: #666;}
+.offers h2{ text-align: center;    color: #333; font-size: 50px; }
+.offer{ margin: 20px 0;    line-height: 1.8; }
+.offer img{ float: left; margin-top: 40px; }
+.offer-descr{ float: left; width: calc( 100% - 250px); }
+.offer h3{  color: #333; font-size: 28px; margin-bottom: 25px;  }
+img{ max-width: 100%; }
+
+.tehnology h2{ font-size: 50px; text-align: center; margin-bottom: 30px;}
+.tehnology { font-size: 20px;  line-height: 1.8; text-align: center; }
+.tehnology p{ background-color: #FFF; }
+
+.services{ background-color: #FFF;    color: #0E1F58;  line-height: 1.8; padding-top: 30px;
+background-position: top; background-repeat: repeat; 
+background-image: url(../img/bg-right.jpg);
+
+}
+.service img{ float: left; margin-top: 40px; }
+.service-descr{ float: left; width: calc( 100% - 250px); }
+.service{ margin: 20px 0 20px;    line-height: 1.8;    background-color: #fff;
+    padding: 10px 10px; }
+
+
+.tz{ text-align: center; line-height: 1.8;}
+.tz h2{ font-size: 50px; text-transform: uppercase; margin-top: 40px;margin-bottom: 40px; }
+.tz p{ background-color: #FFF; }
+
+.contact{background-color: #102467;}
+.contact .row{ background-color: #FFF; color: #0E1F58; text-align: center; }
+.contact h3{  color: #FF8932; font-size: 48px; margin-bottom: 25px;  margin-top: 60px;}
+.map iframe{ width: 100%; }
+
+.footer{ background-color: rgb(38, 39, 44);
+    color: #FFF; padding:10px 0; text-align: center; color: #fff; }
+.footer .menu{ display: flex;   justify-content: space-around;     max-width: 500px;
+    margin-right: 0;
+    display: block;
+    padding: 0;
+    margin-left: auto; }
+.footer .menu li{ display: inline-block; list-style: none;  color: #FFF; padding: 0 10px;}
+.footer img{ max-height: 110px; }
+.footer .col-wrap{   display: flex;  align-items: center;}
+.footer .menu button{ padding: 0 5px; min-width: auto; }
+/*.copy{ max-width: 350px; font-size: 14px; margin-left: auto; margin-right: auto; }*/
+.footer .col{ float: left; }
+.menu button{ background: transparent; border: none;}
+.modal-dialog{ max-width: 94%;     margin-left: auto;
+    margin-right: auto;}
+.modal-dialog .form-control{ margin-bottom: 15px; }
+@media (min-width: 991px) {
+    .btn-inner.scrollup-btn{
+        display: none;
+        text-align: center;
+        position: fixed;
+        bottom: 150px;
+        right: 50px;
+    }
+    .fa-caret-square-o-up::before, .fa-toggle-up::before {
+        color: #000;
+        font-size: 64px;
+    }
+}
+
+/*.achieve .row{    background-color: #0E1F58;}*/
+
+.oracl-promo{
+	background-color: #FFF;    color: #0E1F58;  line-height: 1.8; padding-top: 30px;
+	background: none;
+	
+	position: relative;
+}
+.oracl-promo:before{
+	content: "";
+	background-image: url(../img/PWFeb15Cartwright-frontis-hero.jpg);
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+	background-size: cover;
+	background-position: center;
+	opacity: .4;
+    z-index: -1;
+}
+.oracl-promo h1, .oracl-promo .descr{ max-width: 100%; font-weight: 600; }
+.oracl-promo h1{ font-size: 54px; padding-top: 20px; }
+.oracl-offers{	background-color: transparent;}
+.oracl-offers img{ margin-top: 0px; max-width: 150px; max-height: 90px; }
+.oracl-offers h3{ font-size: 22px; }
+.oracl-tehnology li{margin: 15px 0 10px; list-style: none;}
+.oracl-tehnology .tehnology-item{ border: 1px solid #0E1F58; padding: 15px 30px;     font-size: 18px;}
+.oracl-tehnology .tehnology-item + .tehnology-item{ margin-top: 60px; }
+.oracl-tehnology {    background-image: none;
+    /*background-color: rgb(238, 238, 238);*/
+    background-color: rgb(252, 252, 252);
+    padding: 60px 0;
+}
+.tehnology-item p{ background-color: transparent; }
+.oracl-tehnology{ text-align: left; }
+.oracl-tehnology ul{ margin: 0; padding-left: 5px; }
+.oracl-tehnology li{ position: relative; padding-left: 35px;}
+.oracl-tehnology li:before{
+	position: absolute;
+	content: "";
+	width: 25px; height: 25px;
+	background-image: url(../icons/Tilda_Icons_7cafe_flag.svg);
+	background-repeat: no-repeat;
+	left: 0; top: 6px;
+	        /*background-size: contain;*/
+	        background-color: #0E1F58;
+	       background-size: 20px;
+    background-position: center;
+    background-color: #0E1F58;
+}
+.tehnology-item  h2{color: #0E1F58;}
+.form-inline.bg-grey{ background-color: rgb(252, 252, 252); padding: 60px 0;}
+.form-inline.bg-grey p{color: #0E1F58; font-size: 24px;}
+.main-promo:before{background-image: url(../img/bg-grey.jpg);}
+.main-service { background-color: #fff; }
+.main-service .service {
+    float: left; width: 50%;
+    padding: 15px; position: relative;
+}
+.main-service .offer-descr{
+    position: relative;   width: 100%; display: block;
+   height: 200px;
+    color: #FFF;
+    text-align: center;  border: 2px solid #0e1f58;transition: 0.3s;color: #0e1f58;
+}
+.main-service .offer-descr:before{
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background-size: cover;
+    background-position: center;
+/*    opacity: .4;
+    z-index: -1;*/
+     background-image: url(../img/1.jpg); opacity: .4;transition: 0.3s;
+}
+.main-service h3{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0;
+ font-weight: 600; opacity: 1; z-index: 2; 
+}
+.main-service .offer-descr:hover{
+ border-color: #FFF; transition: 0.3s;
+}
+.main-service .offer-descr:hover:before{ opacity: 1; transition: 0.3s;}
+
+@media (max-width: 1200px){
+	.oracl-promo h1 {font-size: 54px;}
+    header .hidden-xs{ display: none; }
+    /*header .container{ padding: 0; }*/
+
+}
+@media (max-width: 991px){
+	header ul{ font-size: 14px; }
+    header .right{ padding-top: 18px; }
+    header .right a{    font-size: 16px !important;}
+}
+@media (max-width: 768px){
+        body{ font-size: 14px; }
+        .col-3{ float: none; width: auto;  text-align: center; }
+        header{ padding: 20px 0; }
+        section{ padding: 30px 0; }
+        .promo h1{ font-size: 50px; text-align: center;}
+        .promo .descr, .promo-descr p, .tehnology{ font-size: 16px; }
+        .achieve .descr{font-size: 16px; margin: 0 0 20px;}
+        .achieve .descr h3, .tehnology h2, .tz h2, .offers h2{ font-size: 32px; }
+        .achieve .col-3 h3{ margin-top: 5px; min-height: 50px; }
+        .achieve .col-3 p{ min-height: 100px;     margin-bottom: 0; }
+        .achieve .col-3{ max-width: 400px;    margin: 0 auto 25px; }
+        .offer h3{ font-size: 20px; }
+        .service{ margin: 10px 0 ; padding: 10px 0; }
+        .contact h3{ font-size: 18px; }
+        .contact { padding: 0; }
+        .footer{ padding: 20px 0; }
+        .btn { margin-top: 15px; }
+        .achieve .row{    background-color: transparent;}
+        header ul{ padding-top: 10px; }
+        .oracl-promo .descr{ font-size: 22px; text-align: center; }
+        .oracl-promo h1{ font-size: 46px; }
+        header .col-60, header .col-5{ float: none; text-align: center; width: 100%; }
+        header ul{flex-wrap: wrap;}
+}
+@media (max-width: 630px){
+        .offer-descr, .service-descr{ float: none;width: auto; }
+        .offer h3{ text-align: center; margin-top: 0; margin-bottom: 10px;}
+        .service img, .offer img{ float: none;    margin: 0 auto;    display: block; }
+        .col-2, .col-3, .col-4{ float: none; width: auto; text-align: center;}
+        .xxs-hidden{ display: none; }
+        .tz img{ height: 250px !important }
+        .offer {    margin: 20px 0;   }
+        /*section {    padding: 30px 0;}*/
+        .oracl-promo h1{ font-size: 38px; }
+        .main-service .service{ float: none; width: 100%; padding: 5px;}
+        .main-promo .descr{ font-size: 18px; }
+}
+@media (max-width: 480px){
+        .promo h1{ font-size:38px;}
+         .oracl-promo h1{ font-size: 32px; }
+         .hidden-xs{ display: none; }
+}
+@media (max-width: 430px){
+	.oracl-promo h1 { font-size: 26px;}
+	.oracl-promo .descr{     font-size: 18px;   line-height: 1.5;}
+	.oracl-offers h3{ font-size: 18px; }
+	.tehnology-item h2 {font-size: 26px;}
+	.oracl-tehnology .tehnology-item{     padding: 15px 10px; }
+}

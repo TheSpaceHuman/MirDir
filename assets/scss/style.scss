@@ -1,0 +1,95 @@
+/*
+@import "utils/vars";
+@import "utils/libs";
+@import "utils/reset";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/helpers";
+
+html {
+  font-family: $mainFont;
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $lgDesktopWidth) {
+		font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+		font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+		font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+a:hover, a:active {
+  color: $primary-color;
+  text-decoration: none;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section, .section {
+  position: relative;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+@import "./modules/header";
+@import "./modules/main";
+@import "./modules/footer";
+
+*/

@@ -12,24 +12,28 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'css/vendors.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'css/bootstrap.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'css/common.css' },
     ]
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'rgb(236, 54, 51)' },
   /*
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'ant-design-vue/dist/antd.css',
+    '@/assets/scss/style.scss',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/ant-design',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,13 +51,12 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {
-  },
+  axios: {},
   /*
   ** Build configuration
   */
   build: {
-    transpile: [/^element-ui/],
+    transpile: [/^ant-design-vue/],
     /*
     ** You can extend webpack config here
     */
