@@ -13,7 +13,8 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "ant-design-vue": "^1.4.10",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue2-filters": "^0.9.1"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",

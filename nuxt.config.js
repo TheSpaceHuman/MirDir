@@ -13,9 +13,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'css/vendors.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'css/bootstrap.min.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'css/common.css' },
+      // { rel: 'stylesheet', type: 'text/css', href: 'css/vendors.css' },
+      // { rel: 'stylesheet', type: 'text/css', href: 'css/bootstrap.min.css' },
+      // { rel: 'stylesheet', type: 'text/css', href: 'css/common.css' },
     ]
   },
   /*
@@ -34,6 +34,8 @@ export default {
   */
   plugins: [
     '@/plugins/ant-design',
+    '@/filters/phone',
+    '@/plugins/vue2-filters',
   ],
   /*
   ** Nuxt.js dev-modules

@@ -79,11 +79,8 @@ section, .section {
 }
 
 .container {
-  width: 100%;
-  flex: 0 0 auto;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: $lgDesktopWidth;
+  margin: 0 auto;
   padding: 0 15px;
 }
 

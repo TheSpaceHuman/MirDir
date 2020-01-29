@@ -1,5 +1,5 @@
 <template>
-  <div class="area font-text-ralewaymedium font-header-ralewaybold">
+  <div style="display: none;" class="area font-text-ralewaymedium font-header-ralewaybold">
     <header class="header">
       <div class="container">
         <div class="col-2">
