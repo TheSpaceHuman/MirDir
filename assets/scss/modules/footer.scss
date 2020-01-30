@@ -1,1 +1,20 @@
-.footer {}
+.footer {
+  background-color: rgb(38, 39, 44);
+  color: #FFF;
+  padding: 10px 0;
+  text-align: center;
+
+  &__logo {
+    max-width: 70px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    a {
+      padding: 5px 12px;
+      font-size: 15px;
+    }
+  }
+}

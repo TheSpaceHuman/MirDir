@@ -1,8 +1,22 @@
 <template>
   <div>
-    <section>
-
-    </section>
+    <TheBanner image="/images/banners/index-banner2.jpg" height="550px">
+      <h1 class="banner-title">Центр разработки «МИР ДАННЫХ ИТ»</h1>
+      <span class="banner-subtitle">11 лет практики.</span>
+      <span class="banner-subtitle">100+ проектов и постоянных клиентов.</span>
+      <span class="banner-subtitle">Широкий список сертификатов и технологий.</span>
+      <span class="banner-subtitle">Офисы в 9 регионах страны - а значит адекватные цены.</span>
+    </TheBanner>
+    <div class="container py-30">
+      <a-row type="flex" :gutter="15">
+        <a-col :xm="24" :lg="12" v-for="(card, index) in cards" :key="index">
+          <a-card hoverable class="card mb-15">
+            <img :src="card.image" :alt="card.title"  slot="cover" class="card__img">
+            <a-card-meta :title="card.title" :description="card.subtitle"/>
+          </a-card>
+        </a-col>
+      </a-row>
+    </div>
     <div style="display: none;" class="area font-text-ralewaymedium font-header-ralewaybold">
       <header class="header">
         <div class="container">
@@ -187,9 +201,24 @@
 </template>
 
 <script>
+import TheBanner from '~/components/base/TheBanner.vue'
 
 export default {
-
+  components: {
+    TheBanner
+  },
+  data() {
+    return {
+      cards: [
+        { title: 'Администрирование баз данных', subtitle: '', image: '/images/cards/bandwidth-close-up-computer-connection-1148820.jpg', link: '/administration' },
+        { title: 'Oracle', subtitle: '', image: '/images/cards/oracle.png', link: '/oracle' },
+        { title: 'Тендеры. Конкурсы. Субподряд', subtitle: '', image: '/images/cards/sign-pen-business-document-48195.jpg', link: '/trends' },
+        { title: 'Разработка программного обеспечения', subtitle: '', image: '/images/cards/person-using-silver-macbook-pro-1181467.jpg', link: '/development' },
+        { title: 'Обучение персонала заказчика', subtitle: '', image: '/images/cards/top-view-photo-of-group-of-people-using-macbook-while-3182773.jpg', link: '' },
+        { title: 'Продвижение партнеров', subtitle: '', image: '/images/cards/photo-of-people-near-wooden-table-3184418.jpg', link: '' },
+      ]
+    }
+  }
 }
 </script>
 
