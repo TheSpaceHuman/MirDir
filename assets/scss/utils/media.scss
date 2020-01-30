@@ -1,0 +1,30 @@
+@media screen and (max-width: $lgDesktopWidth) {
+  html, body {
+    font-size: $mainFontSize;
+  }
+}
+@media screen and (max-width: $mdDesktopWidth) {
+  html, body {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: $smDesktopWidth) {
+  html, body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: $tableWidth) {
+  html, body {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: $phoneWidth) {
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: $smPhoneWidth) {
+  html, body {
+    font-size: 12px;
+  }
+}

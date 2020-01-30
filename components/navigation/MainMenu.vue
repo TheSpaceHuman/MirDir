@@ -54,7 +54,10 @@
 
 <style scoped lang="scss">
   .main-menu {
-
+    font-size: inherit;
+    a {
+      font-size: inherit;
+    }
     &__items {
       border-color: transparent;
     }

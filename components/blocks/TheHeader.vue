@@ -18,7 +18,7 @@
 
 <script>
   import MainMenu from '~/components/navigation/MainMenu.vue'
-  import SITE_CONST from '~/dictionary/contact'
+  import CONTACTS_CONST from '~/dictionary/contact'
 
   export default {
     name: "TheHeader",
@@ -27,7 +27,7 @@
     },
     data() {
       return {
-        phone: SITE_CONST.phone
+        phone: CONTACTS_CONST.phone
       }
     }
   }
