@@ -3,7 +3,9 @@
     <div class="container">
       <a-row type="flex">
         <a-col :xm="24" :md="6">
-          <img src="/images/logo.png" alt="" class="footer__logo">
+          <nuxt-link to="/">
+            <img src="/images/logo.png" alt="" class="footer__logo">
+          </nuxt-link>
         </a-col>
         <a-col :xm="24" :md="18">
           <div class="footer__links">

@@ -3,7 +3,9 @@
       <div class="container">
         <section class="header__top-menu">
           <div class="header__top-menu-logo">
-            <img src="/images/logo.png" class="header__top-menu-logo-img" alt="WD">
+            <nuxt-link to="/">
+              <img src="/images/logo.png" class="header__top-menu-logo-img" alt="WD">
+            </nuxt-link>
           </div>
           <div class="header__top-menu-nav">
             <MainMenu />

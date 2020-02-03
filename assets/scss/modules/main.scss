@@ -21,4 +21,23 @@
     height: 300px;
     object-fit: cover;
   }
+  &:hover .ant-card-meta-title {
+    color: $secondary-color;
+  }
+  .ant-card-cover {
+    position: relative;
+  }
+  .ant-card-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.5);
+  }
+  &:hover .ant-card-cover::before {
+    display: none;
+  }
 }
+

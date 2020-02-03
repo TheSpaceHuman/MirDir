@@ -1,7 +1,11 @@
 .header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
 
   &__top-menu-logo-img {
-    max-width: 70px;
+    max-width: 100px;
     margin: 0;
   }
   &__top-menu-logo {
@@ -9,16 +13,19 @@
   }
 
   &__top-menu-nav {
-    flex: 1 1 60%;
+    flex: 1 1 70%;
     display: flex;
     justify-content: flex-start;
   }
   &__top-menu-phone {
-    flex: 1 1 25%;
+    flex: 1 1 15%;
+    min-width: 160px;
+    display: flex;
+    justify-content: flex-end;
   }
   &__top-menu {
     display: flex;
     align-items: center;
-    padding: 25px 0;
+    padding: 0;
   }
 }

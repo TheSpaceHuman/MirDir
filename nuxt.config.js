@@ -37,6 +37,7 @@ export default {
     '@/plugins/ant-design',
     '@/filters/phone',
     '@/plugins/vue2-filters',
+    '@/plugins/vuelidate',
   ],
   /*
   ** Nuxt.js dev-modules

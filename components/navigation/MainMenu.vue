@@ -44,10 +44,16 @@
         }
       }
     },
-    computed: {
-    },
     created() {
       this.initMenu();
+    },
+    watch: {
+      $route: {
+        handler(val){
+          this.initMenu()
+        },
+        deep: true
+      }
     }
   }
 </script>
