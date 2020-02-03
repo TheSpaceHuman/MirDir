@@ -19,16 +19,20 @@
         </a-col>
       </a-row>
     </div>
+    <div class="container mb-50">
+      <FormQuestion />
+    </div>
   </div>
 
 </template>
 
 <script>
 import TheBanner from '~/components/base/TheBanner.vue'
+import FormQuestion from '~/components/blocks/FormQuestion.vue'
 
 export default {
   components: {
-    TheBanner
+    TheBanner, FormQuestion
   },
   data() {
     return {
