@@ -12,12 +12,10 @@
             <a-input placeholder="Телефон" type="text" id="phone" v-model="form.phone" />
           </a-col>
           <a-col :xm="24" :md="12" class="mb-15">
-            <a-checkbox v-model="form.personal">Даю согласие на <a href="/docs/Согласие на обработку персональных данных.pdf" target="_blank">обработку персональных данных</a></a-checkbox>
+            <a-checkbox v-model="form.personal">Даю согласие на <a href="/docs/Согласие на обработку персональных данных.pdf" target="_blank">обработку персональных данных</a>  <span class="text-danger">*</span></a-checkbox>
           </a-col>
-          <a-col :xm="24" :md="12" class="mb-15 d-flex justify-content-end align-items-center">
-            <a-button type="primary" html-type="submit">Перезвоните мне</a-button>
-            <span>$invalid = {{$v.form.$invalid}}</span>
-          </a-col>
+          <a-col :xm="24" :md="12" class="mb-15 d-flex justify-content-end align-items-center"></a-col>
+          <a-button type="primary" html-type="submit" :disabled="$v.form.$invalid">Перезвоните мне</a-button>
         </a-row>
       </form>
     </section>
@@ -44,9 +42,17 @@
     },
     validations: {
       form: {
-        name: required,
-        phone: required,
-        personal: requiredIf,
+        name: {
+          required,
+        },
+        phone: {
+          required
+        },
+        personal: {
+          isRequired(value) {
+            return value
+          }
+        },
       }
     }
   }

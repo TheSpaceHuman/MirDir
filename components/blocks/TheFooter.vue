@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <a-row type="flex">
         <a-col :xm="24" :md="6">

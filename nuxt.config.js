@@ -38,6 +38,7 @@ export default {
     '@/filters/phone',
     '@/plugins/vue2-filters',
     '@/plugins/vuelidate',
+    '@/plugins/vue-scrollto',
   ],
   /*
   ** Nuxt.js dev-modules
