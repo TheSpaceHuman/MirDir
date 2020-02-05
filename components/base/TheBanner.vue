@@ -21,7 +21,7 @@
       },
       height: {
         type: String,
-        default: 'auto'
+        default: '550px'
       }
     },
     data() {
@@ -38,7 +38,6 @@
 </script>
 
 <style scoped lang="scss">
-  @import "@/assets/scss/utils/vars";
   .banner {
     position: relative;
     text-align: center;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheBanner image="/images/banners/POP-SW-header.jpg" height="550px">
+    <TheBanner image="/images/banners/POP-SW-header.jpg">
       <h1 class="banner-title">Центр разработки «МИР ДАННЫХ ИТ»</h1>
       <span class="banner-subtitle">11 лет практики.</span>
       <span class="banner-subtitle">100+ проектов и постоянных клиентов.</span>
@@ -31,6 +31,7 @@ import TheBanner from '~/components/base/TheBanner.vue'
 import FormQuestion from '~/components/blocks/FormQuestion.vue'
 
 export default {
+  name: "index",
   components: {
     TheBanner, FormQuestion
   },
