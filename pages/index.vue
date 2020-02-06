@@ -20,7 +20,7 @@
       </a-row>
     </div>
     <div class="container mb-50">
-      <FormQuestion />
+      <FormNamePhone />
     </div>
   </div>
 
@@ -28,12 +28,12 @@
 
 <script>
 import TheBanner from '~/components/base/TheBanner.vue'
-import FormQuestion from '~/components/blocks/FormQuestion.vue'
+import FormNamePhone from '~/components/forms/FormNamePhone.vue'
 
 export default {
   name: "index",
   components: {
-    TheBanner, FormQuestion
+    TheBanner, FormNamePhone
   },
   data() {
     return {

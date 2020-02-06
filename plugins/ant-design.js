@@ -26,4 +26,5 @@ Vue.use(Button);
 Vue.use(Anchor);
 Vue.use(Breadcrumb);
 Vue.use(Input);
+Vue.use(Modal);
 

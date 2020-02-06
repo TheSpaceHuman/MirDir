@@ -13,6 +13,21 @@
   color: #fff;
   margin-bottom: 8px;
 }
+.banner-list {
+  font-size: 25px;
+  line-height: 1.2;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  li {
+    padding-left: 15px;
+  }
+  li::before {
+    content: "\2022"
+  }
+}
 .card {
   width: 100%;
 
@@ -40,4 +55,10 @@
     display: none;
   }
 }
-
+.big-number {
+  color: $tertiary-color;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+}

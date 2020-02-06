@@ -6,6 +6,7 @@
     </main>
     <TheFooter />
     <ArrowUp />
+    <TheModals />
   </div>
 </template>
 
@@ -13,10 +14,11 @@
   import TheHeader from '~/components/blocks/TheHeader.vue'
   import TheFooter from '~/components/blocks/TheFooter.vue'
   import ArrowUp from '~/components/base/ArrowUp.vue'
+  import TheModals from '~/components/blocks/TheModals.vue'
 
   export default {
     components: {
-      TheHeader, TheFooter, ArrowUp
+      TheHeader, TheFooter, ArrowUp, TheModals
     }
   }
 </script>
