@@ -39,6 +39,7 @@ export default {
     '@/plugins/vue2-filters',
     '@/plugins/vuelidate',
     '@/plugins/vue-scrollto',
+    '@/plugins/vue-the-mask',
   ],
   /*
   ** Nuxt.js dev-modules

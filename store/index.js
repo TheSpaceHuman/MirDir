@@ -2,15 +2,21 @@ export const state = () => ({
   modals: {
     formNamePhone: {
       show: false,
-      component: 'form-name-email'
+      component: 'form-name-email',
+      title: 'Задать вопрос',
+      data: {},
     },
     formNameEmail: {
       show: false,
-      component: 'form-name-email-phone'
+      component: 'form-name-email-phone',
+      title: 'Заявка на аудит',
+      data: {},
     },
     formNameEmailPhone: {
       show: false,
-      component: 'form-name-phone'
+      component: 'form-name-phone',
+      title: 'Заявка на чек-лист проверки базы данных',
+      data: {},
     }
   }
 })

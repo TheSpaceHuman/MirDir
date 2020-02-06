@@ -62,3 +62,11 @@
   line-height: 1;
   display: inline-block;
 }
+.figure {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-shadow: 6px 11px 20px 4px rgba(0,0,0,0.75);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

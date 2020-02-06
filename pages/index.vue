@@ -20,10 +20,14 @@
       </a-row>
     </div>
     <div class="container mb-50">
-      <FormNamePhone />
+      <FormNamePhone
+        title="Готовы ответить на любые вопросы"
+        button-title="Перезвоните мне"
+        button-alight="left"
+        :col="2"
+      ></FormNamePhone>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -44,7 +48,7 @@ export default {
         { title: 'Разработка программного обеспечения', subtitle: '', image: '/images/cards/person-using-silver-macbook-pro-1181467.jpg', link: '/development' },
         { title: 'Обучение персонала заказчика', subtitle: '', image: '/images/cards/top-view-photo-of-group-of-people-using-macbook-while-3182773.jpg', link: '' },
         { title: 'Продвижение партнеров', subtitle: '', image: '/images/cards/photo-of-people-near-wooden-table-3184418.jpg', link: '' },
-      ],
+      ]
     }
   },
   methods: {}

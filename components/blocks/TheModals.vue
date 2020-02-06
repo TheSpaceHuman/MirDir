@@ -5,8 +5,8 @@
         :key="key"
         v-model="modal.show"
         @cancel="closeModal(key)"
-        ok-text="Отправить"
-        cancel-text="Закрыть"
+        :footer="null"
+        :title="modal.title"
       >
         <comment :is="modal.component"></comment>
       </a-modal>

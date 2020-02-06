@@ -23,7 +23,7 @@
             <p>реализованных проекта</p>
           </a-col>
           <a-col :xs="24" :md="6">
-            <span class="big-number mb-20">{{SITE.data}}</span> <strong class="color--tertiary">терабайт</strong>
+            <span class="big-number mb-20">{{SITE.dataSupported}}</span> <strong class="color--tertiary">терабайт</strong>
             <p>данных у нас на обслуживании</p>
           </a-col>
         </a-row>
@@ -66,6 +66,15 @@
             </GrayCard>
           </a-col>
         </a-row>
+        <figure style="background-image: url('/images/administration.page/367b7d52f215d68ead20fb77270c30ea.jpg')" class="figure mt-50">
+          <a-row type="flex">
+            <a-col :xs="24" :md="{span: 12, offset: 12}" >
+              <figcaption class="h4 text-uppercase text-bold text-center mb-30">Ваша база данных - друг или враг?</figcaption>
+              <p class="mb-30">Проверьте свою базу данных по нашему чек-листу и узнайте сильные и слабые места вашей системы</p>
+              <TheButton type="danger">Скачать чек-лист</TheButton>
+            </a-col>
+          </a-row>
+        </figure>
 
       </div>
     </section>

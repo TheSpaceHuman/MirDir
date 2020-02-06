@@ -22,6 +22,7 @@
 .mb-50 {margin-bottom: 50px;}
 .mb-60 {margin-bottom: 60px;}
 .mb-90 {margin-bottom: 90px;}
+.mt-50 {margin-top: 50px;}
 .mr-15 {margin-right: 15px;}
 .ml-15 {margin-left: 15px;}
 .my-30 {margin-bottom: 30px; margin-top: 30px;}
@@ -87,6 +88,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+.justify-content-start {
+  justify-content: flex-start;
+}
 .justify-content-center {
   justify-content: center;
 }
@@ -107,4 +111,7 @@
 }
 .w--490 {
   max-width: 490px;
+}
+.w-100 {
+  width: 100%;
 }
