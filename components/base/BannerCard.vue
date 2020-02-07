@@ -15,11 +15,16 @@
     props: {
       image: String,
       title: String,
+      color: {
+        type: String,
+        default: '#000'
+      }
     },
     data() {
       return {
         style: {
-          backgroundImage: `url('${this.image}')`
+          backgroundImage: `url('${this.image}')`,
+          color: this.color
         }
       }
     }

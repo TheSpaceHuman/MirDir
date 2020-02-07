@@ -1,5 +1,5 @@
 <template>
-    <header class="header" id="header">
+    <header class="header" id="header" :class="top ? 'header--fixed': 'header--scroll'">
       <div class="container">
         <section class="header__top-menu">
           <div class="header__top-menu-logo">
@@ -29,8 +29,32 @@
     },
     data() {
       return {
-        phone: CONTACTS_CONST.phone
+        phone: CONTACTS_CONST.phone,
+        windowScroll: null,
       }
-    }
+    },
+    methods: {
+      windowScrollHandler(e) {
+        this.windowScroll = window.scrollY
+      }
+    },
+    computed: {
+      top() {
+        return this.windowScroll === 0
+      }
+    },
+    created() {
+      if(process.client) {
+        window.addEventListener('scroll', this.windowScrollHandler)
+      }
+    },
+    mounted() {
+      this.windowScroll = window.scrollY
+    },
+    beforeDestroy() {
+      if(process.client) {
+        window.removeEventListener('scroll', this.windowScrollHandler)
+      }
+    },
   }
 </script>
