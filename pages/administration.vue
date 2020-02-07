@@ -66,16 +66,32 @@
             </GrayCard>
           </a-col>
         </a-row>
-        <figure style="background-image: url('/images/administration.page/367b7d52f215d68ead20fb77270c30ea.jpg')" class="figure mt-50">
-          <a-row type="flex">
-            <a-col :xs="24" :md="{span: 12, offset: 12}" >
-              <figcaption class="h4 text-uppercase text-bold text-center mb-30">Ваша база данных - друг или враг?</figcaption>
-              <p class="mb-30">Проверьте свою базу данных по нашему чек-листу и узнайте сильные и слабые места вашей системы</p>
-              <TheButton type="danger">Скачать чек-лист</TheButton>
-            </a-col>
-          </a-row>
-        </figure>
+        <BannerCard
+          class="mt-50"
+          image="/images/administration.page/367b7d52f215d68ead20fb77270c30ea.jpg"
+          title="Ваша база данных - друг или враг?"
+        >
+          <p class="mb-30">Проверьте свою базу данных по нашему чек-листу и узнайте сильные и слабые места вашей системы</p>
+          <TheButton type="danger" @click="openModal">Скачать чек-лист</TheButton>
+        </BannerCard>
 
+      </div>
+    </section>
+    <section class="block-3 py-50">
+      <div class="container">
+        <h2 class="h2 text-uppercase text-bold mb-20">Добавьте до 30% к скорости баз данных</h2>
+        <p><span class="color--secondary">Компания Мир Данных ИТ</span> занимается реализацией масштабных проектов обслуживания, контроля и обновления баз данных для средних и крупных предприятий</p>
+        <div class="mt-30">
+          <TheTabs :items="tabs" image="/images/logo.png" />
+        </div>
+      </div>
+    </section>
+    <section class="block-4 py-50">
+      <div class="container">
+        <h2 class="h2 text-uppercase text-bold mb-20">Гарантия вашего результата</h2>
+        <a-card title="Card Title" :hoverable="true">
+
+        </a-card>
       </div>
     </section>
 
@@ -85,14 +101,16 @@
 <script>
   import TheBanner from '~/components/base/TheBanner.vue'
   import TheButton from '~/components/base/TheButton.vue'
-  import TheCustomers from '~/components/blocks/TheCustomers.vue'
+  import TheCustomers from '~/components/base/TheCustomers.vue'
   import GrayCard from '~/components/base/GrayCard.vue'
+  import BannerCard from '~/components/base/BannerCard.vue'
+  import TheTabs from '~/components/base/TheTabs.vue'
   import SITE from  '~/dictionary/site'
 
   export default {
     name: "administration",
     components: {
-      TheBanner, TheButton, TheCustomers, GrayCard
+      TheBanner, TheButton, TheCustomers, GrayCard, BannerCard, TheTabs
     },
     computed: {
       getYear() {
@@ -115,6 +133,13 @@
           {title: 'Сфера', src: '/images/customers/23ca5331d6aff57e5743265ecfb62a25.png', description: ''},
           {title: 'Queen mary', src: '/images/customers/4bd22cb2fbcefa654e3c4ee165c472dd.png', description: ''},
           {title: 'USB', src: '/images/customers/284167d2a5d2691e56acdb7bcbc9cc9e.png', description: ''},
+        ],
+        tabs: [
+          { title: 'Доступность данных', content: '<h3 class="h3 text-uppercase text-bold mb-20">Доступность данных</h3><ul><li>Обеспечение постоянного доступа к данным во избежание сбоя выполнения бизнес-процессов</li><li>Поддержка бесперебойной работы в реальном времени 24/7</li></ul>' },
+          { title: 'Защита данных', content: '<h3 class="h3 text-uppercase text-bold mb-20">Защита данных</h3><ul><li>От несанкционированного доступа</li></ul>' },
+          { title: 'Производительности', content: '<h3 class="h3 text-uppercase text-bold mb-20">Повышение производительности</h3><ul><li>Обеспечение оптимального времени отклика для эффективных бизнес-операций</li></ul>' },
+          { title: 'Снижение расходов', content: '<h3 class="h3 text-uppercase text-bold mb-20">Снижение расходов</h3><ul><li>для оптимизации корпоративного бюджета</li></ul>' },
+          { title: 'Минимизация рисков', content: '<h3 class="h3 text-uppercase text-bold mb-20">Минимизация рисков</h3><ul><li>долгосрочное, стабильное обеспечение требуемого уровня обслуживания с учетом развития бизнеса</li><li>без неожиданных больших затрат и разочарований</li></ul>' },
         ]
       }
     },

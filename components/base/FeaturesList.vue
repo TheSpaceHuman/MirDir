@@ -26,7 +26,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "./../../assets/scss/utils/vars";
+  @import "../../assets/scss/utils/vars";
   .features-list {
     &__items {
       display: flex;

@@ -40,7 +40,7 @@
   .the-button {
     cursor: pointer;
     padding: 12px 25px;
-    border-radius: 8px;
+    border-radius: 20px;
   }
   .the-button--primary {
     background-color: $primary-color;

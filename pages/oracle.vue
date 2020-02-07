@@ -24,8 +24,8 @@
 
 <script>
   import TheBanner from '~/components/base/TheBanner.vue'
-  import FeaturesList from '~/components/blocks/FeaturesList.vue'
-  import FeaturesCard from '~/components/blocks/FeaturesCard.vue'
+  import FeaturesList from '~/components/base/FeaturesList.vue'
+  import FeaturesCard from '~/components/base/FeaturesCard.vue'
 
   export default {
     name: "oracle",

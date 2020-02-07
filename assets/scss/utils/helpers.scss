@@ -23,6 +23,7 @@
 .mb-60 {margin-bottom: 60px;}
 .mb-90 {margin-bottom: 90px;}
 .mt-50 {margin-top: 50px;}
+.mt-30 {margin-top: 30px;}
 .mr-15 {margin-right: 15px;}
 .ml-15 {margin-left: 15px;}
 .my-30 {margin-bottom: 30px; margin-top: 30px;}
@@ -69,11 +70,15 @@
 }
 
 
-.h1 {}
+.h1 {
+  font-size: 38px;
+}
 .h2 {
   font-size: 32px;
 }
-.h3 {}
+.h3 {
+  font-size: 28px;
+}
 .h4 {
   font-size: 24px;
 }

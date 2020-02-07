@@ -17,7 +17,7 @@
 </script>
 
 <style lang="scss">
-  @import "./../../assets/scss/utils/vars";
+  @import "../../assets/scss/utils/vars";
 
   .features-card {
     border: 1px solid $tertiary-color;
