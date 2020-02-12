@@ -4,12 +4,12 @@
       <h1 class="banner-title">Анализ и диагностика причин неудовлетворительной производительности систем на базе ПО Oracle</h1>
       <span class="banner-subtitle">Выполнение работ по настройке производительности, от диагностики и рекомендаций до внедрения исправлений.</span>
     </TheBanner>
-    <div class="container-fluid" style="background-image: url('/images/fon/molecular-background-pattern-1.jpg');background-repeat: repeat;">
+    <div class="container-fluid bg-molecular-pattern">
       <div class="container py-30">
         <FeaturesList :items="featuresList" />
       </div>
     </div>
-    <div class="container-fluid bg-neutral-primary ">
+    <div class="container-fluid bg-neutral-primary">
       <div class="container py-60">
         <FeaturesCard
           v-for="(featuresCard, index) in featuresCards"

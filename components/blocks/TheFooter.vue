@@ -4,7 +4,7 @@
       <a-row type="flex">
         <a-col :xm="24" :md="6">
           <nuxt-link to="/">
-            <img src="/images/logo.png" alt="" class="footer__logo">
+            <img src="/images/logo.png" alt="Мир Данных ИТ - Логотип" class="footer__logo"title="Мир Данных ИТ">
           </nuxt-link>
         </a-col>
         <a-col :xm="24" :md="18">

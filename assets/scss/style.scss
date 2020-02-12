@@ -73,7 +73,7 @@ section, .section {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+@import "./modules/banner";
 @import "./modules/header";
 @import "./modules/main";
 @import "./modules/footer";

@@ -4,7 +4,7 @@
         <section class="header__top-menu">
           <div class="header__top-menu-logo">
             <nuxt-link to="/">
-              <img src="/images/logo.png" class="header__top-menu-logo-img" alt="WD">
+              <img src="/images/logo.png" class="header__top-menu-logo-img" alt="Мир Данных ИТ - Логотип" title="Мир Данных ИТ">
             </nuxt-link>
           </div>
           <div class="header__top-menu-nav">

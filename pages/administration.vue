@@ -2,20 +2,20 @@
   <div>
     <TheBanner image="/images/banners/stockvault-global-network-connecting-the-globe-globalization263891.jpg">
       <h1 class="banner-title">ОБСЛУЖИВАНИЕ И АДМИНИСТРИРОВАНИЕ БАЗ ДАННЫХ</h1>
-      <ul class="banner-list">
+      <ul class="banner-list banner-list--line mb-40">
         <li>Oracle</li>
         <li>MySQL</li>
         <li>Microsoft SQL</li>
         <li>Postgre SQL</li>
       </ul>
-      <TheButton type="danger" @click="modal1">Заказать аудит баз данных</TheButton>
+      <TheButton type="danger" @click="openModal('formNamePhone')">Заказать аудит баз данных</TheButton>
     </TheBanner>
     <section class="block-1 py-50">
       <div class="container">
         <a-row type="flex">
           <a-col :xs="24" :md="12">
             <h2 class="h2 text-uppercase text-bold mb-20">Нам доверяют</h2>
-            <p class="w--490">{{ getYear }} лет успешной работы на рынках России, Европы, СНГ, включая масштабные
+            <p class="w--490">{{ $store.getters.birthday }} лет успешной работы на рынках России, Европы, СНГ, включая масштабные
               федеральные проекты для госсектора</p>
           </a-col>
           <a-col :xs="24" :md="6">
@@ -73,7 +73,7 @@
         >
           <p class="mb-30 text-center">Проверьте свою базу данных по нашему чек-листу и узнайте сильные и слабые места вашей системы</p>
           <a-row type="flex" justify="center">
-            <TheButton type="danger" @click="modal3">Скачать чек-лист</TheButton>
+            <TheButton type="danger" @click="openModal('formNameEmailPhone')">Скачать чек-лист</TheButton>
           </a-row>
         </BannerCard>
 
@@ -109,7 +109,7 @@
           >
             <p class="mb-30 text-center">Скачайте чек-лист проверки БД, разработанный экспертами команды МИР ДАННЫХ ИТ</p>
             <a-row type="flex" justify="center">
-              <TheButton type="danger" @click="modal3">Скачать чек-лист</TheButton>
+              <TheButton type="danger" @click="openModal('')">Скачать чек-лист</TheButton>
             </a-row>
           </BannerCard>
         </div>
@@ -162,13 +162,6 @@
     components: {
       TheBanner, TheButton, TheCustomers, GrayCard, BannerCard, TheTabs, WarrantyCard, NumberCard
     },
-    computed: {
-      getYear() {
-        const before = new Date(2008, 1, 15).getFullYear()
-        const after = new Date().getFullYear()
-        return after - before
-      }
-    },
     data() {
       return {
         SITE,
@@ -215,17 +208,12 @@
 
       }
     },
-     methods: {
-       modal1() {
-         this.$store.commit('toggleModal', 'formNamePhone')
-       },
-       modal2() {
-         this.$store.commit('toggleModal', 'formNameEmail')
-       },
-       modal3() {
-         this.$store.commit('toggleModal', 'formNameEmailPhone')
-       }
-     }
+    methods: {
+      // formNamePhone formNameEmail formNameEmailPhone
+      openModal(name) {
+        this.$store.commit('toggleModal', name)
+      },
+    }
   }
 </script>
 

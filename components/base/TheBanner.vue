@@ -1,10 +1,7 @@
 <template>
-    <section class="banner" :style="style">
-      <style>
-        :root {
-          --banner-image: url('{{image}}');
-        }
-      </style>
+    <section class="banner" :style="bannerStyle">
+      <div class="banner__image" :style="bannerImageStyle" v-if="image"></div>
+      <div class="banner__color" :style="bannerColorStyle" v-else></div>
       <div class="banner__content">
         <slot></slot>
       </div>
@@ -15,9 +12,10 @@
   export default {
     name: "TheBanner",
     props: {
-      image: {
+      image: String,
+      color: {
         type: String,
-        require: true
+        default: '#000'
       },
       height: {
         type: String,
@@ -26,18 +24,35 @@
     },
     data() {
       return {
-        style: {
+        bannerStyle: {
           minHeight: this.height,
-          // backgroundImage: `url("${this.image}")`,
-          // backgroundPosition: 'center',
-          // backgroundSize: 'cover',
+        },
+        bannerImageStyle: {
+          position: 'absolute',
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundImage: 'url("' + this.image +'")',
+          zIndex: -1,
+        },
+        bannerColorStyle: {
+          position: 'absolute',
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
+          backgroundColor: this.color,
+          zIndex: -1,
         }
       }
     }
   }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   .banner {
     position: relative;
     text-align: center;
@@ -46,28 +61,15 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    &__image::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0, 0.6);
+      z-index: -1;
+    }
   }
-  .banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: var(--banner-image);
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
-  }
-  .banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0, 0.6);
-    z-index: -1;
-  }
-
 </style>

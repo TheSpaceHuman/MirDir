@@ -1,0 +1,38 @@
+.banner-title {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.banner-subtitle {
+  display: block;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.banner-list {
+  font-size: 25px;
+  line-height: 1.2;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  li {
+    list-style: disc;
+  }
+
+  &.banner-list--line {
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    li {
+      padding-left: 15px;
+    }
+    li::before {
+      content: "\2022"
+    }
+  }
+}

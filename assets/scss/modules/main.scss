@@ -1,33 +1,6 @@
 .main {}
 
-.banner-title {
-  font-size: 60px;
-  line-height: 1.2;
-  color: #fff;
-  margin-bottom: 40px;
-}
-.banner-subtitle {
-  display: block;
-  font-size: 25px;
-  line-height: 1.2;
-  color: #fff;
-  margin-bottom: 8px;
-}
-.banner-list {
-  font-size: 25px;
-  line-height: 1.2;
-  color: #fff;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  li {
-    padding-left: 15px;
-  }
-  li::before {
-    content: "\2022"
-  }
-}
+
 .card {
   width: 100%;
 

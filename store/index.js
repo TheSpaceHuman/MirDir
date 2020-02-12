@@ -18,6 +18,11 @@ export const state = () => ({
       title: 'Заявка на чек-лист проверки базы данных',
       data: {},
     }
+  },
+  birthday: {
+    year: 2008,
+    month: 1,
+    date: 15,
   }
 })
 
@@ -28,5 +33,10 @@ export const mutations = {
 }
 
 export const getters = {
-  modals: (state) => state.modals
+  modals: (state) => state.modals,
+  birthday: (state) => {
+    const before = new Date(state.birthday.year, state.birthday.month, state.birthday.date).getFullYear()
+    const after = new Date().getFullYear()
+    return after - before
+  }
 }

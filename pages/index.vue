@@ -20,12 +20,16 @@
       </a-row>
     </div>
     <div class="container mb-50">
-      <FormNamePhone
-        title="Готовы ответить на любые вопросы"
-        button-title="Перезвоните мне"
-        button-alight="left"
-        :col="2"
-      ></FormNamePhone>
+      <a-row type="flex">
+        <a-col :xs="24" :md="{span: 12, offset: 6}">
+          <FormNamePhone
+            title="Готовы ответить на любые вопросы"
+            button-title="Перезвоните мне"
+            button-alight="center"
+            :col="1"
+          ></FormNamePhone>
+        </a-col>
+      </a-row>
     </div>
   </div>
 </template>
