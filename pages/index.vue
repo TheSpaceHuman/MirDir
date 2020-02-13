@@ -2,7 +2,7 @@
   <div>
     <TheBanner image="/images/banners/POP-SW-header.jpg">
       <h1 class="banner-title">Центр разработки «МИР ДАННЫХ ИТ»</h1>
-      <span class="banner-subtitle">11 лет практики.</span>
+      <span class="banner-subtitle">{{ $store.getters.birthday }} лет практики.</span>
       <span class="banner-subtitle">100+ проектов и постоянных клиентов.</span>
       <span class="banner-subtitle">Широкий список сертификатов и технологий.</span>
       <span class="banner-subtitle">Офисы в 9 регионах страны - а значит адекватные цены.</span>
@@ -47,11 +47,11 @@ export default {
     return {
       cards: [
         { title: 'Администрирование баз данных', subtitle: '', image: '/images/cards/bandwidth-close-up-computer-connection-1148820.jpg', link: '/administration' },
+        { title: 'Разработка программного обеспечения', subtitle: '', image: '/images/cards/person-using-silver-macbook-pro-1181467.jpg', link: '/development' },
+        { title: 'Обучение персонала', subtitle: '', image: '/images/cards/top-view-photo-of-group-of-people-using-macbook-while-3182773.jpg', link: '/education' },
+        { title: 'Продвижение партнеров', subtitle: '', image: '/images/cards/photo-of-people-near-wooden-table-3184418.jpg', link: '/promotion' },
         { title: 'Oracle', subtitle: '', image: '/images/cards/oracle.jpg', link: '/oracle' },
         { title: 'Тендеры. Конкурсы. Субподряд', subtitle: '', image: '/images/cards/sign-pen-business-document-48195.jpg', link: '/trends' },
-        { title: 'Разработка программного обеспечения', subtitle: '', image: '/images/cards/person-using-silver-macbook-pro-1181467.jpg', link: '/development' },
-        { title: 'Обучение персонала заказчика', subtitle: '', image: '/images/cards/top-view-photo-of-group-of-people-using-macbook-while-3182773.jpg', link: '' },
-        { title: 'Продвижение партнеров', subtitle: '', image: '/images/cards/photo-of-people-near-wooden-table-3184418.jpg', link: '' },
       ]
     }
   },

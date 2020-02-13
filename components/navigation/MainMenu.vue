@@ -20,10 +20,12 @@
         type: Array,
         default: () => [
           { name: 'Главная', link: '/', key: '1', icon: ''},
-          { name: 'Oracle', link: '/oracle', key: '2', icon: ''},
-          { name: 'Администрирование', link: '/administration', key: '3', icon: ''},
-          { name: 'Разработка', link: '/development', key: '4', icon: ''},
-          { name: 'Тренды', link: '/trends', key: '5', icon: ''},
+          { name: 'Администрирование', link: '/administration', key: '2', icon: ''},
+          { name: 'Разработка', link: '/development', key: '3', icon: ''},
+          { name: 'Обучение персонала', link: '/education', key: '4', icon: ''},
+          { name: 'Продвижение', link: '/promotion', key: '5', icon: ''},
+          { name: 'Oracle', link: '/oracle', key: '6', icon: ''},
+          { name: 'Тренды', link: '/trends', key: '7', icon: ''},
         ]
       },
     },

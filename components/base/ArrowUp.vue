@@ -1,5 +1,5 @@
 <template>
-    <a href="#" class="arrow-up" v-scroll-to="'#default-layout'" v-if="windowScroll > 550">
+    <a href="#" class="arrow-up" v-scroll-to="'#default-layout'" v-if="windowScroll > 250">
       <a-icon type="up-circle"  class="arrow-up__icon" theme="filled" />
     </a>
 </template>

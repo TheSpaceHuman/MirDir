@@ -156,6 +156,7 @@
   import WarrantyCard from '~/components/base/WarrantyCard.vue'
   import NumberCard from '~/components/base/NumberCard.vue'
   import SITE from  '~/dictionary/site'
+  import { mapGetters } from 'vuex';
 
   export default {
     name: "administration",
@@ -165,18 +166,6 @@
     data() {
       return {
         SITE,
-        customers: [
-          {title: 'Дискси', src: '/images/customers/ff1e7c634aae05dfaf06a01323a947fe.png', description: ''},
-          {title: 'Мегамарт', src: '/images/customers/61fcda56c79ed7763e370190ebe919b2.png', description: ''},
-          {title: 'Федеральная служба  по финансовому мониторингу', src: '/images/customers/d67793c6bbee58a646b1a0d759dd96e6.png', description: 'Федеральная служба  по финансовому мониторингу'},
-          {title: 'Natalie tours', src: '/images/customers/ff39ffbe72c71b25a445643992958172.png', description: ''},
-          {title: 'Федеральная миграционная служба РФ', src: '/images/customers/07af8c0d4e60b02f8bc6cff9ad039a69.png', description: 'Федеральная миграционная служба РФ'},
-          {title: 'Кораблик', src: '/images/customers/59becde746c9e448ff68226020855e60.png', description: ''},
-          {title: 'Мир детства', src: '/images/customers/9bcbfe25766bc1cefbf61e5dab6555ee.png', description: ''},
-          {title: 'Сфера', src: '/images/customers/23ca5331d6aff57e5743265ecfb62a25.png', description: ''},
-          {title: 'Queen mary', src: '/images/customers/4bd22cb2fbcefa654e3c4ee165c472dd.png', description: ''},
-          {title: 'USB', src: '/images/customers/284167d2a5d2691e56acdb7bcbc9cc9e.png', description: ''},
-        ],
         tabs: [
           { title: 'Доступность данных', content: '<h3 class="h3 text-uppercase text-bold mb-20">Доступность данных</h3><ul><li>Обеспечение постоянного доступа к данным во избежание сбоя выполнения бизнес-процессов</li><li>Поддержка бесперебойной работы в реальном времени 24/7</li></ul>' },
           { title: 'Защита данных', content: '<h3 class="h3 text-uppercase text-bold mb-20">Защита данных</h3><ul><li>От несанкционированного доступа</li></ul>' },
@@ -207,6 +196,11 @@
         ]
 
       }
+    },
+    computed: {
+      ...mapGetters([
+        'customers'
+      ])
     },
     methods: {
       // formNamePhone formNameEmail formNameEmailPhone

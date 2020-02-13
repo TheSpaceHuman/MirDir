@@ -118,6 +118,9 @@
   background-image: url("/images/fon/molecular-background-pattern-12.jpg");
   background-repeat: repeat;
 }
+.bg-fon-1{
+  background-color: $fon-1;
+}
 
 .w--490 {
   max-width: 490px;
@@ -129,3 +132,10 @@
   width: 60px;
   height: 60px;
 }
+.list--disk {
+  padding-left: 30px;
+  li {
+    list-style: disc;
+  }
+}
+

@@ -49,7 +49,7 @@
     height: 12px;
   }
   &__content {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     font-size: 26px;
   }
 }
