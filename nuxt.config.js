@@ -26,7 +26,7 @@ export default {
   ** Global CSS
   */
   css: [
-    // 'ant-design-vue/dist/antd.css',
+    // 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css',
     '@/assets/less/antd.less',
     '@/assets/scss/style.scss',
   ],
@@ -40,6 +40,8 @@ export default {
     '@/plugins/vuelidate',
     '@/plugins/vue-scrollto',
     '@/plugins/vue-the-mask',
+    '@/plugins/vue-lazyload',
+    // '@/plugins/vue2-perfect-scrollbar',
   ],
   /*
   ** Nuxt.js dev-modules

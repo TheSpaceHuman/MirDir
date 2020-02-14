@@ -1,5 +1,5 @@
 <template>
-    <a href="#" class="arrow-up" v-scroll-to="'#default-layout'" v-if="windowScroll > 250">
+    <a href="#" class="arrow-up" v-scroll-to="'#default-layout'" v-if="windowScroll > 200">
       <a-icon type="up-circle"  class="arrow-up__icon" theme="filled" />
     </a>
 </template>
@@ -35,7 +35,7 @@
     position: fixed;
     bottom: 13%;
     right: 4%;
-    z-index: 9999;
+    z-index: 200;
     &__icon svg {
       width: 40px!important;
       height: 40px!important;

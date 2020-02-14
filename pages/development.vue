@@ -47,23 +47,25 @@
         <p class="text-center">Мы готовы предоставить заказчику максимально подходящий вариант сотрудничества</p>
       </div>
       <div class="container">
-        <section class="development-cards py-30">
-          <a-row type="flex">
-            <a-col :xs="24" :md="8" v-for="(card, key) in cards" :key="key" class="p-15">
-              <a-card>
-                <img
-                  style="height: 380px;"
-                  :alt="card.title"
-                  :src="card.src"
-                  slot="cover"
-                />
-                <a-card-meta :title="card.title">
-                  <template slot="description">{{card.description}}</template>
-                </a-card-meta>
-              </a-card>
-            </a-col>
-          </a-row>
-        </section>
+        <lazy-component>
+          <section class="development-cards py-30">
+            <a-row type="flex">
+              <a-col :xs="24" :md="8" v-for="(card, key) in cards" :key="key" class="p-15">
+                <a-card>
+                  <img
+                    style="height: 380px;"
+                    :alt="card.title"
+                    :src="card.src"
+                    slot="cover"
+                  />
+                  <a-card-meta :title="card.title">
+                    <template slot="description">{{card.description}}</template>
+                  </a-card-meta>
+                </a-card>
+              </a-col>
+            </a-row>
+          </section>
+        </lazy-component>
       </div>
       <section class="bg-fon-1 py-50">
         <div class="container">
@@ -83,7 +85,9 @@
         </div>
       </section>
       <div class="container py-30">
-        <BannerCard image="/images/development.page/office-1209640_1280.jpg" style="height: 440px;" class="mb-50" />
+        <lazy-component>
+          <BannerCard image="/images/development.page/office-1209640_1280.jpg" style="height: 440px;" class="mb-50" />
+        </lazy-component>
         <h4 class="h1 text-center text-uppercase mb-20">Аналитика</h4>
         <p class="mb-20">Техническое задание (ТЗ) - главный инструмент для создания любого продукта. От его качества зависит итоговый результат. Качественное ТЗ включает в себя: определение и формулировку назначения проекта, предметной области, требований (общих и частных) к предмету проекта, состава, содержания работ и требований к ним, порядка контроля и приемки результатов, требований к документированию и другим специфическим аспектам реализации проекта.</p>
         <p class="mb-20">МИР ДАННЫХ ИТ занимается аналитикой и создает качественную проектную документацию, отвечающую высокому уровню предъявляемых к ней требований. Наша команда имеет богатый опыт в сфере создания, доработки, анализа и исправления документации на разных этапах реализации проектов в различных отраслях и сферах.</p>

@@ -1,1 +1,5 @@
 //@import "~animate.css";
+//@import "~vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.min.css";
+.ps__rail-y {z-index: 9999}
+.ps__rail-x {z-index: 9999}
+.ps {height: 100vh;}

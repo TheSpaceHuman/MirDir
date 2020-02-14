@@ -37,11 +37,12 @@
 <script>
 import TheBanner from '~/components/base/TheBanner.vue'
 import FormNamePhone from '~/components/forms/FormNamePhone.vue'
+import TheButton from '~/components/base/TheButton.vue'
 
 export default {
   name: "index",
   components: {
-    TheBanner, FormNamePhone
+    TheBanner, FormNamePhone, TheButton
   },
   data() {
     return {

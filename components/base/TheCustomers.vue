@@ -1,11 +1,13 @@
 <template>
     <div class="the-customers">
-      <div class="the-customers__items">
-        <div class="the-customers__item" v-for="(item, index) in items" :key="index">
-          <img :src="item.src" :alt="item.title" class="the-customers__item-img">
-          <span class="the-customers__item-description" v-if="item.description">{{item.description}}</span>
+      <lazy-component>
+        <div class="the-customers__items">
+          <div class="the-customers__item" v-for="(item, index) in items" :key="index">
+            <img :src="item.src" :alt="item.title" class="the-customers__item-img">
+            <span class="the-customers__item-description" v-if="item.description">{{item.description}}</span>
+          </div>
         </div>
-      </div>
+      </lazy-component>
     </div>
 </template>
 
