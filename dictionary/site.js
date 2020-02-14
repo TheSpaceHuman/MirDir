@@ -1,6 +1,7 @@
 const SITE = {
   projects: 57,
   dataSupported: 1230,
+  privacyPolicy: '/docs/Политика в отношении обработки персональных данных.pdf',
   personalLink: '/docs/Согласие на обработку персональных данных.pdf',
   staff: {
     tester: 10,

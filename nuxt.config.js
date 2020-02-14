@@ -13,9 +13,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { rel: 'stylesheet', type: 'text/css', href: 'css/vendors.css' },
-      // { rel: 'stylesheet', type: 'text/css', href: 'css/bootstrap.min.css' },
-      // { rel: 'stylesheet', type: 'text/css', href: 'css/common.css' },
     ]
   },
   /*
@@ -27,6 +24,7 @@ export default {
   */
   css: [
     // 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css',
+    'hamburgers/dist/hamburgers.css',
     '@/assets/less/antd.less',
     '@/assets/scss/style.scss',
   ],

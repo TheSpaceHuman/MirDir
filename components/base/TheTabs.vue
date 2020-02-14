@@ -1,7 +1,7 @@
 <template>
     <section class="the-tabs" :style="tabsStyle">
       <a-row type="flex">
-        <a-col :xs="24" :md="image ? 20 : 24">
+        <a-col :xs="24" :sm="24" :md="image ? 20 : 24">
           <a-tabs
             :default-active-key="activeTab"
             tab-position="top"
@@ -15,8 +15,8 @@
             </a-tab-pane>
           </a-tabs>
         </a-col>
-        <a-col :xs="24" :md="4" v-if="image">
-          <img :src="image" alt="MirDir">
+        <a-col :xs="24" :sm="24" :md="4" v-if="image">
+          <img :src="image" alt="Мир данных ИТ" class="the-tabs__logo" >
         </a-col>
       </a-row>
     </section>
@@ -52,6 +52,7 @@
 </script>
 
 <style lang="scss">
+  @import "./../../assets/scss/utils/vars";
   .the-tabs {
     padding: 40px;
     .ant-tabs-bar {
@@ -65,6 +66,12 @@
     }
     &__content {
       font-size: 18px;
+    }
+    &__logo {
+      @media screen and (max-width: $tableWidth) {
+        margin: 0 auto;
+        max-width: 220px;
+      }
     }
   }
 </style>

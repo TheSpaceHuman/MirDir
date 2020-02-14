@@ -36,6 +36,15 @@ export const state = () => ({
     {title: 'Queen mary', src: '/images/customers/4bd22cb2fbcefa654e3c4ee165c472dd.png', description: ''},
     {title: 'USB', src: '/images/customers/284167d2a5d2691e56acdb7bcbc9cc9e.png', description: ''},
   ],
+  menu: [
+    { name: 'Главная', link: '/', key: '1', icon: ''},
+    { name: 'Администрирование', link: '/administration', key: '2', icon: ''},
+    { name: 'Разработка', link: '/development', key: '3', icon: ''},
+    { name: 'Обучение персонала', link: '/education', key: '4', icon: ''},
+    { name: 'Продвижение', link: '/promotion', key: '5', icon: ''},
+    { name: 'Oracle', link: '/oracle', key: '6', icon: ''},
+    { name: 'Тренды', link: '/trends', key: '7', icon: ''},
+  ]
 })
 
 export const mutations = {
@@ -51,5 +60,6 @@ export const getters = {
     const after = new Date().getFullYear()
     return after - before
   },
-  customers: (state) => state.customers
+  customers: (state) => state.customers,
+  menu: (state) => state.menu,
 }

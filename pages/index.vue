@@ -7,21 +7,24 @@
       <span class="banner-subtitle">Широкий список сертификатов и технологий.</span>
       <span class="banner-subtitle">Офисы в 9 регионах страны - а значит адекватные цены.</span>
     </TheBanner>
-    <div class="container py-30">
-      <a-row type="flex" :gutter="15">
-        <a-col :xm="24" :lg="12" v-for="(card, index) in cards" :key="index">
-          <nuxt-link :to="card.link">
-            <a-card hoverable class="card mb-15">
-              <img :src="card.image" :alt="card.title"  slot="cover" class="card__img">
-              <a-card-meta :title="card.title" :description="card.subtitle"/>
-            </a-card>
-          </nuxt-link>
-        </a-col>
-      </a-row>
-    </div>
+    <section class="index-cards py-30">
+      <div class="container">
+        <a-row type="flex" :gutter="15">
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" v-for="(card, index) in cards" :key="index">
+            <nuxt-link :to="card.link">
+              <a-card hoverable class="card mb-15">
+                <img v-lazy="card.image" :alt="card.title"  slot="cover" class="card__img">
+                <a-card-meta :title="card.title" :description="card.subtitle"/>
+              </a-card>
+            </nuxt-link>
+          </a-col>
+        </a-row>
+      </div>
+    </section>
+
     <div class="container mb-50">
       <a-row type="flex">
-        <a-col :xs="24" :md="{span: 12, offset: 6}">
+        <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
           <FormNamePhone
             title="Готовы ответить на любые вопросы"
             button-title="Перезвоните мне"

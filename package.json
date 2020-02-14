@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "animate.css": "^3.7.2",
     "ant-design-vue": "^1.4.10",
-    "lodash": "^4.17.15",
+    "hamburgers": "^1.1.3",
     "nuxt": "^2.0.0",
     "vue-lazyload": "^1.3.3",
     "vue-scrollto": "^2.17.1",

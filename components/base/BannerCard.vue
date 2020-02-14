@@ -1,7 +1,7 @@
 <template>
     <figure :style="style" class="figure">
       <a-row type="flex">
-        <a-col :xs="24" :md="{span: 12, offset: 12}" >
+        <a-col :xs="24" :sm="24" :md="{span: 12, offset: 12}" >
           <figcaption v-if="title" class="h4 text-uppercase text-bold text-center mb-30">{{title}}</figcaption>
           <slot></slot>
         </a-col>

@@ -3,7 +3,7 @@
     <TheBanner image="/images/banners/computer-1209641_1920.jpg">
       <h1 class="banner-title">Центр разработки «МИР ДАННЫХ ИТ»</h1>
       <a-row type="flex">
-        <a-col :xs="24" :md="{span: 12, offset: 6}">
+        <a-col :xs="24" :sm="24" :md="24" :lg="{span: 12, offset: 6}">
           <h2 class="banner-subtitle h2 text-left mb-20">Сотрудничество с крупными системными интеграторами.</h2>
           <ul class="banner-list">
             <li>Проектирование</li>
@@ -17,7 +17,7 @@
     <div class="container py-50">
       <h2 class="h2 text-center mb-30">Мы уже внедрили ряд уникальных разработок в бизнес-процессы наших клиентов. Поможем претворить в жизнь все ваши гениальные идеи.</h2>
       <a-row type="flex">
-        <a-col :xs="24" :md="{span: 12, offset: 6}">
+        <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
           <FormNamePhone
             title="Оставьте контакты. Мы перезвоним."
             button-title="Перезвоните мне"
@@ -30,7 +30,7 @@
     <TheBanner color="rgb(238, 238, 238)" height="300px" class="fz-20">
       <div class="container">
         <a-row type="flex">
-          <a-col :xs="24" :md="{span: 14, offset: 5}" class="text-left">
+          <a-col :xs="24" :sm="24" :md="{span: 14, offset: 5}" class="text-left">
             <h4 class="h4 mb-30">Удерживаем конкурентоспособные цены на весь спектр услуг</h4>
             <p class="mb-20">Работаем в 9 региноах России: Москва, Севастополь, Тула, Ростов-на-Дону, Челябинск, Калининград, Пушкино, Мытищи, Люберцы, Нижний Новгород и наша география продолжает расширяться.</p>
             <a-button type="primary" @click="openModal('formNameEmailPhone')">Сотрудничество</a-button>
@@ -47,13 +47,13 @@
         <p class="text-center">Мы готовы предоставить заказчику максимально подходящий вариант сотрудничества</p>
       </div>
       <div class="container">
-        <lazy-component>
-          <section class="development-cards py-30">
-            <a-row type="flex">
-              <a-col :xs="24" :md="8" v-for="(card, key) in cards" :key="key" class="p-15">
+        <section class="development-cards py-30">
+          <a-row type="flex">
+            <a-col :xs="24" :sm="24" :md="24" :lg="8" v-for="(card, key) in cards" :key="key" class="p-15">
+              <lazy-component>
                 <a-card>
                   <img
-                    style="height: 380px;"
+                    class="development-cards__img"
                     :alt="card.title"
                     :src="card.src"
                     slot="cover"
@@ -62,10 +62,10 @@
                     <template slot="description">{{card.description}}</template>
                   </a-card-meta>
                 </a-card>
-              </a-col>
-            </a-row>
-          </section>
-        </lazy-component>
+              </lazy-component>
+            </a-col>
+          </a-row>
+        </section>
       </div>
       <section class="bg-fon-1 py-50">
         <div class="container">

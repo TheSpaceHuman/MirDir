@@ -1,13 +1,11 @@
 <template>
     <div class="the-customers">
-      <lazy-component>
         <div class="the-customers__items">
           <div class="the-customers__item" v-for="(item, index) in items" :key="index">
-            <img :src="item.src" :alt="item.title" class="the-customers__item-img">
+            <img v-lazy="item.src" :alt="item.title" class="the-customers__item-img">
             <span class="the-customers__item-description" v-if="item.description">{{item.description}}</span>
           </div>
         </div>
-      </lazy-component>
     </div>
 </template>
 
@@ -20,7 +18,9 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+  @import "./../../assets/scss/utils/vars";
+
   .the-customers {
 
     &__items {
@@ -31,6 +31,12 @@
     &__item {
       flex: 1 1 20%;
       margin-bottom: 20px;
+      @media screen and (max-width: $smDesktopWidth) {
+        flex: 1 1 50%;
+      }
+      @media screen and (max-width: $phoneWidth) {
+        flex: 1 1 100%;
+      }
     }
     &__item-img {
       width: 60%;

@@ -13,16 +13,16 @@
     <section class="block-1 py-50">
       <div class="container">
         <a-row type="flex">
-          <a-col :xs="24" :md="12">
+          <a-col :xs="24" :sm="24" :md="12">
             <h2 class="h2 text-uppercase text-bold mb-20">Нам доверяют</h2>
             <p class="w--490">{{ $store.getters.birthday }} лет успешной работы на рынках России, Европы, СНГ, включая масштабные
               федеральные проекты для госсектора</p>
           </a-col>
-          <a-col :xs="24" :md="6">
+          <a-col :xs="24" :sm="24" :md="6">
             <span class="big-number mb-20">{{SITE.projects}}</span>
             <p>реализованных проекта</p>
           </a-col>
-          <a-col :xs="24" :md="6">
+          <a-col :xs="24" :sm="24" :md="6">
             <span class="big-number mb-20">{{SITE.dataSupported}}</span> <strong class="color--tertiary">терабайт</strong>
             <p>данных у нас на обслуживании</p>
           </a-col>
@@ -37,7 +37,7 @@
         <h2 class="h2 text-uppercase text-bold mb-20">90% Банков и ритейлов теряли деньги...</h2>
         <p class="w--490">из-за медленной и некачественной работы баз данных</p>
         <a-row type="flex" class="py-50">
-          <a-col :xs="24" :md="8">
+          <a-col :xs="24" :sm="24" :md="8">
             <GrayCard title="Документы" class="mb-20">
               <ul>
                 <li>Заканчивается место на диске</li>
@@ -53,10 +53,10 @@
               </ul>
             </GrayCard>
           </a-col>
-          <a-col :xs="24" :md="8">
+          <a-col :xs="24" :sm="24" :md="8">
             <img src="/images/administration.page/e96aebf877ee49fc9f90dd87be995c52.png" alt="Диаграма" style="width: 70%;margin: 0 auto;">
           </a-col>
-          <a-col :xs="24" :md="8">
+          <a-col :xs="24" :sm="24" :md="8">
             <GrayCard title="Финансы">
               <ul>
                 <li>Невозможно внести данные</li>
@@ -93,7 +93,7 @@
       <div class="container">
         <h2 class="h2 text-uppercase text-bold mb-20">Гарантия вашего результата</h2>
         <a-row type="flex" :gutter="20">
-          <a-col :xs="24" :md="6" v-for="(card, index) in warrantyCards" :key="index">
+          <a-col :xs="24" :sm="24" :md="6" v-for="(card, index) in warrantyCards" :key="index" class="mb-20">
             <WarrantyCard
               :title="card.title"
               :icon="card.icon"
@@ -124,7 +124,7 @@
         <p><span class="color--secondary">Ведение ваших баз данных</span> для проектов любой сложности и объема</p>
         <div class="py-50">
           <a-row type="flex">
-            <a-col :xm="24" :md="12" v-for="(item, index) in numberList" :key="index">
+            <a-col :xs="24" :sm="24" :md="12" v-for="(item, index) in numberList" :key="index">
               <NumberCard
                 :number="item.number"
                 :content="item.content"
@@ -134,7 +134,7 @@
         </div>
         <h2 class="h2 text-bold text-uppercase mb-30">А ещё...</h2>
         <a-row type="flex" :gutter="20">
-          <a-col :xs="24" :md="8" v-for="(card, index) in warrantyCards2" :key="index">
+          <a-col :xs="24" :sm="24" :md="8" v-for="(card, index) in warrantyCards2" :key="index" class="mb-20">
             <WarrantyCard
               :title="card.title"
               :icon="card.icon"

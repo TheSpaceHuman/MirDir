@@ -1,10 +1,10 @@
 <template>
     <div class="service-card">
       <a-row type="flex" jutify="center">
-        <a-col :xs="24" :md="8" class="service-card__icon">
+        <a-col :xs="24" :sm="24" :md="8" class="service-card__icon">
           <TheIcon :name="icon" width="80%" height="100%" />
         </a-col>
-        <a-col :xs="24" :md="16">
+        <a-col :xs="24" :sm="24" :md="16">
           <h5 class="service-card__title"></h5>
           <div class="service-card__content">
             <slot></slot>

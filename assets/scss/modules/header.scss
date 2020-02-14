@@ -3,29 +3,56 @@
   top: 0;
   z-index: 100;
 
-  &__top-menu-logo-img {
+  &__menu-logo-img {
     max-width: 100px;
     margin: 0;
   }
-  &__top-menu-logo {
-    flex: 1 1 15%;
+  &__menu-logo {
+    @media screen and (max-width: $mdDesktopWidth) {
+      flex: 1 1 calc(100% / 3)
+    }
   }
-
-  &__top-menu-nav {
-    flex: 1 1 70%;
+  &__menu-mobile {
+    flex: 1 1 auto;
+    @media screen and (min-width: $mdDesktopWidth) {
+      display: none;
+    }
+    @media screen and (max-width: $mdDesktopWidth) {
+      display: block;
+    }
+  }
+  &__menu-nav {
     display: flex;
     justify-content: flex-start;
+    @media screen and (max-width: $mdDesktopWidth) {
+      display: none;
+    }
+    flex: 1 1 auto;
   }
-  &__top-menu-phone {
-    flex: 1 1 15%;
+  &__menu-phone {
     min-width: 160px;
     display: flex;
     justify-content: flex-end;
+    flex: 1 1 auto;
+    @media screen and (max-width: $mdDesktopWidth) {
+      justify-content: center;
+    }
+    @media screen and (max-width: $tableWidth) {
+      justify-content: flex-end;
+    }
+    @media screen and (min-width: 1250px) and (max-width: 1400px) {
+      display: none;
+    }
+    @media screen and (max-width: $mdDesktopWidth) {
+      flex: 1 1 calc(100% / 3)
+    }
   }
-  &__top-menu {
-    display: flex;
+  &__menu {
     align-items: center;
     padding: 0;
+    @media screen and (max-width: $tableWidth) {
+      flex-wrap: nowrap;
+    }
   }
   .ant-menu {
     background-color: transparent;

@@ -1,3 +1,21 @@
+/* Example
+@media screen and (max-width: $lgDesktopWidth) {
+
+}
+@media screen and (max-width: $mdDesktopWidth) {
+
+}
+@media screen and (max-width: $smDesktopWidth) {
+
+}
+@media screen and (max-width: $tableWidth) {
+
+}
+@media screen and (max-width: $phoneWidth) {
+
+}
+*/
+
 html, body {
   @media screen and (max-width: $lgDesktopWidth) {
     font-size: $mainFontSize;
@@ -32,7 +50,88 @@ html, body {
   @media screen and (max-width: $tableWidth) {
     max-width: $phoneWidth;
   }
+}
+
+.banner-title {
+  @media screen and (max-width: $tableWidth) {
+    font-size: 40px;
+  }
   @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
+    font-size: 32px;
   }
 }
+.banner-subtitle {
+  @media screen and (max-width: $tableWidth) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 15px;
+  }
+}
+.card__img {
+  @media screen and (max-width: $tableWidth) {
+   height: 235px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    height: 200px;
+  }
+}
+.banner-list {
+  @media screen and (max-width: $tableWidth) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 15px;
+  }
+}
+.development-cards__img {
+  @media screen and (max-width: $tableWidth) {
+    height: 210px;
+  }
+}
+.h1 {
+  @media screen and (max-width: $tableWidth) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 21px;
+  }
+}
+.h2 {
+  @media screen and (max-width: $tableWidth) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 19px;
+  }
+}
+.h3 {
+  @media screen and (max-width: $tableWidth) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 17px;
+  }
+}
+.h4 {
+  @media screen and (max-width: $tableWidth) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 16px;
+  }
+}
+.footer__logo {
+  @media screen and (max-width: $tableWidth) {
+    margin: 0 auto 20px;
+  }
+}
+.footer__links {
+  @media screen and (max-width: $tableWidth) {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+
+
+

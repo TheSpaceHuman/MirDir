@@ -22,7 +22,6 @@
   .features-card {
     border: 1px solid $tertiary-color;
     padding: 30px;
-    font-family: 'Montserrat', sans-serif;
 
     ul {
       padding-left: 25px;
@@ -41,11 +40,23 @@
       color: $tertiary-color;
       text-align: center;
       margin-bottom: 30px;
+      @media screen and (max-width: $tableWidth) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: $phoneWidth) {
+        font-size: 19px;
+      }
     }
     &__content {
       font-size: 18px;
       line-height: 1.5;
       color: #000;
+      @media screen and (max-width: $tableWidth) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: $phoneWidth) {
+        font-size: 14px;
+      }
     }
 
   }
