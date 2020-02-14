@@ -35,6 +35,7 @@
     position: fixed;
     bottom: 13%;
     right: 4%;
+    z-index: 9999;
     &__icon svg {
       width: 40px!important;
       height: 40px!important;

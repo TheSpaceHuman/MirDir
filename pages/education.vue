@@ -1,13 +1,22 @@
 <template>
-  <h1>Обучение персонала заказчика</h1>
+  <div>
+    <TheBanner image="/images/banners/laptop-3196481_1920.jpg">
+      <h1 class="banner-title">Обучение персонала</h1>
+    </TheBanner>
+  </div>
 </template>
 
 <script>
+  import TheBanner from '~/components/base/TheBanner.vue'
+
   export default {
-    name: "education"
+    name: "education",
+    components: {
+      TheBanner
+    }
   }
 </script>
 
-<style scoped>
+<style lang="scss">
 
 </style>
