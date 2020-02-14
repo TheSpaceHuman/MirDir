@@ -65,7 +65,18 @@
     methods: {
       async send() {
         console.info(this.form)
-      }
+        this.clearForm()
+        this.$message.success('Сообщение успешно отправлено!')
+      },
+      clearForm() {
+        for (let key in this.form) {
+          if(key === 'personal') {
+            this.form[key] = false
+          } else {
+            this.form[key] = ''
+          }
+        }
+      },
     },
     validations: {
       form: {
