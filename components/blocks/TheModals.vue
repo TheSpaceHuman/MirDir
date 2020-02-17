@@ -8,7 +8,12 @@
         :footer="null"
         :title="modal.title"
       >
-        <comment :is="modal.component"></comment>
+        <comment
+          :is="modal.component"
+          button-title="Перезвоните мне"
+          button-alight="center"
+          :fields="formsFields[modal.data.fields]"
+        ></comment>
       </a-modal>
     </div>
 </template>
@@ -18,15 +23,17 @@
   import FormNameEmail from '~/components/forms/FormNameEmail.vue';
   import FormNameEmailPhone from '~/components/forms/FormNameEmailPhone.vue';
   import FormNamePhone from '~/components/forms/FormNamePhone.vue';
+  import MainForm from '~/components/forms/MainForm.vue'
 
   export default {
     name: "TheModals",
     components: {
-      FormNameEmail, FormNameEmailPhone, FormNamePhone
+      FormNameEmail, FormNameEmailPhone, FormNamePhone, MainForm
     },
     computed: {
       ...mapGetters([
-        'modals'
+        'modals',
+        'formsFields'
       ])
     },
     methods: {

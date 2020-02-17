@@ -13,12 +13,12 @@
             <p>Качественная реализация федеральных и коммерческих проектов </p>
           </a-col>
           <a-col :xs="24" :sm="24" :md="12" class="px-30">
-            <FormNamePhone
+            <MainForm
               title="Обсудите вопросы сотрудничества с ген.дир-ом"
               button-title="Есть разговор"
               button-alight="center"
-              :col="1"
-            ></FormNamePhone>
+              :fields="$store.getters.formsFields.namePhone"
+            ></MainForm>
           </a-col>
         </a-row>
         <div class="pt-50">
@@ -34,7 +34,7 @@
 
 <script>
   import TheBanner from '~/components/base/TheBanner.vue'
-  import FormNamePhone from '~/components/forms/FormNamePhone.vue'
+  import MainForm from '~/components/forms/MainForm.vue'
   import CheckList from '~/components/base/CheckList.vue'
   import TheCustomers from '~/components/base/TheCustomers.vue'
   import SITE from '~/dictionary/site'
@@ -44,7 +44,7 @@
   export default {
     name: "trends",
     components: {
-      TheBanner, FormNamePhone, CheckList, TheCustomers
+      TheBanner, MainForm, CheckList, TheCustomers
     },
     data: () => ({
       SITE

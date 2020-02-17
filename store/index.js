@@ -2,22 +2,37 @@ export const state = () => ({
   modals: {
     formNamePhone: {
       show: false,
-      component: 'form-name-phone',
+      component: 'main-form',
       title: 'Задать вопрос',
-      data: {},
+      data: {fields: 'namePhone'},
     },
     formNameEmail: {
       show: false,
-      component: 'form-name-email',
+      component: 'main-form',
       title: 'Заявка на аудит',
-      data: {},
+      data: {fields: 'nameEmail'},
     },
     formNameEmailPhone: {
       show: false,
-      component: 'form-name-email-phone',
+      component: 'main-form',
       title: 'Заявка на чек-лист проверки базы данных',
-      data: {},
+      data: {fields: 'nameEmailPhone'},
     }
+  },
+  formsFields: {
+    namePhone: [
+      {label: 'Имя', name: 'name', mask: '', placeholder: 'Имя', type: 'text', required: true},
+      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'text', required: true},
+    ],
+    nameEmail: [
+      {label: 'Имя', name: 'name', mask: '', placeholder: 'Имя', type: 'text', required: true},
+      {label: 'Email', name: 'email', mask: '', placeholder: 'Email', type: 'email', required: true},
+    ],
+    nameEmailPhone: [
+      {label: 'Имя', name: 'name', mask: '', placeholder: 'Имя', type: 'text', required: true},
+      {label: 'Email', name: 'email', mask: '', placeholder: 'Email', type: 'email', required: true},
+      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'text', required: true},
+    ],
   },
   birthday: {
     year: 2008,
@@ -62,4 +77,5 @@ export const getters = {
   },
   customers: (state) => state.customers,
   menu: (state) => state.menu,
+  formsFields: (state) => state.formsFields
 }

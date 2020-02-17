@@ -101,7 +101,6 @@
           </a-col>
         </a-row>
         <div class="pt-50">
-          <lazy-component>
             <BannerCard
             class="mt-50"
             image="/images/administration.page/144.jpg"
@@ -113,7 +112,6 @@
               <TheButton type="danger" @click="openModal('formNameEmail')">Скачать чек-лист</TheButton>
             </a-row>
           </BannerCard>
-          </lazy-component>
         </div>
       </div>
     </section>

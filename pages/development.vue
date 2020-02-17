@@ -18,12 +18,12 @@
       <h2 class="h2 text-center mb-30">Мы уже внедрили ряд уникальных разработок в бизнес-процессы наших клиентов. Поможем претворить в жизнь все ваши гениальные идеи.</h2>
       <a-row type="flex">
         <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
-          <FormNamePhone
+          <MainForm
             title="Оставьте контакты. Мы перезвоним."
             button-title="Перезвоните мне"
             button-alight="center"
-            :col="1"
-          ></FormNamePhone>
+            :fields="$store.getters.formsFields.namePhone"
+          ></MainForm>
         </a-col>
       </a-row>
     </div>
@@ -101,7 +101,7 @@
 
 <script>
   import TheBanner from '~/components/base/TheBanner.vue'
-  import FormNamePhone from '~/components/forms/FormNamePhone.vue'
+  import MainForm from '~/components/forms/MainForm.vue'
   import ServiceCard from '~/components/base/ServiceCard.vue'
   import BannerCard from '~/components/base/BannerCard.vue'
 
@@ -125,7 +125,7 @@
       ]
     }),
     components: {
-      TheBanner, FormNamePhone, ServiceCard, BannerCard
+      TheBanner, MainForm, ServiceCard, BannerCard
     },
     methods: {
       // formNamePhone formNameEmail formNameEmailPhone

@@ -25,12 +25,12 @@
     <div class="container mb-50">
       <a-row type="flex">
         <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
-          <FormNamePhone
+          <MainForm
             title="Готовы ответить на любые вопросы"
             button-title="Перезвоните мне"
             button-alight="center"
-            :col="1"
-          ></FormNamePhone>
+            :fields="$store.getters.formsFields.namePhone"
+          ></MainForm>
         </a-col>
       </a-row>
     </div>
@@ -39,13 +39,13 @@
 
 <script>
 import TheBanner from '~/components/base/TheBanner.vue'
-import FormNamePhone from '~/components/forms/FormNamePhone.vue'
 import TheButton from '~/components/base/TheButton.vue'
+import MainForm from '~/components/forms/MainForm.vue'
 
 export default {
   name: "index",
   components: {
-    TheBanner, FormNamePhone, TheButton
+    TheBanner, TheButton, MainForm
   },
   data() {
     return {

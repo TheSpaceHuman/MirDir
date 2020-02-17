@@ -85,6 +85,9 @@
           margin-#{$side}: #{$space}px !important;
         }
       }
+      .m-#{$space} {
+        margin: #{$space}px !important;;
+      }
 
       .p#{str-slice($side, 0, 1)}-#{$space} {
         @if($side == 'x') {
@@ -96,8 +99,11 @@
         } @else {
           padding-#{$side}: #{$space}px !important;
         }
-
       }
+      .p-#{$space} {
+        padding: #{$space}px !important;;
+      }
+
     }
   }
 }
