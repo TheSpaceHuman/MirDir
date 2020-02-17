@@ -2,6 +2,11 @@ import Vue from 'vue'
 import { Row, Menu, Icon, Input, Col, Alert, Card, Carousel, Dropdown, Modal, Tabs, Tooltip, Checkbox, Collapse, Button, Anchor, Breadcrumb, message, notification } from 'ant-design-vue'
 
 Vue.prototype.$message = message;
+Vue.prototype.$message.config({
+  top: '100px',
+  duration: 2,
+  maxCount: 3,
+});
 Vue.prototype.$notification = notification;
 Vue.prototype.$info = Modal.info;
 Vue.prototype.$success = Modal.success;

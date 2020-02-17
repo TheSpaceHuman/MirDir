@@ -3,32 +3,35 @@
   margin: 0;
   line-height: 1.5;
 }
-.px-15 {padding-left: 15px;padding-right: 15px;}
-.px-30 {padding-left: 30px;padding-right: 30px;}
-.px-50 {padding-left: 50px;padding-right: 50px;}
-.py-15 {padding-top: 15px;padding-bottom: 15px;}
-.py-30 {padding-top: 30px;padding-bottom: 30px;}
-.py-50 {padding-top: 50px;padding-bottom: 50px;}
-.py-60 {padding-top: 60px;padding-bottom: 60px;}
-.pt-50 {padding-top: 50px;}
-.pr-15 {padding-right: 15px;}
-.pl-15 {padding-left: 15px;}
-.p-15 {padding: 15px;}
-.pb-10 {padding-bottom: 10px;}
-.pb-50 {padding-bottom: 50px;}
-.mb-15 {margin-bottom: 15px;}
-.mb-20 {margin-bottom: 20px;}
-.mb-30 {margin-bottom: 30px;}
-.mb-35 {margin-bottom: 35px;}
-.mb-40 {margin-bottom: 40px;}
-.mb-50 {margin-bottom: 50px;}
-.mb-60 {margin-bottom: 60px;}
-.mb-90 {margin-bottom: 90px;}
-.mt-50 {margin-top: 50px;}
-.mt-30 {margin-top: 30px;}
-.mr-15 {margin-right: 15px;}
-.ml-15 {margin-left: 15px;}
-.my-30 {margin-bottom: 30px; margin-top: 30px;}
+//.px-15 {padding-left: 15px;padding-right: 15px;}
+//.px-30 {padding-left: 30px;padding-right: 30px;}
+//.px-50 {padding-left: 50px;padding-right: 50px;}
+//.py-15 {padding-top: 15px;padding-bottom: 15px;}
+//.py-30 {padding-top: 30px;padding-bottom: 30px;}
+//.py-50 {padding-top: 50px;padding-bottom: 50px;}
+//.py-60 {padding-top: 60px;padding-bottom: 60px;}
+//.pt-50 {padding-top: 50px;}
+//.pr-15 {padding-right: 15px;}
+//.pl-15 {padding-left: 15px;}
+//.p-15 {padding: 15px;}
+//.pb-10 {padding-bottom: 10px;}
+//.pb-50 {padding-bottom: 50px;}
+//.mb-15 {margin-bottom: 15px;}
+//.mb-20 {margin-bottom: 20px;}
+//.mb-30 {margin-bottom: 30px;}
+//.mb-35 {margin-bottom: 35px;}
+//.mb-40 {margin-bottom: 40px;}
+//.mb-50 {margin-bottom: 50px;}
+//.mb-60 {margin-bottom: 60px;}
+//.mb-90 {margin-bottom: 90px;}
+//.mt-50 {margin-top: 50px;}
+//.mt-30 {margin-top: 30px;}
+//.mr-15 {margin-right: 15px;}
+//.ml-15 {margin-left: 15px;}
+//.my-30 {margin-bottom: 30px; margin-top: 30px;}
+
+$spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
+@include indents($spaceamounts);
 
 .w-100 {width: 100%;}
 .h-100 {height: 100%;}

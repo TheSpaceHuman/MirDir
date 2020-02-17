@@ -65,3 +65,40 @@
     src: $src;
   }
 }
+
+// -----------------------------------
+// margin and padding helpers
+// -----------------------------------
+
+@mixin indents($spaceamounts) {
+  $sides: (top, bottom, left, right, x, y);
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      .m#{str-slice($side, 0, 1)}-#{$space} {
+        @if($side == 'x') {
+          margin-left: #{$space}px !important;
+          margin-right: #{$space}px !important;
+        } @else if($side == 'y') {
+          margin-top: #{$space}px !important;
+          margin-bottom: #{$space}px !important;
+        } @else {
+          margin-#{$side}: #{$space}px !important;
+        }
+      }
+
+      .p#{str-slice($side, 0, 1)}-#{$space} {
+        @if($side == 'x') {
+          padding-left: #{$space}px !important;
+          padding-right: #{$space}px !important;
+        } @else if($side == 'y') {
+          padding-top: #{$space}px !important;
+          padding-bottom: #{$space}px !important;
+        } @else {
+          padding-#{$side}: #{$space}px !important;
+        }
+
+      }
+    }
+  }
+}
+
