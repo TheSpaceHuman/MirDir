@@ -5,15 +5,21 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Мир данных ИТ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Центр разработки "МИР ДАННЫХ ИТ"' },
+      { name: 'yandex-verification', content: 'fecc6d8e9ec4c1a1' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ]
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
+      { rel: 'apple-touch-icon', type: 'image/png', href: '/images/logo.png' },
+    ],
+    script: [
+      { src: '/vendors/yandex.metrica.js' }
+    ],
   },
   /*
   ** Customize the progress-bar color
@@ -57,7 +63,9 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {},
+  axios: {
+    baseURL: process.client ? window.location.host : '',
+  },
   /*
   ** Build configuration
   */

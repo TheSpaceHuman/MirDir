@@ -22,6 +22,7 @@
 <script>
   import { required } from 'vuelidate/lib/validators'
   import SITE from  '~/dictionary/site'
+  import CONTACT from  '~/dictionary/contact'
 
   export default {
     name: "MainForm",
@@ -47,12 +48,30 @@
         type: String,
         default: 'center'
       },
+      actionPath: {
+        type: String,
+        default: '/send_form.php'
+      },
       action: {
         type: Function,
         default: function () {
           console.info(this.form)
-          this.clearForm()
-          this.$message.success('Сообщение успешно отправлено!')
+          const form = {...this.form}
+          form.subj = this.title
+          form.to = this.CONTACT.email
+          const formData = new FormData()
+          for(let key in form) {
+            formData.set(key, form[key])
+          }
+          this.$axios.post(this.actionPath, formData)
+            .then(() => {
+              this.clearForm()
+              this.$message.success('Сообщение успешно отправлено!')
+            })
+            .catch(() => {
+              this.$message.error('Ошибка, что-то пошло не так!')
+            })
+
         }
       }
     },
@@ -60,6 +79,7 @@
       return {
         form: {},
         SITE,
+        CONTACT,
         buttonClass: {
           'justify-content-center': this.buttonAlight === 'center',
           'justify-content-start': this.buttonAlight === 'left',
