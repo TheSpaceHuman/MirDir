@@ -55,18 +55,6 @@ section, .section {
   position: relative;
 }
 
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0 auto;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 .container {
   max-width: $lgDesktopWidth;

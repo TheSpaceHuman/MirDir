@@ -20,15 +20,12 @@
 
 <script>
   import { mapGetters } from 'vuex';
-  import FormNameEmail from '~/components/forms/FormNameEmail.vue';
-  import FormNameEmailPhone from '~/components/forms/FormNameEmailPhone.vue';
-  import FormNamePhone from '~/components/forms/FormNamePhone.vue';
   import MainForm from '~/components/forms/MainForm.vue'
 
   export default {
     name: "TheModals",
     components: {
-      FormNameEmail, FormNameEmailPhone, FormNamePhone, MainForm
+      MainForm
     },
     computed: {
       ...mapGetters([
