@@ -17,9 +17,9 @@ export default {
       { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
       { rel: 'apple-touch-icon', type: 'image/png', href: '/images/logo.png' },
     ],
-    script: [
-      { src: '/vendors/yandex.metrica.js' }
-    ],
+    // script: [
+    //   { src: '/vendors/yandex.metrica.js' }
+    // ],
   },
   /*
   ** Customize the progress-bar color
@@ -58,6 +58,17 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '61043104',
+        webvisor: true,
+        clickmap:true,
+        useCDN:false,
+        trackLinks:true,
+        accurateTrackBounce:true,
+      }
+    ]
   ],
   /*
   ** Axios module configuration

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/yandex-metrika": "^1.0.3",
     "animate.css": "^3.7.2",
     "ant-design-vue": "^1.4.10",
     "hamburgers": "^1.1.3",
