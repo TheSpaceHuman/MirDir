@@ -11,7 +11,7 @@
             <MainMenu :items="$store.getters.menu" />
           </a-col>
           <a-col :xs="8" :sm="8" :md="8" :lg="3" class="header__menu-phone">
-            <a :href="phone | phone-href">{{ phone | phone }}</a>
+            <a :href="phone | phoneHref">{{ phone | phone }}</a>
           </a-col>
           <a-col :xs="8" :sm="8" :md="8" class="header__menu-mobile">
             <MainMenu :items="$store.getters.menu" :mobile="true" />

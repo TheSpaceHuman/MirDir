@@ -8,7 +8,7 @@ Vue.filter('phone', function (phone) {
   }
 });
 
-Vue.filter('phone-href', function (phone) {
+Vue.filter('phoneHref', function (phone) {
   if (!phone) {
     return '';
   } else {

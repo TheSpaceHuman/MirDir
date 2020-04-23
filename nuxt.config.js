@@ -13,13 +13,10 @@ export default {
       { name: 'yandex-verification', content: 'fecc6d8e9ec4c1a1' }
     ],
     link: [
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
       { rel: 'apple-touch-icon', type: 'image/png', href: '/images/logo.png' },
     ],
-    // script: [
-    //   { src: '/vendors/yandex.metrica.js' }
-    // ],
+    script: []
   },
   /*
   ** Customize the progress-bar color
@@ -63,10 +60,10 @@ export default {
       {
         id: '61043104',
         webvisor: true,
-        clickmap:true,
-        useCDN:false,
-        trackLinks:true,
-        accurateTrackBounce:true,
+        clickmap: true,
+        useCDN: false,
+        trackLinks: true,
+        accurateTrackBounce: true,
       }
     ]
   ],
