@@ -16,12 +16,12 @@ export default {
       { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
       { rel: 'apple-touch-icon', type: 'image/png', href: '/images/logo.png' },
     ],
-    script: []
+    script: [],
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: 'rgb(236, 54, 51)' },
+  loading: { color: '#52c41a', failedColor: 'rgb(236, 54, 51)' },
   /*
   ** Global CSS
   */

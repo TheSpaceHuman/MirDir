@@ -73,6 +73,10 @@
             })
 
         }
+      },
+      inModal: {
+        type: Boolean,
+        default: false
       }
     },
     data() {
