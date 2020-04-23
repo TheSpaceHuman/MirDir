@@ -23,6 +23,7 @@
   import { required } from 'vuelidate/lib/validators'
   import SITE from  '~/dictionary/site'
   import CONTACT from  '~/dictionary/contact'
+  import VALIDATION from  '~/dictionary/validation'
 
   export default {
     name: "MainForm",
@@ -66,11 +67,11 @@
           this.$axios.post(this.actionPath, formData)
             .then(() => {
               this.clearForm()
-              this.$message.success('Сообщение успешно отправлено!')
+              this.$message.success(this.VALIDATION.success)
               this.closeModal(this.modalKey)
             })
             .catch(() => {
-              this.$message.error('Ошибка, что-то пошло не так!')
+              this.$message.error(this.VALIDATION.error)
             })
 
         }
@@ -85,6 +86,7 @@
         form: {},
         SITE,
         CONTACT,
+        VALIDATION,
         buttonClass: {
           'justify-content-center': this.buttonAlight === 'center',
           'justify-content-start': this.buttonAlight === 'left',
