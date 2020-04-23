@@ -67,6 +67,7 @@
             .then(() => {
               this.clearForm()
               this.$message.success('Сообщение успешно отправлено!')
+              this.closeModal(this.modalKey)
             })
             .catch(() => {
               this.$message.error('Ошибка, что-то пошло не так!')
@@ -74,9 +75,9 @@
 
         }
       },
-      inModal: {
-        type: Boolean,
-        default: false
+      modalKey: {
+        type: String,
+        default: ''
       }
     },
     data() {
@@ -106,6 +107,9 @@
           key === 'personal' ? this.form[key] = false : this.form[key] = null
         }
       },
+      closeModal(modalKey) {
+        this.$store.commit('toggleModal', modalKey)
+      }
     },
     validations() {
       let form = {}

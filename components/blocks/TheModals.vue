@@ -13,6 +13,7 @@
           button-title="Перезвоните мне"
           button-alight="center"
           :fields="formsFields[modal.data.fields]"
+          :modal-key="key"
         ></comment>
       </a-modal>
     </div>
@@ -34,8 +35,8 @@
       ])
     },
     methods: {
-      closeModal(modal) {
-        this.$store.commit('toggleModal', modal)
+      closeModal(modalKey) {
+        this.$store.commit('toggleModal', modalKey)
       }
     }
   }
