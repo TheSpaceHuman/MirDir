@@ -14,6 +14,7 @@
             <nuxt-link :to="card.link">
               <a-card  class="card mb-15" :hoverable="true" :bordered="false">
                 <img v-lazy="card.image" :alt="card.title"  slot="cover" class="card__img">
+                <div class="card__title" slot="cover" v-html="card.title"></div>
               </a-card>
             </nuxt-link>
           </a-col>
@@ -49,12 +50,12 @@ export default {
   data() {
     return {
       cards: [
-        { title: '', subtitle: '', image: '/images/cards/card-1.jpg', link: '/oracle' },
-        { title: '', subtitle: '', image: '/images/cards/card-2.jpg', link: '/administration' },
-        { title: '', subtitle: '', image: '/images/cards/card-3.jpg', link: '/development' },
-        { title: '', subtitle: '', image: '/images/cards/card-4.jpg', link: '/tenders' },
-        { title: '', subtitle: '', image: '/images/cards/card-5.jpg', link: '/promotion' },
-        { title: '', subtitle: '', image: '/images/cards/card-6.jpg', link: '/education' },
+        { title: '<p>Диагностика систем Oracle</p>', subtitle: '', image: '/images/cards/1.jpg', link: '/oracle' },
+        { title: '<p>Администрирование баз данных</p>', subtitle: '', image: '/images/cards/2.jpg', link: '/administration' },
+        { title: '<p>Разработка программного обеспечения</p>', subtitle: '', image: '/images/cards/3.jpg', link: '/development' },
+        { title: '<p>Тендеры<br>Субподряд</p>', subtitle: '', image: '/images/cards/4.jpg', link: '/tenders' },
+        { title: '<p>Продвижение партнеров</p>', subtitle: '', image: '/images/cards/5.jpg', link: '/promotion' },
+        { title: '<p>Обучение персонала</p>', subtitle: '', image: '/images/cards/6.jpg', link: '/education' },
       ]
     }
   },
