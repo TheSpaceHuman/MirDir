@@ -39,10 +39,8 @@
   import TheCustomers from '~/components/base/TheCustomers.vue'
   import SITE from '~/dictionary/site'
   import { mapGetters } from 'vuex';
-
-
   export default {
-    name: "trends",
+    name: "tenders",
     components: {
       TheBanner, MainForm, CheckList, TheCustomers
     },

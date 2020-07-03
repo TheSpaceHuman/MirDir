@@ -10,11 +10,11 @@
     <section class="index-cards py-30">
       <div class="container">
         <a-row type="flex" :gutter="15">
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" v-for="(card, index) in cards" :key="index">
+          <a-col :xs="24" :sm="24" :md="12" :lg="8" v-for="(card, index) in cards" :key="index">
             <nuxt-link :to="card.link">
               <a-card hoverable class="card mb-15">
                 <img v-lazy="card.image" :alt="card.title"  slot="cover" class="card__img">
-                <a-card-meta :title="card.title" :description="card.subtitle"/>
+<!--                <a-card-meta :title="card.title" :description="card.subtitle"/>-->
               </a-card>
             </nuxt-link>
           </a-col>
@@ -50,12 +50,12 @@ export default {
   data() {
     return {
       cards: [
-        { title: 'Администрирование баз данных', subtitle: '', image: '/images/cards/bandwidth-close-up-computer-connection-1148820.jpg', link: '/administration' },
-        { title: 'Разработка программного обеспечения', subtitle: '', image: '/images/cards/person-using-silver-macbook-pro-1181467.jpg', link: '/development' },
-        { title: 'Обучение персонала', subtitle: '', image: '/images/cards/top-view-photo-of-group-of-people-using-macbook-while-3182773.jpg', link: '/education' },
-        { title: 'Продвижение партнеров', subtitle: '', image: '/images/cards/photo-of-people-near-wooden-table-3184418.jpg', link: '/promotion' },
-        { title: 'Oracle', subtitle: '', image: '/images/cards/oracle.jpg', link: '/oracle' },
-        { title: 'Тендеры. Конкурсы. Субподряд', subtitle: '', image: '/images/cards/sign-pen-business-document-48195.jpg', link: '/trends' },
+        { title: '', subtitle: '', image: '/images/cards/card-1.jpg', link: '/oracle' },
+        { title: '', subtitle: '', image: '/images/cards/card-2.jpg', link: '/administration' },
+        { title: '', subtitle: '', image: '/images/cards/card-3.jpg', link: '/development' },
+        { title: '', subtitle: '', image: '/images/cards/card-4.jpg', link: '/tenders' },
+        { title: '', subtitle: '', image: '/images/cards/card-5.jpg', link: '/promotion' },
+        { title: '', subtitle: '', image: '/images/cards/card-6.jpg', link: '/education' },
       ]
     }
   },
