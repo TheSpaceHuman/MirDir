@@ -12,9 +12,8 @@
         <a-row type="flex" :gutter="15">
           <a-col :xs="24" :sm="24" :md="12" :lg="8" v-for="(card, index) in cards" :key="index">
             <nuxt-link :to="card.link">
-              <a-card hoverable class="card mb-15">
+              <a-card  class="card mb-15" :hoverable="true" :bordered="false">
                 <img v-lazy="card.image" :alt="card.title"  slot="cover" class="card__img">
-<!--                <a-card-meta :title="card.title" :description="card.subtitle"/>-->
               </a-card>
             </nuxt-link>
           </a-col>
