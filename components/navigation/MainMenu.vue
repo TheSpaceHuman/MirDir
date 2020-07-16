@@ -28,7 +28,8 @@
               :key="key"
               @click="hideMobileMenu"
             >
-              <nuxt-link :to="item.link" class="main-menu__mobile-link"><a-icon v-if="item.icon" :type="item.icon" /> {{item.name}}</nuxt-link>
+              <a :href="item.link" v-if="item.target" :target="item.target"><a-icon v-if="item.icon" :type="item.icon" /> {{item.name}}</a>
+              <nuxt-link :to="item.link" class="main-menu__mobile-link" v-else><a-icon v-if="item.icon" :type="item.icon" /> {{item.name}}</nuxt-link>
             </li>
           </ul>
         </transition>
@@ -40,7 +41,8 @@
           v-for="item in items"
           :key="item.key"
         >
-          <nuxt-link :to="item.link"><a-icon v-if="item.icon" :type="item.icon" /> {{item.name}}</nuxt-link>
+          <a :href="item.link" v-if="item.target" :target="item.target"><a-icon v-if="item.icon" :type="item.icon" /> {{item.name}}</a>
+          <nuxt-link :to="item.link" v-else><a-icon v-if="item.icon" :type="item.icon" /> {{item.name}}</nuxt-link>
         </a-menu-item>
       </a-menu>
     </nav>

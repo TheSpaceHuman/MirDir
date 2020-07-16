@@ -59,6 +59,7 @@ export const state = () => ({
     { name: 'Тендеры', link: '/tenders', key: '5', icon: ''},
     { name: 'Продвижение', link: '/promotion', key: '6', icon: ''},
     { name: 'Обучение персонала', link: '/education', key: '7', icon: ''},
+    { name: 'Скачать презентацию', link: '/docs/markiting-wd.pdf', key: '8', icon: '', target: '_blank'},
   ]
 })
 

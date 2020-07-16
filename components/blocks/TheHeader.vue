@@ -2,12 +2,12 @@
     <header class="header" id="header" :class="top ? 'header--fixed': 'header--scroll'">
       <div class="container">
         <a-row type="flex" class="header__menu">
-          <a-col :xs="8" :sm="8" :md="8" :lg="3" class="header__menu-logo">
+          <a-col :xs="8" :sm="8" :md="8" :lg="2" class="header__menu-logo">
             <nuxt-link to="/">
               <img src="/images/logo.png" class="header__menu-logo-img" alt="Мир Данных ИТ - Логотип" title="Мир Данных ИТ">
             </nuxt-link>
           </a-col>
-          <a-col :lg="18" class="header__menu-nav">
+          <a-col :lg="19" class="header__menu-nav">
             <MainMenu :items="$store.getters.menu" />
           </a-col>
           <a-col :xs="8" :sm="8" :md="8" :lg="3" class="header__menu-phone">
