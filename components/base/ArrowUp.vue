@@ -36,9 +36,12 @@
     bottom: 13%;
     right: 4%;
     z-index: 200;
-    &__icon svg {
-      width: 40px!important;
-      height: 40px!important;
+    &__icon {
+      font-size: 35px;
+      svg {
+        width: 40px!important;
+        height: 40px!important;
+      }
     }
   }
 </style>
