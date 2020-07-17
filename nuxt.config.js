@@ -58,14 +58,22 @@ export default {
     [
       '@nuxtjs/yandex-metrika',
       {
-        id: '61043104',
+        id: '65666029',
         webvisor: true,
         clickmap: true,
         useCDN: false,
         trackLinks: true,
         accurateTrackBounce: true,
       }
-    ]
+    ],
+    [
+      'nuxt-facebook-pixel-module',
+      {
+        track: 'PageView',
+        pixelId: '281457353291107',
+        disabled: false
+      }
+    ],
   ],
   /*
   ** Axios module configuration
