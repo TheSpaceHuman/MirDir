@@ -50,12 +50,12 @@ export default {
   data() {
     return {
       cards: [
-        { title: '<p>Администрирование баз данных</p>', subtitle: '', image: '/images/cards/1.jpg', link: '/administration' },
-        { title: '<p>Разработка программного обеспечения</p>', subtitle: '', image: '/images/cards/2.jpg', link: '/development' },
+        { title: '<p>Администрирование <br>баз данных</p>', subtitle: '', image: '/images/cards/1.jpg', link: '/administration' },
+        { title: '<p>Разработка <br>программного <br>обеспечения</p>', subtitle: '', image: '/images/cards/2.jpg', link: '/development' },
         { title: '<p>Тендеры<br>Субподряд</p>', subtitle: '', image: '/images/cards/3.jpg', link: '/tenders' },
-        { title: '<p>Продвижение партнеров</p>', subtitle: '', image: '/images/cards/4.jpg', link: '/promotion' },
+        { title: '<p>Продвижение <br>партнеров</p>', subtitle: '', image: '/images/cards/4.jpg', link: '/promotion' },
         { title: '<p>Обучение персонала</p>', subtitle: '', image: '/images/cards/5.jpg', link: '/education' },
-        { title: '<p>Диагностика систем Oracle</p>', subtitle: '', image: '/images/cards/6.jpeg', link: '/oracle' },
+        { title: '<p>Диагностика систем <br>Oracle</p>', subtitle: '', image: '/images/cards/6.jpeg', link: '/oracle' },
       ]
     }
   },
