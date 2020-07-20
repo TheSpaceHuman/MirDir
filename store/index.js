@@ -53,12 +53,12 @@ export const state = () => ({
   ],
   menu: [
     { name: 'Главная', link: '/', key: '1', icon: ''},
-    { name: 'Oracle', link: '/oracle', key: '2', icon: ''},
-    { name: 'Администрирование', link: '/administration', key: '3', icon: ''},
-    { name: 'Разработка', link: '/development', key: '4', icon: ''},
-    { name: 'Тендеры', link: '/tenders', key: '5', icon: ''},
-    { name: 'Продвижение', link: '/promotion', key: '6', icon: ''},
-    { name: 'Обучение персонала', link: '/education', key: '7', icon: ''},
+    { name: 'Администрирование', link: '/administration', key: '2', icon: ''},
+    { name: 'Разработка', link: '/development', key: '3', icon: ''},
+    { name: 'Тендеры', link: '/tenders', key: '4', icon: ''},
+    { name: 'Продвижение', link: '/promotion', key: '5', icon: ''},
+    { name: 'Обучение персонала', link: '/education', key: '6', icon: ''},
+    { name: 'Oracle', link: '/oracle', key: '7', icon: ''},
     { name: 'Скачать презентацию', link: '/docs/markiting-wd.pdf', key: '8', icon: '', target: '_blank'},
   ]
 })

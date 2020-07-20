@@ -10,7 +10,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Центр разработки "МИР ДАННЫХ ИТ"' },
-      { name: 'yandex-verification', content: 'fecc6d8e9ec4c1a1' }
+      { name: 'yandex-verification', content: 'c195aef846dfb72a' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
