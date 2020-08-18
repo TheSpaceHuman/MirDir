@@ -58,9 +58,9 @@ export const state = () => ({
     { name: 'Тендеры', link: '/tenders', key: '4', icon: ''},
     { name: 'Продвижение', link: '/promotion', key: '5', icon: ''},
     { name: 'Обучение персонала', link: '/education', key: '6', icon: ''},
-    // { name: 'Oracle', link: '/oracle', key: '7', icon: ''},
+    { name: 'Oracle', link: '/oracle', key: '7', icon: ''},
     { name: 'Статьи', link: '/articles', key: '8', icon: ''},
-    { name: 'Скачать презентацию', link: '/docs/markiting-wd.pdf', key: '9', icon: '', target: '_blank'},
+    { name: 'Презентация', link: '/docs/markiting-wd.pdf', key: '9', icon: '', target: '_blank'},
   ],
   articles: [
     {
