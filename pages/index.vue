@@ -19,6 +19,18 @@
             </nuxt-link>
           </a-col>
         </a-row>
+        <h2 class="h2 my-20 text-center">Статьи и публикации</h2>
+        <a-row type="flex" :gutter="15">
+          <a-col :xs="24" :sm="24" :md="12" :lg="8" v-for="(post, index) in $store.getters.posts" :key="index">
+            <nuxt-link :to="`/articles/${index}`">
+              <a-tooltip placement="bottom" :title="post.title">
+                <a-card  class="card mb-15" :hoverable="true" :bordered="false">
+                  <img v-lazy="post.images[0].src" :alt="post.title"  slot="cover" class="card__img fix--height">
+                </a-card>
+              </a-tooltip>
+            </nuxt-link>
+          </a-col>
+        </a-row>
       </div>
     </section>
 
@@ -62,4 +74,10 @@ export default {
   methods: {}
 }
 </script>
+<style lang="scss" scoped>
+  .fix--height {
+    object-fit: cover;
+    height: 210px;
+  }
+</style>
 

@@ -76,7 +76,11 @@
         if(currentPage.length) {
           this.activeItem =  [currentPage[0].key]
         } else {
-          this.activeItem =  [this.items[0].key]
+          if (this.$route.name === 'articles-id') {
+            this.activeItem = [this.items[7].key]
+          } else {
+            this.activeItem = [this.items[0].key]
+          }
         }
       },
       toggleHamburger() {
