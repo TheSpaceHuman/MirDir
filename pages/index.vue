@@ -22,7 +22,7 @@
         <h2 class="h2 my-20 text-center">Статьи и публикации</h2>
         <a-row type="flex" :gutter="15">
           <a-col :xs="24" :sm="24" :md="12" :lg="8" v-for="(post, index) in $store.getters.posts" :key="index">
-            <nuxt-link :to="`/articles/${index}`">
+            <nuxt-link :to="`/articles/${post.alias}`">
               <a-tooltip placement="bottom" :title="post.title">
                 <a-card  class="card mb-15" :hoverable="true" :bordered="false">
                   <img v-lazy="post.images[0].src" :alt="post.title"  slot="cover" class="card__img fix--height">

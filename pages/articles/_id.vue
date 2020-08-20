@@ -2,11 +2,11 @@
   <div class="post-detail">
     <div class="container">
       <h1 class="post-detail__title">{{ post.title }}</h1>
-      <the-carousel>
+      <!--<the-carousel>
         <div v-for="(image, index) in post.images" :key="index">
           <img :src="image.src" :alt="post.title" :title="post.title">
         </div>
-      </the-carousel>
+      </the-carousel>-->
       <section class="post-detail__content" v-html="post.content"></section>
     </div>
   </div>

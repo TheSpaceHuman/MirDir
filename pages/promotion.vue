@@ -14,6 +14,11 @@
     name: "promotion",
     components: {
       TheBanner
+    },
+    head() {
+      return {
+        titleTemplate: '%s | Продвижение',
+      }
     }
   }
 </script>

@@ -8,7 +8,7 @@
                   :title="post.title"
                   :image="post.images[0].src"
                   :description="post.description"
-                  :id="index"
+                  :id="post.alias"
         />
       </div>
     </div>
@@ -22,7 +22,7 @@ export default {
   components: { PostCard },
   head() {
     return {
-      title: 'Статьи и публикации',
+      titleTemplate: '%s | Статьи и публикации',
       meta: [
         {
           hid: 'description',

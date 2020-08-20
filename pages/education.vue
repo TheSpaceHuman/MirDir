@@ -14,6 +14,11 @@
     name: "education",
     components: {
       TheBanner
+    },
+    head() {
+      return {
+        titleTemplate: '%s | Обучение персонала',
+      }
     }
   }
 </script>

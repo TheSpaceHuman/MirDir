@@ -67,6 +67,11 @@
       ...mapGetters([
         'customers'
       ])
+    },
+    head() {
+      return {
+        titleTemplate: '%s | Тренды',
+      }
     }
   }
 </script>

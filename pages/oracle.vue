@@ -53,6 +53,11 @@
 
         ]
       }
+    },
+    head() {
+      return {
+        titleTemplate: '%s | Oracle',
+      }
     }
 
   }

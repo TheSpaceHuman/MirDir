@@ -132,6 +132,11 @@
       openModal(name) {
         this.$store.commit('toggleModal', name)
       },
+    },
+    head() {
+      return {
+        titleTemplate: '%s | Разработка',
+      }
     }
   }
 </script>
