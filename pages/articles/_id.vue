@@ -46,6 +46,13 @@ export default {
     font-size: 1.5rem;
     font-weight: 700;
   }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
   p {
     margin-bottom: 15px;
   }

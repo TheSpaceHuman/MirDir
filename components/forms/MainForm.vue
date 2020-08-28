@@ -1,6 +1,6 @@
 <template>
     <section class="main-form">
-      <h4 class="h4 color--primary  text-center mb-30" v-if="title">{{title}}</h4>
+      <h2 class="h4 color--primary  text-center mb-30" v-if="title">{{title}}</h2>
       <form @submit.prevent="action">
         <a-row type="flex" :gutter="15">
           <a-col :xs="24" :sm="24" :md="24 / col" :lg="24 /col" class="mb-15" v-for="field in fields" :key="field.name">

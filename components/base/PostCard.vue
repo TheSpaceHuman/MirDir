@@ -21,7 +21,7 @@ export default {
     title: String,
     description: String,
     image: String,
-    id: Number
+    id: String | Number
   },
   data() {
     return {}

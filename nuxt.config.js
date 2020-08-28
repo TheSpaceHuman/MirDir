@@ -74,7 +74,12 @@ export default {
         disabled: false
       }
     ],
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
+  sitemap: {
+    hostname: 'https://mir-dit.ru/',
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

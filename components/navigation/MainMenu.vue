@@ -76,10 +76,12 @@
         if(currentPage.length) {
           this.activeItem =  [currentPage[0].key]
         } else {
-          if (this.$route.name === 'articles-id') {
-            this.activeItem = [this.items[7].key]
-          } else {
-            this.activeItem = [this.items[0].key]
+          switch (this.$route.name) {
+            case 'articles-id':
+              this.activeItem = [this.items[7].key]
+              break
+            default:
+              this.activeItem = []
           }
         }
       },

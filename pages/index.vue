@@ -25,7 +25,10 @@
             <nuxt-link :to="`/articles/${post.alias}`">
               <a-tooltip placement="bottom" :title="post.title">
                 <a-card  class="card mb-15" :hoverable="true" :bordered="false">
-                  <img v-lazy="post.images[0].src" :alt="post.title"  slot="cover" class="card__img fix--height">
+                  <img v-lazy="post.image" :alt="post.title"  slot="cover" class="card__img fix--height">
+                  <div class="card__title" slot="cover">
+                    <p>{{ post.shortTitle }}</p>
+                  </div>
                 </a-card>
               </a-tooltip>
             </nuxt-link>
@@ -38,7 +41,7 @@
       <a-row type="flex">
         <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
           <MainForm
-            title="Готовы ответить на любые вопросы"
+            title="По вопросам сотрудничества и партнерства. Свяжитесь с нами"
             button-title="Перезвоните мне"
             button-alight="center"
             :fields="$store.getters.formsFields.namePhone"
