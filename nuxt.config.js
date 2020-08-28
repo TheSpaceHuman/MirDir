@@ -80,6 +80,14 @@ export default {
   sitemap: {
     hostname: 'https://mir-dit.ru/',
   },
+  robots: {
+    Host: 'https://mir-dit.ru/',
+    Disallow: ['/_nuxt', '/fonts', '/images', '/docs'],
+    Sitemap: '/sitemap.xml'
+  },
+  generate: {
+    routes: ['/articles/programma-obucheniya-it-specialista', '/articles/vidy-it-autosrsinga', '/articles/voprosy-administrirovaniya-baz-dannyh']
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
