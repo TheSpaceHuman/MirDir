@@ -66,4 +66,13 @@
 .development-cards__img {
   height: 300px;
 }
-
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-left .ant-timeline-item-content, .ant-timeline.ant-timeline-right .ant-timeline-item-left .ant-timeline-item-content {
+  left: calc(52%);
+  width: calc(46%);
+}
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-right .ant-timeline-item-content, .ant-timeline.ant-timeline-right .ant-timeline-item-right .ant-timeline-item-content {
+  width: calc(46%);
+}
+.ant-timeline-item-content {
+  font-size: 16px;
+}

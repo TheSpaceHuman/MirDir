@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Row, Menu, Icon, Input, Col, Alert, Card, Carousel, Dropdown, Modal, Tabs, Tooltip, Checkbox, Collapse, Button, Anchor, Breadcrumb, message, notification } from 'ant-design-vue'
+import { Row, Menu, Icon, Input, Col, Alert, Card, Carousel, Dropdown, Modal, Tabs, Tooltip, Checkbox, Collapse, Button, Anchor, Breadcrumb, message, notification, Timeline } from 'ant-design-vue'
 
 Vue.prototype.$message = message;
 Vue.prototype.$message.config({
@@ -32,4 +32,5 @@ Vue.use(Anchor);
 Vue.use(Breadcrumb);
 Vue.use(Input);
 Vue.use(Modal);
+Vue.use(Timeline);
 

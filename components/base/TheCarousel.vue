@@ -1,5 +1,5 @@
 <template>
-  <a-carousel arrows class="the-carousel">
+  <a-carousel arrows class="the-carousel" :dots="true">
     <div
       slot="prevArrow"
       slot-scope="props"

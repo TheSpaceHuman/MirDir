@@ -518,6 +518,18 @@ export const state = () => ({
         </p>
       `,
     }
+  ],
+  education: [
+    {
+      title: 'Тестировщик ПО Обучение и стажировка',
+      image: '/images/articles/9.png',
+      url: '/education/it-obuchenie-testirovshchik'
+    },
+    {
+      title: 'Системный аналитик Обучение и стажировка',
+      image: '/images/articles/11.png',
+      url: '/education/it-obuchenie-analitik'
+    }
   ]
 })
 
@@ -538,5 +550,6 @@ export const getters = {
   menu: (state) => state.menu,
   formsFields: (state) => state.formsFields,
   postById: (state) => alias => state.articles.find((post) => post.alias === alias ),
-  posts: (state) => state.articles
+  posts: (state) => state.articles,
+  education: (state) => state.education
 }
