@@ -42,6 +42,7 @@ export default {
 .post-card {
   margin-bottom: 25px;
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   &__title {
     font-weight: 700;
@@ -53,11 +54,12 @@ export default {
   }
   &__content {
     padding: 0 18px;
-    flex: 0 0 70%;
+    flex: 1 1 70%;
     height: 100%;
   }
   &__img {
-    flex: 0 0 30%;
+    flex: 1 1 30%;
+    min-width: 320px;
     img {
       object-fit: cover;
       height: 210px;
