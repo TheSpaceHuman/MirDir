@@ -1,5 +1,5 @@
 <template>
-  <VueSlickCarousel :arrows="false" :dots="true" :slidesPerRow="3">
+  <VueSlickCarousel v-bind="settings">
     <nuxt-link :to="item.url" class="more_item" v-for="item in items" :key="item.title">
       <img :src="item.img" :alt="item.title" class="more_item-img">
       <div class="more_item-text">
@@ -41,6 +41,41 @@
       ])
     }
   },
+  data() {
+    return {
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+          {
+            "breakpoint": 1920,
+            "settings": {
+              "slidesToShow": 3,
+              "slidesToScroll": 1,
+              "dots": true,
+            }
+          },
+          {
+            "breakpoint": 1280,
+            "settings": {
+              "slidesToShow": 2,
+              "slidesToScroll": 1,
+              "dots": true,
+            }
+          },
+          {
+            "breakpoint": 720,
+            "settings": {
+              "slidesToShow": 1,
+              "slidesToScroll": 1,
+              "dots": true,
+            }
+          }
+        ]
+      },
+    }
+  }
 }
 </script>
 
