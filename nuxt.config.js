@@ -42,13 +42,14 @@ export default {
     '@/plugins/vue-scrollto',
     '@/plugins/vue-the-mask',
     '@/plugins/vue-lazyload',
+    '@/plugins/vue-slick-carousel',
+    // { src: '@/plugins/vue-carousel', ssr: false },
     // '@/plugins/vue2-perfect-scrollbar',
   ],
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-  ],
+  buildModules: [],
   /*
   ** Nuxt.js modules
   */
@@ -86,7 +87,12 @@ export default {
     Sitemap: '/sitemap.xml'
   },
   generate: {
-    routes: ['/articles/programma-obucheniya-it-specialista', '/articles/vidy-it-autosrsinga', '/articles/voprosy-administrirovaniya-baz-dannyh']
+    routes: [
+      '/articles/programma-obucheniya-it-specialista',
+      '/articles/vidy-it-autosrsinga',
+      '/articles/voprosy-administrirovaniya-baz-dannyh',
+      '/articles/metod-podbora-vakansij-it-specialista'
+    ]
   },
   /*
   ** Axios module configuration
