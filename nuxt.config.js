@@ -91,7 +91,9 @@ export default {
       '/articles/programma-obucheniya-it-specialista',
       '/articles/vidy-it-autosrsinga',
       '/articles/voprosy-administrirovaniya-baz-dannyh',
-      '/articles/metod-podbora-vakansij-it-specialista'
+      '/articles/metod-podbora-vakansij-it-specialista',
+      '/articles/crisis-management-it',
+      '/articles/agile-transformation',
     ]
   },
   /*
