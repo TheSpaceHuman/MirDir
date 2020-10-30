@@ -122,4 +122,11 @@ $spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
     list-style: disc;
   }
 }
+.list-default {
+  list-style-type: unset;
+  padding-left: 20px;
+  li {
+    list-style-type: unset;
+  }
+}
 

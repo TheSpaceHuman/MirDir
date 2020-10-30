@@ -80,6 +80,12 @@
             case 'articles-id':
               this.activeItem = [this.items[7].key]
               break
+            case 'education-it-obuchenie-analitik':
+              this.activeItem = [this.items[5].key]
+              break
+            case 'education-it-obuchenie-testirovshchik':
+              this.activeItem = [this.items[5].key]
+              break
             default:
               this.activeItem = []
           }

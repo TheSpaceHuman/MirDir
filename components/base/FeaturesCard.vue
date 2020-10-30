@@ -1,7 +1,7 @@
 <template>
     <section class="features-card">
       <h3 class="features-card__title">{{title}}</h3>
-      <p class="features-card__content" v-html="content"></p>
+      <div class="features-card__content" v-html="content"></div>
       <slot></slot>
     </section>
 </template>

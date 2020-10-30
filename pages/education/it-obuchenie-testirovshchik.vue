@@ -13,13 +13,7 @@
     </div>
     <div class="fon-1 py-30">
       <div class="container">
-        <h3 class="h2 text-center text-bold mb-20">Почему мы?</h3>
-        <a-row class="why-items" :gutter="16">
-          <a-col :sm="24" :md="8" v-for="item in why" class="why-item mb-10" :key="item.title">
-            <h4 class="why-item__title">{{ item.title }}</h4>
-            <p class="why-item__content">{{ item.content }}</p>
-          </a-col>
-        </a-row>
+        <WhyAreWe :items="why" />
       </div>
     </div>
     <div class="container py-30">
@@ -47,56 +41,7 @@
     </div>
     <div class="container py-30">
       <h4 class="h4 text-center mb-30">Программа обучения «Функциональное тестирование ПО»</h4>
-      <a-timeline mode="alternate">
-        <a-timeline-item>
-          <div slot="dot" class="circle">1</div>
-          <p class="text-bold">Работа с багрекером</p>
-          <ul>
-            <li>Что такое баг-трекер и какие баг-трекеры бывают.</li>
-            <li>Что такое баг, ошибка, дефект и в чем разница.</li>
-            <li>Жизненный цикл бага.</li>
-            <li>Атрибуты бага и зачем они нужны, как и кем используются.</li>
-          </ul>
-        </a-timeline-item>
-        <a-timeline-item>
-          <div slot="dot" class="circle">2</div>
-          <p class="text-bold">Теория тест-анализа, основные техники тест-анализа</p>
-          <ul>
-            <li>Основные техники тест-анализа (эквивалентное разбиение, граничные значения, анализ состояний и переходов, таблицы решений, попарное тестирование)</li>
-          </ul>
-        </a-timeline-item>
-        <a-timeline-item>
-          <div slot="dot" class="circle">3</div>
-          <p class="text-bold">Тестирование без требований</p>
-          <ul>
-            <li>Исследовательское тестирование и какие есть подводные камни при таком виде тестирования.</li>
-            <li>Отсутствие требований, разбор основных методов исследовательского тестирования (предугадывание ошибок, тестирование на основе чек-листов, тестирование методом свободного поиска, использование тест-туров, сессий тестирования)</li>
-          </ul>
-        </a-timeline-item>
-        <a-timeline-item>
-          <div slot="dot" class="circle">4</div>
-          <p class="text-bold">Особенности тестирования</p>
-          <ul>
-            <li>Тестирование веб-приложений</li>
-            <li>Инструментарий для тестов веб-приложений.</li>
-            <li>Тестирование веб-сервисов с помощью Postman и Swagger.</li>
-            <li>Тестирование пользовательского интерфейса.</li>
-          </ul>
-        </a-timeline-item>
-        <a-timeline-item>
-          <div slot="dot" class="circle">5</div>
-          <p class="text-bold">Разработка тест-дизайна</p>
-          <ul>
-            <li>Варианты тестовой документации,</li>
-            <li>Инструментарий для разработки тест-дизайнов</li>
-            <li>Сервисы Google, TestLink, плагин Test Management for JIRA</li>
-          </ul>
-        </a-timeline-item>
-        <a-timeline-item>
-          <div slot="dot" class="circle">6</div>
-          <p class="text-bold">Отработка практических заданий после каждого урока с проверками от наставника и рекомендациями</p>
-        </a-timeline-item>
-      </a-timeline>
+      <TheTimeline :items="timeline" />
     </div>
     <ApplicationForTraining class="mb-20" />
     <div class="fon-2 py-30">
@@ -125,6 +70,8 @@ import TheBanner from '~/components/base/TheBanner.vue'
 import TheCarousel from '~/components/base/TheCarousel.vue'
 import ApplicationForTraining from '~/components/blocks/ApplicationForTraining.vue'
 import MainForm from '~/components/forms/MainForm.vue'
+import WhyAreWe from '~/components/blocks/WhyAreWe.vue'
+import TheTimeline from '~/components/base/TheTimeline.vue'
 export default {
   name: "Tester",
   head() {
@@ -132,7 +79,7 @@ export default {
       titleTemplate: this.title,
     }
   },
-  components: { TheBanner, TheCarousel, ApplicationForTraining, MainForm },
+  components: { TheBanner, TheCarousel, ApplicationForTraining, MainForm, WhyAreWe, TheTimeline },
   data() {
     return {
       title: 'Тестировщик ПО Обучение и стажировка',
@@ -155,6 +102,61 @@ export default {
         '<ul><li>Понимать базовые термины тестирования и выполнять все востребованные виды тестирования в IT</li><li>Освоите принципы проведения тестирования с документацией и при ее отсутствии, получите практический опыт по составлению тестовой документации</li></ul>',
         '<ul><li>Тестировать REST API с применением самых популярных инструментов (Postman, SoapUI, Swagger)</li><li>Приобретете базовые навыки работы с SQL</li><li>Отработаете возможности применения популярных плагинов и утилит для качественной работы тестировщиком</li></ul>',
         '<ul><li>Тестировать веб-продукты и пользоваться панелью разработчика</li><li>Получите опыт тестирования требований</li><li>Работать с баг-трекингом JIRA и с инструментами ведения чек-листов и тест-кейсов (JIRA, TestLink)</li></ul>'
+      ],
+      timeline: [
+        {
+          title: 'Работа с багрекером',
+          content: `
+          <ul>
+            <li>Что такое баг-трекер и какие баг-трекеры бывают.</li>
+            <li>Что такое баг, ошибка, дефект и в чем разница.</li>
+            <li>Жизненный цикл бага.</li>
+            <li>Атрибуты бага и зачем они нужны, как и кем используются.</li>
+          </ul>
+          `,
+        },
+        {
+          title: 'Теория тест-анализа, основные техники тест-анализа',
+          content: `
+          <ul>
+            <li>Основные техники тест-анализа (эквивалентное разбиение, граничные значения, анализ состояний и переходов, таблицы решений, попарное тестирование)</li>
+          </ul>
+          `,
+        },
+        {
+          title: 'Тестирование без требований',
+          content: `
+          <ul>
+            <li>Исследовательское тестирование и какие есть подводные камни при таком виде тестирования.</li>
+            <li>Отсутствие требований, разбор основных методов исследовательского тестирования (предугадывание ошибок, тестирование на основе чек-листов, тестирование методом свободного поиска, использование тест-туров, сессий тестирования)</li>
+          </ul>
+          `,
+        },
+        {
+          title: 'Особенности тестирования',
+          content: `
+          <ul>
+            <li>Тестирование веб-приложений</li>
+            <li>Инструментарий для тестов веб-приложений.</li>
+            <li>Тестирование веб-сервисов с помощью Postman и Swagger.</li>
+            <li>Тестирование пользовательского интерфейса.</li>
+          </ul>
+          `,
+        },
+        {
+          title: 'Разработка тест-дизайна',
+          content: `
+          <ul>
+            <li>Варианты тестовой документации,</li>
+            <li>Инструментарий для разработки тест-дизайнов</li>
+            <li>Сервисы Google, TestLink, плагин Test Management for JIRA</li>
+          </ul>
+          `,
+        },
+        {
+          title: 'Отработка практических заданий после каждого урока с проверками от наставника и рекомендациями',
+          content: ``,
+        },
       ]
     }
   }
@@ -162,39 +164,21 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/scss/utils/vars";
-.fon-1 {
-  background-color: #f5f5f5;
-}
-.fon-2 {
-  background-color: $secondary-color;
-}
-.why-item {
-  &__title {
-    font-size: 21px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  @import "../../assets/scss/utils/vars";
+  .fon-1 {
+    background-color: $apricot-color;
   }
-  &__content {}
-}
-.skills {
-  ul, li {
-    list-style: unset;
+  .fon-2 {
+    background-color: $secondary-color;
   }
-  ul {
-    padding-left: 18px;
+  .skills {
+    ul, li {
+      list-style: unset;
+    }
+    ul {
+      padding-left: 18px;
+    }
   }
-}
-.circle {
-  border: 1px solid $neutral-regular;
-  color: $neutral-regular;
-  border-radius: 50%;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 17px;
-  font-size: 13px;
-}
   .font-white {
     color: $neutral-primary;
   }

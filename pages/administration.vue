@@ -66,17 +66,18 @@
             </GrayCard>
           </a-col>
         </a-row>
-
-          <BannerCard
-            class="mt-50"
-            image="/images/administration.page/367b7d52f215d68ead20fb77270c30ea.jpg"
-            title="Ваша база данных - друг или враг?"
-          >
-            <p class="mb-30 text-center">Проверьте свою базу данных по нашему чек-листу и узнайте сильные и слабые места вашей системы</p>
-            <a-row type="flex" justify="center">
-              <TheButton type="danger" @click="openModal('formNameEmail')">Скачать чек-лист</TheButton>
-            </a-row>
-          </BannerCard>
+          <lazy-component>
+            <BannerCard
+              class="mt-50"
+              image="/images/administration.page/367b7d52f215d68ead20fb77270c30ea.jpg"
+              title="Ваша база данных - друг или враг?"
+            >
+              <p class="mb-30 text-center">Проверьте свою базу данных по нашему чек-листу и узнайте сильные и слабые места вашей системы</p>
+              <a-row type="flex" justify="center">
+                <TheButton type="danger" @click="openModal('formNameEmail')">Скачать чек-лист</TheButton>
+              </a-row>
+            </BannerCard>
+          </lazy-component>
       </div>
     </section>
     <section class="block-3 py-50">
@@ -101,17 +102,19 @@
           </a-col>
         </a-row>
         <div class="pt-50">
+          <lazy-component>
             <BannerCard
-            class="mt-50"
-            image="/images/administration.page/144.jpg"
-            title="Проверьте свою базу самостоятельно!"
-            color="#fff"
-          >
-            <p class="mb-30 text-center">Скачайте чек-лист проверки БД, разработанный экспертами команды МИР ДАННЫХ ИТ</p>
-            <a-row type="flex" justify="center">
-              <TheButton type="danger" @click="openModal('formNameEmail')">Скачать чек-лист</TheButton>
-            </a-row>
-          </BannerCard>
+              class="mt-50"
+              image="/images/administration.page/144.jpg"
+              title="Проверьте свою базу самостоятельно!"
+              color="#fff"
+            >
+              <p class="mb-30 text-center">Скачайте чек-лист проверки БД, разработанный экспертами команды МИР ДАННЫХ ИТ</p>
+              <a-row type="flex" justify="center">
+                <TheButton type="danger" @click="openModal('formNameEmail')">Скачать чек-лист</TheButton>
+              </a-row>
+            </BannerCard>
+          </lazy-component>
         </div>
       </div>
     </section>
