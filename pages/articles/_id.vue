@@ -82,6 +82,8 @@ export default {
   ul, ol {
     padding-left: 20px;
     margin-bottom: 15px;
+  }
+  ul {
     list-style: unset;
   }
   li {

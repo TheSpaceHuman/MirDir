@@ -19,13 +19,14 @@
             </nuxt-link>
           </a-col>
         </a-row>
+        <!--
         <h2 class="h2 my-20 text-center">Статьи и публикации</h2>
         <a-row type="flex" :gutter="15">
           <a-col :xs="24" :sm="24" :md="12" :lg="8" v-for="(post, index) in $store.getters.posts" :key="index">
             <nuxt-link :to="`/articles/${post.alias}`">
               <a-tooltip placement="bottom" :title="post.title">
                 <a-card  class="card mb-15" :hoverable="true" :bordered="false">
-                  <img v-lazy="post.image" :alt="post.title"  slot="cover" class="card__img fix--height">
+                  <img v-lazy="post.image" :alt="post.title"  slot="cover" class="card__img fix&#45;&#45;height">
                   <div class="card__title" slot="cover">
                     <p>{{ post.shortTitle }}</p>
                   </div>
@@ -34,6 +35,7 @@
             </nuxt-link>
           </a-col>
         </a-row>
+        -->
       </div>
     </section>
 
@@ -69,7 +71,7 @@ export default {
         { title: '<p>Разработка <br>программного <br>обеспечения</p>', subtitle: '', image: '/images/cards/2.jpg', link: '/development' },
         { title: '<p>Тендеры<br>Субподряд</p>', subtitle: '', image: '/images/cards/3.jpg', link: '/tenders' },
         { title: '<p>Продвижение <br>партнеров</p>', subtitle: '', image: '/images/cards/4.jpg', link: '/promotion' },
-        { title: '<p>Обучение персонала</p>', subtitle: '', image: '/images/cards/5.jpg', link: '/education' },
+        { title: '<p>Обучение</p>', subtitle: '', image: '/images/cards/5.jpg', link: '/education' },
         { title: '<p>Диагностика систем <br>Oracle</p>', subtitle: '', image: '/images/cards/6.jpeg', link: '/oracle' },
       ]
     }
