@@ -12,6 +12,8 @@
           :is="modal.component"
           button-title="Перезвоните мне"
           button-alight="center"
+          :subject="modal.title"
+          :action-path="modal.data.actionPath"
           :fields="formsFields[modal.data.fields]"
           :modal-key="key"
         ></comment>

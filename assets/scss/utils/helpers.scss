@@ -129,4 +129,19 @@ $spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
     list-style-type: unset;
   }
 }
-
+.accent-link {
+  font-weight: 700;
+  color: $secondary-color;
+}
+.direction--rtl {
+  direction: rtl;
+}
+.fon-1 {
+  background-color: $apricot-color;
+}
+.fon-2 {
+  background-color: $secondary-color;
+}
+.font-white {
+  color: $neutral-primary;
+}

@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheBanner image="/images/banners/laptop-3196481_1920.jpg">
-      <h1 class="banner-title">Обучение персонала</h1>
+      <h1 class="banner-title">Обучение</h1>
     </TheBanner>
     <div class="container">
       <h2 class="h2 my-20 text-center">Программы обучения</h2>

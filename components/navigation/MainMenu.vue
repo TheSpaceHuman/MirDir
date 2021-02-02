@@ -86,6 +86,9 @@
             case 'education-it-obuchenie-testirovshchik':
               this.activeItem = [this.items[5].key]
               break
+            case 'education-primo-rpa-programmer':
+              this.activeItem = [this.items[5].key]
+              break
             default:
               this.activeItem = []
           }

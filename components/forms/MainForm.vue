@@ -5,8 +5,19 @@
         <a-row type="flex" :gutter="15">
           <a-col :xs="24" :sm="24" :md="24 / col" :lg="24 /col" class="mb-15" v-for="field in fields" :key="field.name">
             <label :for="field.name" class="form-label" v-if="field.label">{{field.label}} <span class="color--danger" v-if="field.required">*</span></label>
-            <a-input v-if="field.mask" :placeholder="field.placeholder" :type="field.text" :id="field.name" v-model="form[field.name]" v-mask="field.mask" />
-            <a-input v-else :placeholder="field.placeholder" :type="field.text" :id="field.name" v-model="form[field.name]" />
+            <template v-if="field.type === 'input'">
+              <a-input v-if="field.mask" :placeholder="field.placeholder" type="text" :id="field.name" v-model="form[field.name]" v-mask="field.mask" />
+              <a-input v-else :placeholder="field.placeholder" :type="field.nativeType || 'text'" :id="field.name" v-model="form[field.name]" />
+            </template>
+            <template v-if="field.type === 'select'">
+              <a-select v-model="form[field.name]" :placeholder="field.placeholder">
+                <a-select-option
+                  v-for="(option, index) in field.values"
+                  :key="index"
+                  :value="option.value"
+                >{{ option.label }}</a-select-option>
+              </a-select>
+            </template>
           </a-col>
           <a-col :xs="24" :sm="24" :md="24" class="mb-15" v-if="personal">
             <a-checkbox v-model="form.personal">Даю согласие на <a :href="SITE.personalLink" target="_blank">обработку персональных данных</a>  <span class="color--danger">*</span></a-checkbox>
@@ -29,6 +40,7 @@
     name: "MainForm",
     props: {
       title: String,
+      subject: String,
       fields: {
         type: Array,
         required: true,
@@ -51,14 +63,14 @@
       },
       actionPath: {
         type: String,
-        default: '/send_form.php'
+        default: '/feedback.php'
       },
       action: {
         type: Function,
         default: function () {
           console.info(this.form)
           const form = {...this.form}
-          form.subj = this.title
+          form.subj = this.subject || this.title;
           form.to = this.CONTACT.email
           const formData = new FormData()
           for(let key in form) {

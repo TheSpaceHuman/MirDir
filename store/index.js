@@ -17,22 +17,91 @@ export const state = () => ({
       component: 'main-form',
       title: 'Заявка на чек-лист проверки базы данных',
       data: {fields: 'nameEmailPhone'},
+    },
+    formQuestionnaire: {
+      show: false,
+      component: 'main-form',
+      title: 'Анкета кандидата на обучение',
+      data: {fields: 'questionnaire', actionPath: '/questionnaire.php'},
     }
   },
   formsFields: {
     namePhone: [
-      {label: 'Имя', name: 'name', mask: '', placeholder: 'Имя', type: 'text', required: true},
-      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'text', required: true},
+      {label: 'Имя', name: 'name', placeholder: 'Имя', type: 'input', nativeType: 'text', required: true},
+      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'input', nativeType: 'text', required: true},
     ],
     nameEmail: [
-      {label: 'Имя', name: 'name', mask: '', placeholder: 'Имя', type: 'text', required: true},
-      {label: 'Email', name: 'email', mask: '', placeholder: 'Email', type: 'email', required: true},
+      {label: 'Имя', name: 'name', placeholder: 'Имя', type: 'input', nativeType: 'text', required: true},
+      {label: 'Email', name: 'email', placeholder: 'Email', type: 'input', nativeType: 'text', required: true},
     ],
     nameEmailPhone: [
-      {label: 'Имя', name: 'name', mask: '', placeholder: 'Имя', type: 'text', required: true},
-      {label: 'Email', name: 'email', mask: '', placeholder: 'Email', type: 'email', required: true},
-      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'text', required: true},
+      {label: 'Имя', name: 'name', placeholder: 'Имя', type: 'input', nativeType: 'text', required: true},
+      {label: 'Email', name: 'email', placeholder: 'Email', type: 'input', nativeType: 'text', required: true},
+      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'input', nativeType: 'text', required: true},
     ],
+    questionnaire: [
+      { label: 'ФИО', name: 'name', placeholder: 'ФИО', type: 'input', required: true },
+      { label: 'Адрес электронной почты', name: 'email', placeholder: 'Адрес электронной почты', type: 'input', required: true },
+      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'input', nativeType: 'text', required: true},
+      {
+        label: 'Предпочтительный способ связи с Вами',
+        name: 'communication',
+        placeholder: 'Выберите один из пунктов',
+        type: 'select',
+        required: true,
+        values: [
+          {
+            value: 'phone',
+            label: 'Телефон',
+          },
+          {
+            value: 'email',
+            label: 'Электронная почта',
+          },
+          {
+            value: 'telegram',
+            label: 'Telegram',
+          },
+          {
+            value: 'whatsapp',
+            label: 'Whatsapp',
+          },
+          {
+            value: 'viber',
+            label: 'Viber',
+          },
+        ]},
+      { label: 'Специальность', name: 'specialty', placeholder: 'Специальность', type: 'input', required: false },
+      { label: 'Имеете ли Вы образование или опыт в сфере IT?', name: 'experience', placeholder: 'Если да, напишите об этом подробнее', type: 'input', nativeType: 'textarea', required: true },
+      { label: 'Область последней работы', name: 'lastWork', placeholder: 'Область последней работы', type: 'input', required: false },
+      {
+        label: 'Укажите направление обучения, которое хотите пройти у нас',
+        name: 'directionStudy',
+        placeholder: 'Выберите специальность',
+        type: 'select',
+        values: [
+          {
+            value: 'Тестировщик',
+            label: 'Тестировщик',
+          },
+          {
+            value: 'Системный аналитик',
+            label: 'Системный аналитик',
+          },
+          {
+            value: 'Программист Primo RPA',
+            label: 'Программист Primo RPA',
+          },
+        ],
+        required: true
+      },
+      { label: 'Чего Вы хотите достичь, получив это обучение?', name: 'purposeTraining', placeholder: 'Цель обучения', type: 'input', nativeType: 'textarea', required: false },
+      { label: 'Внимательны ли Вы к деталям?', name: 'mindfulness', placeholder: '', type: 'input', required: false },
+      { label: 'Готовы ли Вы постоянно обучаться чему-либо новому и развиваться?', name: 'develop', placeholder: '', type: 'input', required: false },
+      { label: 'Умеете ли Вы донести свою мысль до других людей?', name: 'communicationWithPeople', placeholder: '', type: 'input', required: false },
+      { label: 'Откуда Вы о нас узнали?', name: 'hearAboutUs', placeholder: '', type: 'input', nativeType: 'textarea', required: false },
+      { label: 'Почему Вы выбрали нашу компанию?', name: 'chooseOurCompany', placeholder: '', type: 'input', nativeType: 'textarea', required: false },
+    ]
   },
   birthday: {
     year: 2008,
@@ -1149,6 +1218,11 @@ export const state = () => ({
       title: 'Системный аналитик Обучение и стажировка',
       image: '/images/articles/11.png',
       url: '/education/it-obuchenie-analitik'
+    },
+    {
+      title: 'Программист Primo RPA',
+      image: '/images/articles/10.png',
+      url: '/education/primo-rpa-programmer'
     }
   ]
 })

@@ -30,6 +30,7 @@ export default {
     'hamburgers/dist/hamburgers.css',
     '@/assets/less/antd.less',
     '@/assets/scss/style.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -43,6 +44,7 @@ export default {
     '@/plugins/vue-the-mask',
     '@/plugins/vue-lazyload',
     '@/plugins/vue-slick-carousel',
+    '@/plugins/vue-fontawesome',
     // { src: '@/plugins/vue-carousel', ssr: false },
     // '@/plugins/vue2-perfect-scrollbar',
   ],

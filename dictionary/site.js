@@ -3,6 +3,8 @@ const SITE = {
   dataSupported: 1230,
   privacyPolicy: '/docs/personal_data_processing_policy.pdf',
   personalLink: '/docs/consent_to_the_processing_of_personal_data.pdf',
+  instagram: 'https://www.instagram.com/worlddatait',
+  facebook: 'https://www.facebook.com/mirdit.ru',
   staff: {
     tester: 10,
     analytic: 4,
