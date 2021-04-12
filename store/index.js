@@ -22,7 +22,7 @@ export const state = () => ({
       show: false,
       component: 'main-form',
       title: 'Анкета кандидата на обучение',
-      data: {fields: 'questionnaire', actionPath: '/questionnaire.php'},
+      data: {fields: 'questionnaire', actionPath: '/questionnaire.php', mailTo: 'tc@mir-dit.ru'},
     }
   },
   formsFields: {
@@ -1229,7 +1229,9 @@ export const state = () => ({
 
 export const mutations = {
   toggleModal (state, name) {
-    state.modals[name].show = !state.modals[name].show
+    if (name) {
+      state.modals[name].show = !state.modals[name].show
+    }
   }
 }
 

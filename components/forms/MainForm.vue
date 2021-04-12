@@ -41,6 +41,7 @@
     props: {
       title: String,
       subject: String,
+      mailTo: String,
       fields: {
         type: Array,
         required: true,
@@ -68,21 +69,22 @@
       action: {
         type: Function,
         default: function () {
-          console.info(this.form)
           const form = {...this.form}
           form.subj = this.subject || this.title;
-          form.to = this.CONTACT.email
+          form.to = this.mailTo || this.CONTACT.email;
           const formData = new FormData()
           for(let key in form) {
             formData.set(key, form[key])
           }
           this.$axios.post(this.actionPath, formData)
-            .then(() => {
+            .then((res) => {
+              console.debug('success', res)
               this.clearForm()
               this.$message.success(this.VALIDATION.success)
               this.closeModal(this.modalKey)
             })
-            .catch(() => {
+            .catch((e) => {
+              console.debug('error', e)
               this.$message.error(this.VALIDATION.error)
             })
 

@@ -71,6 +71,7 @@
             title="По вопросам обучения. Свяжитесь с нами"
             button-title="Перезвоните мне"
             button-alight="center"
+            mail-to="tc@mir-dit.ru"
             :fields="$store.getters.formsFields.namePhone"
           ></MainForm>
         </a-col>
