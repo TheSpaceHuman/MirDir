@@ -71,20 +71,20 @@
         default: function () {
           const form = {...this.form}
           form.subj = this.subject || this.title;
+          console.debug(this.mailTo);
           form.to = this.mailTo || this.CONTACT.email;
           const formData = new FormData()
           for(let key in form) {
             formData.set(key, form[key])
           }
           this.$axios.post(this.actionPath, formData)
-            .then((res) => {
-              console.debug('success', res)
+            .then(() => {
               this.clearForm()
               this.$message.success(this.VALIDATION.success)
               this.closeModal(this.modalKey)
             })
             .catch((e) => {
-              console.debug('error', e)
+              console.error('error', e)
               this.$message.error(this.VALIDATION.error)
             })
 

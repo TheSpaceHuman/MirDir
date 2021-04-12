@@ -13,7 +13,7 @@
           button-title="Перезвоните мне"
           button-alight="center"
           :subject="modal.title"
-          :mail-to="modal.mailTo"
+          :mail-to="modal.data.mailTo"
           :action-path="modal.data.actionPath"
           :fields="formsFields[modal.data.fields]"
           :modal-key="key"
