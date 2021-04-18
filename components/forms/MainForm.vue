@@ -40,8 +40,13 @@
     name: "MainForm",
     props: {
       title: String,
+      // PHP mail subject
       subject: String,
-      mailTo: String,
+      // PHP mail address
+      mailTo: {
+        type: String,
+        default: 'a.kolodyazhny.a@yandex.ru'
+      },
       fields: {
         type: Array,
         required: true,
@@ -64,15 +69,15 @@
       },
       actionPath: {
         type: String,
-        default: '/feedback.php'
+        default: '/php/mail.php'
       },
       action: {
         type: Function,
         default: function () {
           const form = {...this.form}
-          form.subj = this.subject || this.title;
-          console.debug(this.mailTo);
-          form.to = this.mailTo || this.CONTACT.email;
+          form.subject = this.subject || this.title;
+          form.body = this.createBody(this.form);
+          form.mailTo = this.mailTo || this.CONTACT.email;
           const formData = new FormData()
           for(let key in form) {
             formData.set(key, form[key])
@@ -125,6 +130,14 @@
       },
       closeModal(modalKey) {
         this.$store.commit('toggleModal', modalKey)
+      },
+      createBody(form) {
+        let body = '';
+        for (let [key, value] of Object.entries(form)) {
+          body += `<b>${key}</b>`
+          body += `<p>${value}</p>`
+        }
+        return body;
       }
     },
     validations() {

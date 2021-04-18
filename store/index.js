@@ -22,7 +22,7 @@ export const state = () => ({
       show: false,
       component: 'main-form',
       title: 'Анкета кандидата на обучение',
-      data: {fields: 'questionnaire', actionPath: '/questionnaire.php', mailTo: 'tc@mir-dit.ru'},
+      data: {fields: 'questionnaire', mailTo: 'tc@mir-dit.ru'},
     }
   },
   formsFields: {
