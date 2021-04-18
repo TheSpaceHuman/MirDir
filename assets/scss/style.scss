@@ -57,8 +57,9 @@ ul, li {
 section, .section {
   position: relative;
 }
-
-
+q {
+  quotes: "\00ab" "\00bb";
+}
 .container {
   max-width: $lgDesktopWidth;
   margin: 0 auto;

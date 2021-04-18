@@ -116,6 +116,14 @@ $spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
 .d-inline-block {
   display: inline-block;
 }
+.lists--disk {
+  ul {
+    padding-left: 30px;
+  }
+  li {
+    list-style: disc;
+  }
+}
 .list--disk {
   padding-left: 30px;
   li {
@@ -144,4 +152,7 @@ $spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
 }
 .font-white {
   color: $neutral-primary;
+}
+.round-img {
+  border-radius: 50%;
 }
