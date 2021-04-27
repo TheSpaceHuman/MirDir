@@ -60,6 +60,20 @@ section, .section {
 q {
   quotes: "\00ab" "\00bb";
 }
+blockquote {
+  p {
+    &:before {
+      content: "\00ab";
+    }
+    &:after {
+      content: "\00bb";
+    }
+    margin-bottom: 10px;
+  }
+  cite {
+    font-weight: 700;
+  }
+}
 .container {
   max-width: $lgDesktopWidth;
   margin: 0 auto;
@@ -70,6 +84,7 @@ q {
 @import "./modules/header";
 @import "./modules/main";
 @import "./modules/footer";
+@import "./modules/carousel";
 
 @import "utils/helpers";
 @import "./utils/media";

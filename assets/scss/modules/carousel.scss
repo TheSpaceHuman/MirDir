@@ -1,0 +1,12 @@
+.ant-carousel .slick-prev::before, .ant-carousel .slick-next::before {
+  display: none;
+}
+.ant-carousel .slick-dots li {
+  top: -15px
+}
+.ant-carousel .slick-dots li button {
+  background-color: transparent;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: transparent;
+}

@@ -1,25 +1,30 @@
 <?php
-require('PHPMailer.php');
-require('Exception.php');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-$mail = new PHPMailer(true);
+require 'PHPMailer.php';
+require 'Exception.php';
+require 'SMTP.php';
 
 try {
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.yandex.ru';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'mir-dit@yandex.ru';                     //SMTP username
-    $mail->Password   = 'qaz12345';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-
+    $mail = new PHPMailer();
+    $mail->CharSet = 'UTF-8';
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                    
+    $mail->isSMTP();                                           
+    $mail->Host       = 'smtp.yandex.ru';                    
+    $mail->SMTPAuth   = true;                                 
+    $mail->Username   = 'mir-dit@yandex.ru';                   
+    $mail->Password   = 'qaz12345';                              
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        
+    $mail->Port       = 465;                                  
     // Vars
-    $mailTo = $_POST['mailTo']
-    $body = $_POST['body']
-    $subject = $_POST['subject']
+    $mailTo = $_POST['mailTo'];
+    $body = $_POST['body'];
+    $subject = $_POST['subject'];
     // Send
-    $mail->setFrom($mailTo, 'MirDit');
+    $mail->setFrom('mir-dit@yandex.ru', 'MirDit');
+    $mail->addAddress($mailTo, 'Обрадобка писем');
     $mail->isHTML(true);
     $mail->Subject = $subject;
     $mail->Body    = $body;
@@ -28,3 +33,25 @@ try {
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
+// $mail = new PHPMailer();
+// $mail->CharSet = 'UTF-8';                 
+// $mail->isSMTP();                          
+// $mail->Host       = 'smtp.yandex.ru';                    
+// $mail->SMTPAuth   = true;   
+// $mail->SMTPDebug = 0;                              
+// $mail->Username   = 'mir-dit@yandex.ru';                   
+// $mail->Password   = 'qaz12345';                              
+// $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        
+// $mail->Port       = 465;                                  
+// // Vars
+// $mailTo = $_POST['mailTo'];
+// $body = $_POST['body'];
+// $subject = $_POST['subject'];
+// // Send
+// $mail->setFrom('mir-dit@yandex.ru', 'MirDit');
+// $mail->addAddress($mailTo, 'Обрадобка писем');
+// $mail->isHTML(true);
+// $mail->Subject = $subject;
+// $mail->Body    = $body;
+// $mail->send();
