@@ -3,22 +3,24 @@
       <h2 class="h4 color--primary  text-center mb-30" v-if="title">{{title}}</h2>
       <form @submit.prevent="action">
         <a-row type="flex" :gutter="15">
-          <a-col :xs="24" :sm="24" :md="24 / col" :lg="24 /col" class="mb-15" v-for="field in fields" :key="field.name">
-            <label :for="field.name" class="form-label" v-if="field.label">{{field.label}} <span class="color--danger" v-if="field.required">*</span></label>
-            <template v-if="field.type === 'input'">
-              <a-input v-if="field.mask" :placeholder="field.placeholder" type="text" :id="field.name" v-model="form[field.name]" v-mask="field.mask" />
-              <a-input v-else :placeholder="field.placeholder" :type="field.nativeType || 'text'" :id="field.name" v-model="form[field.name]" />
-            </template>
-            <template v-if="field.type === 'select'">
-              <a-select v-model="form[field.name]" :placeholder="field.placeholder">
-                <a-select-option
-                  v-for="(option, index) in field.values"
-                  :key="index"
-                  :value="option.value"
-                >{{ option.label }}</a-select-option>
-              </a-select>
-            </template>
-          </a-col>
+          <template v-for="field in fields">
+            <a-col :xs="24" :sm="24" :md="24 / col" :lg="24 /col" class="mb-15"  :key="field.name" v-if="isVisible(field)">
+              <label :for="field.name" class="form-label" v-if="field.label">{{field.label}} <span class="color--danger" v-if="field.required">*</span></label>
+              <template v-if="field.type === 'input'">
+                <a-input v-if="field.mask" :placeholder="field.placeholder" type="text" :id="field.name" v-model="form[field.name]" v-mask="field.mask" />
+                <a-input v-else :placeholder="field.placeholder" :type="field.nativeType || 'text'" :id="field.name" v-model="form[field.name]" />
+              </template>
+              <template v-if="field.type === 'select'">
+                <a-select v-model="form[field.name]" :placeholder="field.placeholder">
+                  <a-select-option
+                    v-for="(option, index) in field.values"
+                    :key="index"
+                    :value="option.value"
+                  >{{ option.label }}</a-select-option>
+                </a-select>
+              </template>
+            </a-col>
+          </template>
           <a-col :xs="24" :sm="24" :md="24" class="mb-15" v-if="personal">
             <a-checkbox v-model="form.personal">Даю согласие на <a :href="SITE.personalLink" target="_blank">обработку персональных данных</a>  <span class="color--danger">*</span></a-checkbox>
           </a-col>
@@ -98,6 +100,10 @@
       modalKey: {
         type: String,
         default: ''
+      },
+      visibleCondition: {
+        type: String,
+        default: 'true'
       }
     },
     data() {
@@ -117,6 +123,13 @@
       this.init()
     },
     methods: {
+      isVisible(field) {
+        if (!field.visibleCondition) {
+          field.visibleCondition = 'true'
+        }
+        const f = new Function('form', `return ${field.visibleCondition}`)
+        return f(this.form)
+      },
       init() {
         this.fields.forEach((el) => {
           this.$set(this.form, el.name, null)

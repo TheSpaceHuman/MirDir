@@ -10,7 +10,7 @@
       >
         <comment
           :is="modal.component"
-          button-title="Перезвоните мне"
+          :button-title="modal.buttonTitle || 'Перезвоните мне'"
           button-alight="center"
           :subject="modal.title"
           :mail-to="modal.data.mailTo"

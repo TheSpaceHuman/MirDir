@@ -22,6 +22,7 @@ export const state = () => ({
       show: false,
       component: 'main-form',
       title: 'Анкета кандидата на обучение',
+      buttonTitle: 'Подать заявку на курс',
       data: {fields: 'questionnaire', mailTo: 'tc@mir-dit.ru'},
     }
   },
@@ -42,7 +43,7 @@ export const state = () => ({
     nameEmailPhoneTypeConnection: [
       {label: 'Ваше имя', name: 'name', placeholder: 'Ваше имя', type: 'input', nativeType: 'text', required: true},
       {label: 'Email', name: 'email', placeholder: 'Email', type: 'input', nativeType: 'text', required: true},
-      {label: 'Контакты', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Контакты', type: 'input', nativeType: 'text', required: true},
+      {label: 'Телефон', name: 'phone', mask: '+7 (###) ###-##-##', placeholder: 'Телефон', type: 'input', nativeType: 'text', required: true},
       {
         label: 'Предпочтительный способ связи с Вами',
         name: 'communication',
@@ -165,6 +166,7 @@ export const state = () => ({
         ],
         required: false
       },
+      { label: 'Откуда о нас узнали?', visibleCondition: 'form.hearAboutUs === "other"', name: 'hearAboutUsText', placeholder: 'Укажите откуда о нас узнали', type: 'input'},
       { label: 'Почему Вы выбрали нашу компанию?', name: 'chooseOurCompany', placeholder: '', type: 'input', nativeType: 'textarea', required: false },
     ]
   },
