@@ -36,7 +36,7 @@
       <p class="mb-10">
         Вы можете бесплатно посмотреть вводную лекцию <a v-scroll-to="'#base-course'" class="accent-link">«Введение в профессию»</a> и ознакомиться с форматом подачи и качеством материала.
         Плюс мы еженедельно проводим бесплатные пробные уроки: после выполнения тестового задания вы получите обратную связь от тренера.
-        <a v-scroll-to="'#page-form'" class="accent-link">Записывайтесь!</a>
+        <a @click="openModal('formTrialLesson')" class="accent-link">Записывайтесь!</a>
         Если понравится, сможете легко продолжить обучение в платном формате.
       </p>
       <h5 class="text-bold">Удобство и доступность</h5>
@@ -51,7 +51,7 @@
         <a-row :gutter="50" type="flex" align="middle">
           <a-col :md="24" :lg="6">
             <div class="d-flex justify-content-center my-10">
-              <img src="/images/education/tester/quote-2.jpg" alt="Анастасия Гилевич" class="round-img" style="max-width: 350px;">
+              <img src="/images/education/tester/quote-3.webp" alt="Анастасия Гилевич" class="round-img" style="max-width: 350px;">
             </div>
           </a-col>
           <a-col :md="24" :lg="18">
@@ -83,8 +83,8 @@
       <a-row type="flex">
         <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
           <MainForm
-            title="Запись на пробное занятие"
-            button-title="Записаться"
+            title="Обратная связь"
+            button-title="Свяжитесь со мной"
             button-alight="center"
             mail-to="tc@mir-dit.ru"
             :fields="$store.getters.formsFields.nameEmailPhoneTypeConnection"
