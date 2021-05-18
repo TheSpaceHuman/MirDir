@@ -47,7 +47,7 @@
       // PHP mail address
       mailTo: {
         type: String,
-        default: 'a.kolodyazhny.a@yandex.ru'
+        default: 'info@mir-dit.ru'
       },
       fields: {
         type: Array,

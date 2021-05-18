@@ -46,5 +46,7 @@
 </script>
 
 <style lang="scss">
-
+.ant-modal-body label {
+  font-weight: 700;
+}
 </style>

@@ -173,7 +173,7 @@ export const state = () => ({
         ],
         required: false
       },
-      { label: 'Откуда о нас узнали?', visibleCondition: 'form.hearAboutUs === "other"', name: 'hearAboutUsText', placeholder: 'Укажите откуда о нас узнали', type: 'input'},
+      { visibleCondition: 'form.hearAboutUs === "other"', name: 'hearAboutUsText', placeholder: 'Укажите откуда о нас узнали', type: 'input'},
       { label: 'Почему Вы выбрали нашу компанию?', name: 'chooseOurCompany', placeholder: '', type: 'input', nativeType: 'textarea', required: false },
     ]
   },
