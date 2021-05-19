@@ -12,7 +12,7 @@
           :is="modal.component"
           :button-title="modal.buttonTitle || 'Перезвоните мне'"
           button-alight="center"
-          :subject="modal.title"
+          :subject="modal.subject || modal.title"
           :mail-to="modal.data.mailTo"
           :action-path="modal.data.actionPath"
           :fields="formsFields[modal.data.fields]"

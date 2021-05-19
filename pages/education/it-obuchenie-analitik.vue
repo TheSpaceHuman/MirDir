@@ -2,7 +2,7 @@
   <section class="page-analyst">
     <TheBanner image="/images/education/analyst/eFmM48sH.jpg">
       <h1 class="banner-title">{{ title }}</h1>
-      <TheButton type="danger" @click="openModal('formQuestionnaire')">Анкета кандидата на обучение</TheButton>
+      <TheButton type="danger" @click="openModal('formQuestionnaireSystemsAnalyst')">Анкета кандидата на обучение</TheButton>
     </TheBanner>
     <div class="container py-40">
       <strong>Кто такой, аналитик и чем занимается?</strong>
@@ -50,7 +50,7 @@
         <p>- кто уже развивается в IT-сфере</p>
         <p>Мы дадим всю необходимую теоретическую базу и познакомим с необходимыми инструментами для уверенного старта в профессии. Вы не только освоите востребованные навыки системного/бизнес аналитика, но и приобрете практическим опыт на учебном проекте.</p>
         <p>Курс проводится в онлайн-режиме.</p>
-        <p>По окончании курса слушатели, успешно прошедшие его, получат сертификат, а также возможность пройти стажировку в течение 3 месяцев и закрепить полученные в ходе обучения навыки. Чтобы попасть на курс, <a href="#" class="accent-link" @click.prevent="openModal('formQuestionnaire')">заполните анкету</a> или заполните форму <a href="#" class="accent-link" v-scroll-to="'#page-form'">ниже</a></p>
+        <p>По окончании курса слушатели, успешно прошедшие его, получат сертификат, а также возможность пройти стажировку в течение 3 месяцев и закрепить полученные в ходе обучения навыки. Чтобы попасть на курс, <a href="#" class="accent-link" @click.prevent="openModal('formQuestionnaireSystemsAnalyst')">заполните анкету</a> или заполните форму <a href="#" class="accent-link" v-scroll-to="'#page-form'">ниже</a></p>
       </div>
     </div>
     <div class="container py-30">
@@ -116,7 +116,7 @@ export default {
   components: {TheButton, TheBanner, MainForm, WhyAreWe, TheTimeline, FeaturesCard, ParCertificate },
   data() {
     return {
-      title: 'Системный аналитик Обучение и стажировка',
+      title: 'Системный аналитик',
       subTitle: 'Быстрый и качественный консалтинг в сфере бизнес и цифровой аналитики с большим объемом материала перед трудоустройством на крупные долгоиграющие проекты с гарантией и бесплатным сопровождением',
       why: [
         {

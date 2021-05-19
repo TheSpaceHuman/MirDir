@@ -18,10 +18,35 @@ export const state = () => ({
       title: 'Заявка на чек-лист проверки базы данных',
       data: {fields: 'nameEmailPhone'},
     },
-    formQuestionnaire: {
+    formQuestionnaireTesterPO: {
       show: false,
       component: 'main-form',
       title: 'Анкета кандидата на обучение',
+      subject: 'Анкета на обучение, курс "Тестировщик ПО"',
+      buttonTitle: 'Подать заявку на курс',
+      data: {fields: 'questionnaire', mailTo: 'tc@mir-dit.ru'},
+    },
+    formQuestionnaireSystemsAnalyst: {
+      show: false,
+      component: 'main-form',
+      title: 'Анкета кандидата на обучение',
+      subject: 'Анкета на обучение, курс "Системный аналитик"',
+      buttonTitle: 'Подать заявку на курс',
+      data: {fields: 'questionnaire', mailTo: 'tc@mir-dit.ru'},
+    },
+    formQuestionnairePrimoRPAProgrammer: {
+      show: false,
+      component: 'main-form',
+      title: 'Анкета кандидата на обучение',
+      subject: 'Анкета на обучение, курс "Программист Primo RPA"',
+      buttonTitle: 'Подать заявку на курс',
+      data: {fields: 'questionnaire', mailTo: 'tc@mir-dit.ru'},
+    },
+    formQuestionnaireMobileTester: {
+      show: false,
+      component: 'main-form',
+      title: 'Анкета кандидата на обучение',
+      subject: 'Анкета на обучение, курс "Тестирование мобильных приложений"',
       buttonTitle: 'Подать заявку на курс',
       data: {fields: 'questionnaire', mailTo: 'tc@mir-dit.ru'},
     },
@@ -1284,12 +1309,12 @@ export const state = () => ({
   ],
   education: [
     {
-      title: 'Тестировщик ПО Обучение и стажировка',
+      title: 'Тестировщик ПО',
       image: '/images/articles/9.png',
       url: '/education/it-obuchenie-testirovshchik'
     },
     {
-      title: 'Системный аналитик Обучение и стажировка',
+      title: 'Системный аналитик',
       image: '/images/articles/11.png',
       url: '/education/it-obuchenie-analitik'
     },
@@ -1297,6 +1322,11 @@ export const state = () => ({
       title: 'Программист Primo RPA',
       image: '/images/articles/10.png',
       url: '/education/primo-rpa-programmer'
+    },
+    {
+      title: 'Тестирование мобильных приложений',
+      image: '/images/articles/13.png',
+      url: '/education/testing-mobile-applications'
     }
   ]
 })

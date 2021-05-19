@@ -2,7 +2,7 @@
   <section class="page-tester">
     <TheBanner image="/images/education/fon-2.jpg">
       <h1 class="banner-title">{{ title }}</h1>
-      <TheButton type="danger" @click="openModal('formQuestionnaire')">Анкета кандидата на обучение</TheButton>
+      <TheButton type="danger" @click="openModal('formQuestionnaireTesterPO')">Анкета кандидата на обучение</TheButton>
     </TheBanner>
     <div class="container">
       <h2 class="h2 my-30 text-center">Зачем учиться функциональному тестированию?</h2>
@@ -77,7 +77,7 @@
       <p>Нажмите на кнопку «Начать учиться» и заполните анкету или свяжитесь с нами через форму обратной связи, если у вас остались вопросы. Мы перезвоним/напишем вам и подробнее расскажем о занятиях.</p>
     </div>
     <div class="container my-50 d-flex justify-content-center">
-      <a-button type="primary" @click="openModal('formQuestionnaire')">Начать учиться</a-button>
+      <a-button type="primary" @click="openModal('formQuestionnaireTesterPO')">Начать учиться</a-button>
     </div>
     <div class="container my-50" id="page-form">
       <a-row type="flex">
@@ -123,7 +123,7 @@ export default {
   },
   data() {
     return {
-      title: 'Тестировщик ПО Обучение и стажировка',
+      title: 'Тестировщик ПО',
       carousel: ['/images/education/tester/RFP_1.jpg', '/images/education/tester/RFP_2.jpg', '/images/education/tester/RFP_3.jpg', '/images/education/tester/RFP_4.jpg'],
       why: [
         {
