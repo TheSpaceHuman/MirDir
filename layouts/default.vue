@@ -20,6 +20,7 @@
   import SvgSprite from '~/components/blocks/SvgSprite.vue'
 
   export default {
+    name: 'Layout',
     components: {
       TheHeader, TheFooter, ArrowUp, TheModals, SvgSprite
     }

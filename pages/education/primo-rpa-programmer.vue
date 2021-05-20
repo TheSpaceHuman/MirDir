@@ -2,7 +2,7 @@
   <section class="page-rpa-programmer">
     <TheBanner image="/images/education/rpa-programmer/lWq2Aqg8TbKrsYwyOt6M_dreamstime_l_37675810.jpg">
       <h1 class="banner-title">{{ title }}</h1>
-      <TheButton type="danger" @click="openModal('formQuestionnairePrimoRPAProgrammer')">Анкета кандидата на обучение</TheButton>
+      <TheButton type="danger" @click="openModal('formQuestionnaire')">Анкета кандидата на обучение</TheButton>
     </TheBanner>
     <div class="container py-40">
       <strong>Программист Primo RPA</strong>
@@ -48,12 +48,12 @@
         <h3 class="h3 mb-20 text-center text-bold">Стажировка с последующим трудоустройством от компании МИР ДАННЫХ ИТ для лучших выпускников</h3>
         <p>Наша цель — ваше трудоустройство и успех в профессии.</p>
         <p>Целью программы обучения является подготовка системного/бизнес аналитика под конкретные задачи и проекты.</p>
-        <p>Наш курс для тех:</p>
+        <p>Наш тренинг для тех:</p>
         <p>- кто хочет сменить профессию</p>
         <p>- кто уже развивается в IT-сфере</p>
         <p>Мы дадим всю необходимую теоретическую базу и познакомим с необходимыми инструментами для уверенного старта в профессии. Вы не только освоите востребованные навыки системного/бизнес аналитика, но и приобрете практическим опыт на учебном проекте.</p>
-        <p>Курс проводится в онлайн-режиме.</p>
-        <p>По окончании курса слушатели, успешно прошедшие его, получат сертификат, а также возможность пройти стажировку в течение 3 месяцев и закрепить полученные в ходе обучения навыки. Чтобы попасть на курс, <a href="#" class="accent-link" @click.prevent="openModal('formQuestionnairePrimoRPAProgrammer')">заполните анкету</a> или заполните форму <a href="#" class="accent-link" v-scroll-to="'#page-form'">ниже</a></p>
+        <p>Тренинг проводится в онлайн-режиме.</p>
+        <p>По окончании тренинга слушатели, успешно прошедшие его, получат сертификат, а также возможность пройти стажировку в течение 3 месяцев и закрепить полученные в ходе обучения навыки. Чтобы попасть на тренинг, <a href="#" class="accent-link" @click.prevent="openModal('formQuestionnaire')">заполните анкету</a></p>
       </div>
     </div>
     <div class="container py-30">
@@ -61,22 +61,7 @@
       <TheTimeline :items="timeline" />
     </div>
     <ParCertificate />
-    <div class="container my-50 d-flex justify-content-center">
-      <a-button type="danger" :disabled="true">Узнать стоимость и оплатить</a-button>
-    </div>
-    <div class="container my-50" id="page-form">
-      <a-row type="flex">
-        <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
-          <MainForm
-            title="По вопросам обучения. Свяжитесь с нами"
-            button-title="Перезвоните мне"
-            button-alight="center"
-            mail-to="tc@mir-dit.ru"
-            :fields="$store.getters.formsFields.namePhone"
-          ></MainForm>
-        </a-col>
-      </a-row>
-    </div>
+    <StartLearning />
   </section>
 </template>
 
@@ -87,9 +72,10 @@ import WhyAreWe from "~/components/blocks/WhyAreWe";
 import TheTimeline from "~/components/base/TheTimeline";
 import ParCertificate from "~/components/partials/ParCertificate";
 import TheButton from "~/components/base/TheButton";
+import StartLearning from "@/components/blocks/StartLearning";
 export default {
   name: "primo-rpa-programmer",
-  components: { TheButton, ParCertificate, TheTimeline, WhyAreWe, TheBanner, MainForm },
+  components: {StartLearning, TheButton, ParCertificate, TheTimeline, WhyAreWe, TheBanner, MainForm },
   head() {
     return {
       titleTemplate: this.title

@@ -76,10 +76,14 @@
       action: {
         type: Function,
         default: function () {
+          if (this.$v.form.$invalid) {
+            this.$message.error(this.VALIDATION.invalid)
+            return;
+          }
           const form = {...this.form}
           form.subject = this.subject || this.title;
           form.body = this.createBody(this.form);
-          form.mailTo = 'a.kolodyazhny.a@yandex.ru' || this.mailTo || this.CONTACT.email;
+          form.mailTo = this.mailTo || this.CONTACT.email;
           const formData = new FormData()
           for(let key in form) {
             formData.set(key, form[key])
@@ -91,7 +95,7 @@
               this.closeModal(this.modalKey)
             })
             .catch((e) => {
-              console.error('error', e)
+              console.error('Error: ', e)
               this.$message.error(this.VALIDATION.error)
             })
 
@@ -148,7 +152,7 @@
         let body = '';
         for (let [key, value] of Object.entries(form)) {
           const field = this.getField(key)
-          body += `<b>${field.label ?? key}</b>`
+          body += `<b>${field ? field.label : key}</b>`
           body += `<p>${value}</p>`
         }
         return body;

@@ -2,7 +2,7 @@
   <section class="page-analyst">
     <TheBanner image="/images/education/analyst/eFmM48sH.jpg">
       <h1 class="banner-title">{{ title }}</h1>
-      <TheButton type="danger" @click="openModal('formQuestionnaireSystemsAnalyst')">Анкета кандидата на обучение</TheButton>
+      <TheButton type="danger" @click="openModal('formQuestionnaire')">Анкета кандидата на обучение</TheButton>
     </TheBanner>
     <div class="container py-40">
       <strong>Кто такой, аналитик и чем занимается?</strong>
@@ -45,12 +45,12 @@
         <h3 class="h3 mb-20 text-center text-bold">Стажировка с последующим трудоустройством от компании МИР ДАННЫХ ИТ для лучших выпускников</h3>
         <p>Наша цель — ваше трудоустройство и успех в профессии.</p>
         <p>Целью программы обучения является подготовка системного/бизнес аналитика под конкретные задачи и проекты.</p>
-        <p>Наш курс для тех:</p>
+        <p>Наш тренинг для тех:</p>
         <p>- кто хочет сменить профессию</p>
         <p>- кто уже развивается в IT-сфере</p>
         <p>Мы дадим всю необходимую теоретическую базу и познакомим с необходимыми инструментами для уверенного старта в профессии. Вы не только освоите востребованные навыки системного/бизнес аналитика, но и приобрете практическим опыт на учебном проекте.</p>
-        <p>Курс проводится в онлайн-режиме.</p>
-        <p>По окончании курса слушатели, успешно прошедшие его, получат сертификат, а также возможность пройти стажировку в течение 3 месяцев и закрепить полученные в ходе обучения навыки. Чтобы попасть на курс, <a href="#" class="accent-link" @click.prevent="openModal('formQuestionnaireSystemsAnalyst')">заполните анкету</a> или заполните форму <a href="#" class="accent-link" v-scroll-to="'#page-form'">ниже</a></p>
+        <p>Тренинг проводится в онлайн-режиме.</p>
+        <p>По окончании тренинга слушатели, успешно прошедшие его, получат сертификат, а также возможность пройти стажировку в течение 3 месяцев и закрепить полученные в ходе обучения навыки. Чтобы попасть на тренинг, <a href="#" class="accent-link" @click.prevent="openModal('formQuestionnaire')">заполните анкету</a></p>
       </div>
     </div>
     <div class="container py-30">
@@ -58,43 +58,7 @@
       <TheTimeline :items="timeline" />
     </div>
     <ParCertificate />
-<!--
-    <div class="fon-1 py-30">
-      <div class="container">
-        <a-row>
-          <a-col :sm="24" :md="12" class="px-30">
-            <h3 class="h3 mb-20">Некоторые факты о аналитике</h3>
-            <p>Мы живём во времена, когда количество информации очень быстро растёт. Но толку от этих данных нет, если просто собирать и хранить. Уверен, что любой бизнесмен хочет оптимизировать свой бизнес, понять где можно сэкономить, в какую часть бизнеса лучше вложить деньги, чтобы в будущем заработать, привлечь больше клиентов. Для этого и нужен человек, который умеет получить из данных полезную информацию. Сейчас у любой большой компании куча данных, по этому и спрос на специалистов большой. Отчасти аналитика была всегда, просто не в таких масштабах.Область отделилась, раньше таких людей можно было просто назвать математиком, эконометристом, а сейчас это наука (Data Science)</p>
-          </a-col>
-          <a-col :sm="24" :md="12">
-            <img v-lazy="'/images/education/analyst/c70ef3d899cb8e1be1c0.jpg'" alt="Некоторые факты о аналитике">
-          </a-col>
-        </a-row>
-      </div>
-    </div>
-    <div class="container py-30">
-      <FeaturesCard
-        :title="questions.title"
-        :content="questions.content"
-      ></FeaturesCard>
-    </div>
--->
-    <div class="container my-50 d-flex justify-content-center">
-      <a-button type="danger" :disabled="true">Узнать стоимость и оплатить</a-button>
-    </div>
-    <div class="container my-50" id="page-form">
-      <a-row type="flex">
-        <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
-          <MainForm
-            title="По вопросам обучения. Свяжитесь с нами"
-            button-title="Перезвоните мне"
-            button-alight="center"
-            mail-to="tc@mir-dit.ru"
-            :fields="$store.getters.formsFields.namePhone"
-          ></MainForm>
-        </a-col>
-      </a-row>
-    </div>
+    <StartLearning />
   </section>
 </template>
 
@@ -106,6 +70,7 @@ import TheTimeline from '~/components/base/TheTimeline.vue'
 import FeaturesCard from '~/components/base/FeaturesCard.vue'
 import ParCertificate from "~/components/partials/ParCertificate";
 import TheButton from "~/components/base/TheButton";
+import StartLearning from "@/components/blocks/StartLearning";
 export default {
   name: "Analitik",
   head() {
@@ -113,7 +78,7 @@ export default {
       titleTemplate: this.title,
     }
   },
-  components: {TheButton, TheBanner, MainForm, WhyAreWe, TheTimeline, FeaturesCard, ParCertificate },
+  components: {StartLearning, TheButton, TheBanner, MainForm, WhyAreWe, TheTimeline, FeaturesCard, ParCertificate },
   data() {
     return {
       title: 'Системный аналитик',
