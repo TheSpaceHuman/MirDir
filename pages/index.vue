@@ -21,7 +21,6 @@
         </a-row>
       </div>
     </section>
-
     <div class="container mb-50">
       <a-row type="flex">
         <a-col :xs="24" :sm="24" :md="{span: 12, offset: 6}">
@@ -45,7 +44,7 @@ import MainForm from '~/components/forms/MainForm.vue'
 export default {
   name: "index",
   components: {
-    TheBanner, TheButton, MainForm
+    TheBanner, TheButton, MainForm,
   },
   data() {
     return {

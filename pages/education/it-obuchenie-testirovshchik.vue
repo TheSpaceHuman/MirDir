@@ -3,6 +3,7 @@
     <TheBanner image="/images/education/fon-2.jpg">
       <h1 class="banner-title">{{ title }}</h1>
       <TheButton type="danger" @click="openModal('formQuestionnaire')">Анкета кандидата на обучение</TheButton>
+      <CountDown :end="end" />
     </TheBanner>
     <div class="container">
       <h2 class="h2 my-30 text-center">Зачем учиться функциональному тестированию?</h2>
@@ -64,7 +65,7 @@
       </div>
     </div>
     <div class="container py-30 lists--disk" id="base-course">
-      <h4 class="h4 text-center text-bold mb-30">Хочу стать тестировщиком</h4>
+      <h4 class="h4 text-center text-bold mb-30">Хочу стать тестировщиком.</h4>
       <a-collapse>
         <a-collapse-panel v-for="(courseItem, index) in course" :key="index" :header="courseItem.title">
           <div v-html="courseItem.content"></div>
@@ -86,6 +87,8 @@ import TheTimeline from '~/components/base/TheTimeline.vue'
 import ParCertificate from "~/components/partials/ParCertificate";
 import TheButton from "~/components/base/TheButton";
 import StartLearning from "@/components/blocks/StartLearning";
+import CountDown from "~/components/base/CountDown";
+
 export default {
   name: "Tester",
   head() {
@@ -94,6 +97,7 @@ export default {
     }
   },
   components: {
+    CountDown,
     StartLearning,
     TheButton,
     ParCertificate,
@@ -107,6 +111,7 @@ export default {
   data() {
     return {
       title: 'Тестировщик ПО',
+      end: new Date(2021, 5, 1).getTime(),
       carousel: ['/images/education/tester/RFP_1.jpg', '/images/education/tester/RFP_2.jpg', '/images/education/tester/RFP_3.jpg', '/images/education/tester/RFP_4.jpg'],
       why: [
         {
@@ -184,7 +189,7 @@ export default {
       ],
       course: [
         {
-          title: 'Какие знания нужны, чтобы начать учиться.',
+          title: 'Какие знания нужны, чтобы начать учиться',
           content: `
           <p>
             Для старта вполне хватит полного среднего образования. Быть «технарем» не обязательно, но важно быть достаточно продвинутым пользователем ПК. Помните, что во время работы вам придется быстро осваивать новые программы и технологии. Что касается личных качеств, must have тестировщика – это любопытство, внимательность, настойчивость, здоровый скепсис, перфекционизм, обучаемость, нестандартное мышление и умение работать в команде.
@@ -192,7 +197,7 @@ export default {
           `
         },
         {
-          title: 'Чему вы научитесь.',
+          title: 'Чему вы научитесь',
           content: `
           <ul>
             <li>Понимать базовые термины и выполнять все востребованные виды тестирования.</li>
@@ -203,7 +208,7 @@ export default {
           `
         },
         {
-          title: 'Длительность тренинга.',
+          title: 'Длительность тренинга',
           content: `
            <ul>
             <li>Суммарная длительность тренинга – 1 месяц.</li>
@@ -214,11 +219,11 @@ export default {
           `
         },
         {
-          title: 'Стоимость тренинга.',
+          title: 'Стоимость тренинга',
           content: `<p>10 000 руб.</p>`
         },
         {
-          title: 'Из каких блоков состоит программа тренинга.',
+          title: 'Из каких блоков состоит программа тренинга',
           content: `
           <h5 class="text-bold mb-10">Блок 1. Введение в тестирование.</h5>
           <ul class="mb-15">
@@ -283,7 +288,7 @@ export default {
           `
         },
         {
-          title: 'Вводная лекция «Введение в профессию».',
+          title: 'Вводная лекция «Введение в профессию»',
           content: `
           <div class="container d-flex justify-content-center py-40">
             <iframe width="710" height="400" src="https://www.youtube.com/embed/evs4aAp8Uo0" title="Видеокурс по функциональному тестированию" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

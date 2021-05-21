@@ -45,6 +45,7 @@ export default {
     '@/plugins/vue-lazyload',
     '@/plugins/vue-slick-carousel',
     '@/plugins/vue-fontawesome',
+    { src: '@/plugins/vuejs-countdown-timer.js', ssr: false }
     // { src: '@/plugins/vue-carousel', ssr: false },
     // '@/plugins/vue2-perfect-scrollbar',
   ],
@@ -85,7 +86,7 @@ export default {
   },
   robots: {
     Host: 'https://mir-dit.ru/',
-    Disallow: ['/_nuxt', '/fonts', '/images', '/docs', '/'],
+    Disallow: ['/_nuxt', '/fonts', '/images', '/docs'],
     Sitemap: 'https://mir-dit.ru/sitemap.xml'
   },
   generate: {
