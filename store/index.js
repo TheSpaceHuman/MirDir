@@ -137,6 +137,10 @@ export const state = () => ({
             value: 'Тестирование мобильных приложений',
             label: 'Тестирование мобильных приложений',
           },
+          {
+            value: 'Тестирование веб-сервисов',
+            label: 'Тестирование веб-сервисов',
+          },
         ],
         required: true
       },
@@ -1306,6 +1310,11 @@ export const state = () => ({
       title: 'Тестирование мобильных приложений',
       image: '/images/articles/13.png',
       url: '/education/testing-mobile-applications'
+    },
+    {
+      title: 'Тестирование веб-сервисов',
+      image: '/images/articles/9.png',
+      url: '/education/testing-web-services'
     }
   ]
 })

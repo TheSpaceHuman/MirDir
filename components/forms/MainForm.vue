@@ -83,6 +83,7 @@
           const form = {...this.form}
           form.subject = this.subject || this.title;
           form.body = this.createBody(this.form);
+          // 'a.kolodyazhny.a@yandex.ru'
           form.mailTo = this.mailTo || this.CONTACT.email;
           const formData = new FormData()
           for(let key in form) {
@@ -152,7 +153,7 @@
         let body = '';
         for (let [key, value] of Object.entries(form)) {
           const field = this.getField(key)
-          body += `<b>${field ? field.label : key}</b>`
+          body += `<b>${field && field.label ? field.label : key}</b>`
           body += `<p>${value}</p>`
         }
         return body;
