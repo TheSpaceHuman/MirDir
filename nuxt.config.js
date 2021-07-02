@@ -86,7 +86,7 @@ export default {
   },
   robots: {
     Host: 'https://mir-dit.ru/',
-    Disallow: ['/_nuxt', '/fonts', '/images', '/docs'],
+    Disallow: ['/_nuxt', '/fonts', '/images', '/docs', '/'],
     Sitemap: 'https://mir-dit.ru/sitemap.xml'
   },
   generate: {

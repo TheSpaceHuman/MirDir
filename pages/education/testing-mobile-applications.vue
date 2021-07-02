@@ -2,7 +2,7 @@
   <section class="page-mobile-testers">
     <TheBanner image="/images/education/mobile-tester/smartphone-1701086.jpg">
       <h1 class="banner-title">{{ title }}</h1>
-      <TheButton type="danger" @click="openModal('formQuestionnaire')">Анкета кандидата на обучение</TheButton>
+      <TheButton type="danger" @click="openGetCourse(2)">Анкета кандидата на обучение</TheButton>
       <CountDown :end="end" />
     </TheBanner>
     <div class="container pt-30">
@@ -50,10 +50,10 @@
           </p>
           <p class="mb-10">
             Если ваших знаний недостаточно, вам будет затруднительно выполнять практические работы, а тренер не сможет уделять время на пояснение как составить чек-лист или зарегистрировать правильно баг-репорт. Эти пояснения даются в рамках базового тренинга
-            <a class="accent-link" @click="openModal('formQuestionnaire')">«Хочу стать тестировщиком»</a>
+            <a class="accent-link" @click="openGetCourse(2)">«Хочу стать тестировщиком»</a>
           </p>
           <p class="mb-10">
-            Если вы не уверены, что знаете все это в должной мере, мы рекомендуем вам пройти наш базовый тренинг  <a class="accent-link" @click="openModal('formQuestionnaire')">«Хочу стать тестировщиком»</a>, где вы сможете приобрести необходимые знания и практические навыки.
+            Если вы не уверены, что знаете все это в должной мере, мы рекомендуем вам пройти наш базовый тренинг  <a class="accent-link" @click="openGetCourse(2)">«Хочу стать тестировщиком»</a>, где вы сможете приобрести необходимые знания и практические навыки.
           </p>
           <p>
             Также крайне желательно разбираться в клиент-серверной архитектуре и понимать, как работать с консолью браузера, знать принципы работы клиент-серверной архитектуры.
@@ -74,7 +74,7 @@
         </a-collapse-panel>
         <a-collapse-panel header="Длительность тренинга">
           <ul class="list--disk mb-10">
-            <li>Суммарная длительность тренинга – 2 недели.</li>
+            <li>Суммарная длительность тренинга – 2,5 недели.</li>
             <li>Каждую неделю вы будете проходить 2 занятия и выполнять 2 практические работы.</li>
             <li>На выполнение каждого задания потребуется от 4 до 8 часов (в зависимости от вашей технической подготовки).</li>
             <li>В конце обучения вас ждет итоговое задание, в котором вы отработаете все полученные знания.</li>
@@ -162,7 +162,7 @@
       </a-collapse>
     </div>
     <ParCertificate />
-    <StartLearning />
+    <StartLearning script="2" />
   </section>
 </template>
 
@@ -192,6 +192,10 @@ export default {
     openModal(name) {
       this.$store.commit('toggleModal', name)
     },
+    openGetCourse(key) {
+      const resolve = this.$router.resolve({ path: `/getcourse/${key}`});
+      window.open(resolve.href, '_blank');
+    }
   }
 }
 </script>

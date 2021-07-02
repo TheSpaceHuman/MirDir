@@ -130,6 +130,22 @@ $spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
     list-style: disc;
   }
 }
+.lists-default {
+  ol {
+    li {
+      list-style-type: decimal;
+    }
+  }
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
+  ul, ol {
+    list-style-type: unset;
+    padding-left: 20px;
+  }
+}
 .list-default {
   list-style-type: unset;
   padding-left: 20px;

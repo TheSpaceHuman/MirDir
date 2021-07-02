@@ -2,7 +2,7 @@
   <section class="page-tester">
     <TheBanner image="/images/education/fon-2.jpg">
       <h1 class="banner-title">{{ title }}</h1>
-      <TheButton type="danger" @click="openModal('formQuestionnaire')">Анкета кандидата на обучение</TheButton>
+      <TheButton type="danger" @click="openGetCourse(1)">Анкета кандидата на обучение</TheButton>
       <CountDown :end="end" />
     </TheBanner>
     <div class="container">
@@ -37,7 +37,7 @@
       <p class="mb-10">
         Вы можете бесплатно посмотреть вводную лекцию <a v-scroll-to="'#base-course'" class="accent-link">«Введение в профессию»</a> и ознакомиться с форматом подачи и качеством материала.
         Плюс мы еженедельно проводим бесплатные пробные уроки: после выполнения тестового задания вы получите обратную связь от тренера.
-        <a @click="openModal('formTrialLesson')" class="accent-link">Записывайтесь!</a>
+        <a @click="openGetCourse(1)" class="accent-link">Записывайтесь!</a>
         Если понравится, сможете легко продолжить обучение в платном формате.
       </p>
       <h5 class="text-bold">Удобство и доступность</h5>
@@ -73,7 +73,7 @@
       </a-collapse>
     </div>
     <ParCertificate />
-    <StartLearning />
+    <StartLearning script="1" />
   </section>
 </template>
 
@@ -302,6 +302,10 @@ export default {
     openModal(name) {
       this.$store.commit('toggleModal', name)
     },
+    openGetCourse(key) {
+      const resolve = this.$router.resolve({ path: `/getcourse/${key}`});
+      window.open(resolve.href, '_blank');
+    }
   }
 }
 </script>
