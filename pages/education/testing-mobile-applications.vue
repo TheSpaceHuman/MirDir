@@ -3,7 +3,6 @@
     <TheBanner image="/images/education/mobile-tester/smartphone-1701086.jpg">
       <h1 class="banner-title">{{ title }}</h1>
       <TheButton type="danger" @click="openGetCourse(2)">Анкета кандидата на обучение</TheButton>
-      <CountDown :end="end" />
     </TheBanner>
     <div class="container pt-30">
       <h2 class="h3 mb-20 text-center">Чему вы научитесь</h2>

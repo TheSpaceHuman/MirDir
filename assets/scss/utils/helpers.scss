@@ -4,7 +4,7 @@
   line-height: 1.5;
 }
 
-$spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
+$spaceamounts: (0, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
 @include indents($spaceamounts);
 
 .w-100 {width: 100%;}
@@ -171,4 +171,7 @@ $spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 90, 100);
 }
 .round-img {
   border-radius: 50%;
+}
+.text-nowrap {
+  white-space: nowrap;
 }

@@ -37,7 +37,6 @@ html, body {
   }
 }
 .container {
-
   @media screen and (max-width: $lgDesktopWidth) {
     max-width: $mdDesktopWidth;
   }
@@ -132,6 +131,21 @@ html, body {
     padding-bottom: 20px;
   }
 }
-
+.promo {
+  @media screen and (max-width: $tableWidth) {
+    flex-direction: column;
+    justify-content: center;
+    &__logo {
+      display: none;
+    }
+    &__message {
+      padding: 4px;
+      margin-bottom: 10px;
+    }
+    &__sub-title {
+      margin-bottom: 10px;
+    }
+  }
+}
 
 

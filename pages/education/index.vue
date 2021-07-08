@@ -23,10 +23,12 @@
 
 <script>
   import TheBanner from '~/components/base/TheBanner.vue'
+  import TheButton from '~/components/base/TheButton.vue'
   export default {
     name: "education",
     components: {
-      TheBanner
+      TheBanner,
+      TheButton
     },
     head() {
       return {

@@ -3,7 +3,6 @@
     <TheBanner image="/images/education/fon-2.jpg">
       <h1 class="banner-title">{{ title }}</h1>
       <TheButton type="danger" @click="openGetCourse(1)">Анкета кандидата на обучение</TheButton>
-      <CountDown :end="end" />
     </TheBanner>
     <div class="container">
       <h2 class="h2 my-30 text-center">Зачем учиться функциональному тестированию?</h2>
