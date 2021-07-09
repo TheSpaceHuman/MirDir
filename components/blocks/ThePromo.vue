@@ -1,7 +1,7 @@
 <template>
   <section class="promo" v-if="isVisible">
     <div class="promo__logo">
-      <img src="/images/logo.png" alt="Mir-dit logo">
+      <img src="/images/promo/1.png" alt="Mir-dit logo">
     </div>
     <div class="promo__message">
       <h4 class="promo__title">
@@ -11,7 +11,7 @@
     </div>
     <div class="promo__action">
       <a href="https://mir-dit.online/" target="_blank">
-        <TheButton type="danger" class="text-nowrap">Учебнуя платформа</TheButton>
+        <TheButton type="danger" class="text-nowrap">Учебная платформа</TheButton>
       </a>
     </div>
   </section>
@@ -36,29 +36,32 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "assets/scss/utils/vars";
 .promo {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 12px 4px;
+  padding: 0;
 
   &__title {
-    font-size: 18px;
+    text-align: center;
+    font-size: 17px;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 10px;
   }
 
   &__sub-title {
-    font-size: 16px;
-    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.1;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   &__logo {
     img {
